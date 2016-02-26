@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "My first post!"
+title:  "My first post on Jekyll!"
 date:   2016-02-26 09:13:17 +0200
 categories: blogging
 ---
