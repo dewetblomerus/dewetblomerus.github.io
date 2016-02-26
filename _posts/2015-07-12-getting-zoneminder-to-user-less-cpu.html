@@ -1,0 +1,34 @@
+---
+layout: post
+title: Getting Zoneminder to user less CPU
+date: 2015-07-12 20:54:43.000000000 +02:00
+type: post
+published: true
+status: publish
+categories: []
+tags: []
+meta:
+  _publicize_job_id: '12664544676'
+  geo_public: '0'
+  original_post_id: '15'
+  _wp_old_slug: '15'
+author:
+  login: blomerus
+  email: dewet@blomerus.org
+  display_name: blomerus
+  first_name: ''
+  last_name: ''
+---
+<p>The pc recording the IP cameras in our classroom used to run Windows 7, but dealing with a headless Windows 7 box is about as fun as it sounds, so I am switching to Ubuntu Server.</p>
+<p>Zoneminder was using a lot more CPU than Blue Iris used to, so I was trying to figure out ways to reduce the cpu load, I figured out that I needed to use libjpeg-turbo, here is what I did to get it working.</p>
+<p>wget 'http://sourceforge.net/projects/libjpeg-turbo/files/1.4.1/<a class="name" title="Click to download libjpeg-turbo-official_1.4.1_amd64.deb" href="http://sourceforge.net/projects/libjpeg-turbo/files/1.4.1/libjpeg-turbo-official_1.4.1_amd64.deb/download">libjpeg-turbo-official_1.4.1_amd64.deb</a>'</p>
+<p>dpkg -i <a class="name" title="Click to download libjpeg-turbo-official_1.4.1_amd64.deb" href="http://sourceforge.net/projects/libjpeg-turbo/files/1.4.1/libjpeg-turbo-official_1.4.1_amd64.deb/download">libjpeg-turbo-official_1.4.1_amd64.deb</a></p>
+<p>To find out what jpeg library you are borrowing</p>
+<p>sudo lsof |grep libjpeg.so.8.0.2</p>
+<p>At this point I'm assuming it's installed, from now on I'm trying to get zoneminder to use libjpeg-turbo</p>
+<p>echo "/opt/libjpeg-turbo/lib64" &gt; /etc/ld.so.conf.d/libjpeg-turbo.conf &amp;&amp; echo "/usr/local/lib" &gt; /etc/ld.so.conf.d/ffmpeg.conf &amp;&amp; echo "LD_LIBRARY_PATH=/usr/local/lib:/opt/libjpeg-turbo/lib64:$LD_LIBRARY_PATH" &gt;&gt; /etc/bash.bashrc &amp;&amp; echo "export LD_LIBRARY_PATH" &gt;&gt; /etc/bash.bashrc</p>
+<p>put the following line in 2 different files</p>
+<p>export LD_LIBRARY_PATH=/opt/libjpeg-turbo/lib64:$LD_LIBRARY_PATH</p>
+<p>/etc/profile</p>
+<p>/etc/init.d/zoneminder</p>
+<p>So...... I think it might be working, but the command I used to check if it's working didn't show any different output, so I only noticed that it might be working when I saw my cpu load cut in half. I'm not sure at what point in all of this it started working &amp; I'm not interested enough in this problem to test it by reverting my changes or digging deeper in any other way.</p>

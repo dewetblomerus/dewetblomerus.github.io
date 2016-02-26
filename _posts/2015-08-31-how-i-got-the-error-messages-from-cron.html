@@ -1,0 +1,27 @@
+---
+layout: post
+title: How I got the error messages from Cron
+date: 2015-08-31 20:50:23.000000000 +02:00
+type: post
+published: true
+status: publish
+categories: []
+tags: []
+meta:
+  _edit_last: '25765441'
+  _oembed_a60173806d67b7f77a53ab5993846a80: "{{unknown}}"
+  _oembed_ab333802dda7885e9942c326fb08f075: "{{unknown}}"
+  geo_public: '0'
+  _publicize_job_id: '14294586155'
+author:
+  login: blomerus
+  email: dewet@blomerus.org
+  display_name: blomerus
+  first_name: ''
+  last_name: ''
+---
+<p>So I needed to use Cron to run a script on regular intervals. I quickly realized that running code without error messages was no fun &amp; I needed to see what is going on.</p>
+<p>There must have been a way to write it to a log but it seems like the way people usually handle error messages from Cron is via sending an email, so that's what I went for.</p>
+<p>I followed this post &amp; got it working</p>
+<p>http://www.howtogeek.com/51819/how-to-setup-email-alerts-on-linux-using-gmail/</p>
+<p>Getting my error messages emailed to me helped me find my mistake &amp; now my script works.</p>

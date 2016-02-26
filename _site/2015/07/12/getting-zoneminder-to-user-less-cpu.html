@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Hire Me</title>
-  <meta name="description" content="I built this website in Jekyll & hosting it on Github Pages.
-">
+  <title>Getting Zoneminder to user less CPU</title>
+  <meta name="description" content="The pc recording the IP cameras in our classroom used to run Windows 7, but dealing with a headless Windows 7 box is about as fun as it sounds, so I am switc...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://yourdomain.com/hire-me/">
+  <link rel="canonical" href="http://yourdomain.com/2015/07/12/getting-zoneminder-to-user-less-cpu.html">
   <link rel="alternate" type="application/rss+xml" title="De Wet Blomerus" href="http://yourdomain.com/feed.xml">
 </head>
 
@@ -59,20 +58,27 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <article class="post">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <div class="post-content">
-    <h1 id="hire-me">Hire me</h1>
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Getting Zoneminder to user less CPU</h1>
+    <p class="post-meta"><time datetime="2015-07-12T20:54:43+02:00" itemprop="datePublished">Jul 12, 2015</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{"login"=>"blomerus", "email"=>"dewet@blomerus.org", "display_name"=>"blomerus", "first_name"=>"", "last_name"=>""}</span></span></p>
+  </header>
 
-<p>Running <a href="http://togethertech.org/" target="blank">Together Technologies</a> is my fulltime gig, so everything you see here is part-time only.</p>
-
-<p>If you have a problem that you think can be solved with a web application, scroll to the bottom &amp; send me an email so we can set up a “No Strings Attached” Skype call to chat about it.</p>
-
-<h1 id="what-do-you-do-de-wet">What do you do De Wet?</h1>
-<p>I specialize in productivity &amp; utility driven web applications that helps your employees or customers do something quicker, easier &amp; more accurately. I am well versed in <a href="http://www.amazon.com/Lean-Startup-Entrepreneurs-Continuous-Innovation/dp/0307887898">Lean Startup</a> methodologies, so if the market for what we are building is not validated yet, I have you covered.</p>
-
-<h1 id="what-tools-do-you-use">What tools do you use?</h1>
-<p>I specialize in Ruby, Rails, Linux, Heroku, HTML and CSS in that order. So if you need a web designer, I should not be your first pick, but I can recommend one.</p>
+  <div class="post-content" itemprop="articleBody">
+    <p>The pc recording the IP cameras in our classroom used to run Windows 7, but dealing with a headless Windows 7 box is about as fun as it sounds, so I am switching to Ubuntu Server.</p>
+<p>Zoneminder was using a lot more CPU than Blue Iris used to, so I was trying to figure out ways to reduce the cpu load, I figured out that I needed to use libjpeg-turbo, here is what I did to get it working.</p>
+<p>wget 'http://sourceforge.net/projects/libjpeg-turbo/files/1.4.1/<a class="name" title="Click to download libjpeg-turbo-official_1.4.1_amd64.deb" href="http://sourceforge.net/projects/libjpeg-turbo/files/1.4.1/libjpeg-turbo-official_1.4.1_amd64.deb/download">libjpeg-turbo-official_1.4.1_amd64.deb</a>'</p>
+<p>dpkg -i <a class="name" title="Click to download libjpeg-turbo-official_1.4.1_amd64.deb" href="http://sourceforge.net/projects/libjpeg-turbo/files/1.4.1/libjpeg-turbo-official_1.4.1_amd64.deb/download">libjpeg-turbo-official_1.4.1_amd64.deb</a></p>
+<p>To find out what jpeg library you are borrowing</p>
+<p>sudo lsof |grep libjpeg.so.8.0.2</p>
+<p>At this point I'm assuming it's installed, from now on I'm trying to get zoneminder to use libjpeg-turbo</p>
+<p>echo "/opt/libjpeg-turbo/lib64" &gt; /etc/ld.so.conf.d/libjpeg-turbo.conf &amp;&amp; echo "/usr/local/lib" &gt; /etc/ld.so.conf.d/ffmpeg.conf &amp;&amp; echo "LD_LIBRARY_PATH=/usr/local/lib:/opt/libjpeg-turbo/lib64:$LD_LIBRARY_PATH" &gt;&gt; /etc/bash.bashrc &amp;&amp; echo "export LD_LIBRARY_PATH" &gt;&gt; /etc/bash.bashrc</p>
+<p>put the following line in 2 different files</p>
+<p>export LD_LIBRARY_PATH=/opt/libjpeg-turbo/lib64:$LD_LIBRARY_PATH</p>
+<p>/etc/profile</p>
+<p>/etc/init.d/zoneminder</p>
+<p>So...... I think it might be working, but the command I used to check if it's working didn't show any different output, so I only noticed that it might be working when I saw my cpu load cut in half. I'm not sure at what point in all of this it started working &amp; I'm not interested enough in this problem to test it by reverting my changes or digging deeper in any other way.</p>
 
   </div>
 

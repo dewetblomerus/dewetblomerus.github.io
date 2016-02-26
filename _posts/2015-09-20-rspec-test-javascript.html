@@ -1,0 +1,34 @@
+---
+layout: post
+title: rspec test javascript
+date: 2015-09-20 13:09:20.000000000 +02:00
+type: post
+published: true
+status: publish
+categories: []
+tags: []
+meta:
+  _oembed_63bef73c01fccf6d429b3fa091a580a1: "{{unknown}}"
+  _oembed_875c5de382c53d308f01369325e11186: "{{unknown}}"
+  _oembed_3b64385df6a469441bc30657cd7a8307: "{{unknown}}"
+  _rest_api_published: '1'
+  _rest_api_client_id: "-1"
+  _publicize_job_id: '14980298452'
+  _oembed_812697690fde2ffdbd16b0d23775f5a3: "{{unknown}}"
+author:
+  login: blomerus
+  email: dewet@blomerus.org
+  display_name: blomerus
+  first_name: ''
+  last_name: ''
+---
+<p>I volunteered at <a href="https://railsbridgecapetown.org/">Railsbridge</a> yesterday &amp; when the other teachers didn't seem busy enough I went ahead &amp; asked them questions of my own. I learned about the save_and_open_page method in Rspec.</p>
+<p>This gave me the power to go fix a bunch of feature tests that I previously couldn't figure out how to fix, usually the features were working but the tests were failing falsely.</p>
+<p>Finally I got to one that got the better of me again. It was a page that loaded a "Flash" message but didn't reload the page. I asked for help again and someone explained to me that the Silenium Web Driver that is the default web driver for Rspec isn't capable of seeing these sort of Javascript changes to the page if it doesn't reload, it only inspects HTML but doesn't launch a full headless web browser. What I needed was a gem called 'poltergeist' which would let me use phantomjs which would give me this capability. Here is how I fixed it.</p>
+<p>Install PhantomJS</p>
+<p>https://gist.github.com/julionc/7476620</p>
+<p>Switch from Selenium to Poltergeist</p>
+<p>http://everydayrails.com/2015/01/27/rspec-switch-selenium-poltergeist.html</p>
+<p>Lastly, since phantomjs will be running in a different thread, unexpected things could happen in the test database. Here is a post by Avdi that explains how &amp; why to fix it.</p>
+<p>http://devblog.avdi.org/2012/08/31/configuring-database_cleaner-with-rails-rspec-capybara-and-selenium/</p>
+<p>Before I could finish the last step I noticed that something else was wrong with the spec, I forgot to let it click a link. So now my tests are fixed and this process is not done, but hopefully writing it down for when I do need it will make it less painful at that time.</p>

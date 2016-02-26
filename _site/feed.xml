@@ -6,8 +6,8 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 26 Feb 2016 18:38:59 +0200</pubDate>
-    <lastBuildDate>Fri, 26 Feb 2016 18:38:59 +0200</lastBuildDate>
+    <pubDate>Fri, 26 Feb 2016 21:52:33 +0200</pubDate>
+    <lastBuildDate>Fri, 26 Feb 2016 21:52:33 +0200</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
     
       <item>
@@ -48,6 +48,144 @@
         
         
         <category>blogging</category>
+        
+      </item>
+    
+      <item>
+        <title>Why learn to program?</title>
+        <description>&lt;p&gt;I stumbled on this Lifehacker post &quot;Don&#39;t Learn to Code: Learn to Work With Technology&quot;&lt;/p&gt;
+&lt;p&gt;I think there are two schools of thought here. Readers &amp;amp; Drivers&lt;/p&gt;
+&lt;p&gt;Readers:&lt;/p&gt;
+&lt;p&gt;Readers believe learning to code is like reading. You can make it though life without it. Especially if you live somewhere in central Africa with hot weather &amp;amp; fertile soil so you can farm the land you live on to provide for yourself &amp;amp; your family. People might say &quot;learning to read would be useful &amp;amp; make trips to town more convenient, but it is really difficult, frustrating &amp;amp; time consuming, I am living just fine without knowing how to read, so it is not necessary&quot;. As a reader, when we see this, we think &quot;oh no, you don&#39;t get it, if you only knew the power &amp;amp; freedom literacy would give you, you would start today, but it is really damn frustrating to learn how to read, so I won&#39;t be the one to try and convince you it&#39;s necessary&quot;. Readers generally believe that since so much of our work is done using computers, being able to automate the inefficient bits of what we do &quot;Just makes sense&quot;. Why would you rename files one by one? Why test the contact from on your wordpress website manually? Learning to code makes you more efficient at many daily tasks.&lt;/p&gt;
+&lt;p&gt;Drivers&lt;/p&gt;
+&lt;p&gt;Drivers think learning to code is like fixing a car. Your car breaks. Who should fix it? I was born in 1983 so my first car had fuel injection, sensors to measure all kinds of things &amp;amp; a computer to read the data &amp;amp; calculate how much fuel to inject at any moment. Knowing which gear the automatic gearbox should be in was also calculated by a computer. This code wasn&#39;t open sourced, Chevrolet didn&#39;t even give me a REST API or documentation!!!!!!!! Fact, if things broke on the car, I could not fix all of it. I could not do what my dad did 30 years before and take whole cars apart &amp;amp; put it back together in working order. Fact, I didn&#39;t want to be a career mechanic. So I did some calculations of my own, I calculated that I would take at least twice as long as a decent mechanic to fix my car, so if I could just earn half as much money as a mechanic working on my car, then I am wasting money (opportunity cost of what I could be making) when I work on my car myself. So I decided that until mechanics went into extremely high demand &amp;amp; labor on cars went up exponentially, I will not waste the money (opportunity cost) of working on my car ever again. Unless I was in a position where I am broke or jobless &amp;amp; I need to fix the car before I can go turn hours into money (which has happened a few times). Drivers believe that since other people code for a living, they can use the resulting software &amp;amp; focus on what they are good at. Like owning a car &amp;amp; not needing to know how to fix it.&lt;/p&gt;
+&lt;p&gt;I see merit in both but lean toward the reader mentality. I see the world heading into a direction where being code literate would be useful in more and more situations. Even just knowing what is possible with code &amp;amp; which kinds of jobs should be done by humans &amp;amp; which kinds of jobs should be done by computers. Being able to imagine what kind of custom software would be required to make you more efficient. Even if you don&#39;t work on the car yourself, you will one day own one or be responsible for getting one built or fixed.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 16 Oct 2015 19:49:46 +0200</pubDate>
+        <link>http://yourdomain.com/2015/10/16/why-learn-to-program.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2015/10/16/why-learn-to-program.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>rspec test javascript</title>
+        <description>&lt;p&gt;I volunteered at &lt;a href=&quot;https://railsbridgecapetown.org/&quot;&gt;Railsbridge&lt;/a&gt; yesterday &amp;amp; when the other teachers didn&#39;t seem busy enough I went ahead &amp;amp; asked them questions of my own. I learned about the save_and_open_page method in Rspec.&lt;/p&gt;
+&lt;p&gt;This gave me the power to go fix a bunch of feature tests that I previously couldn&#39;t figure out how to fix, usually the features were working but the tests were failing falsely.&lt;/p&gt;
+&lt;p&gt;Finally I got to one that got the better of me again. It was a page that loaded a &quot;Flash&quot; message but didn&#39;t reload the page. I asked for help again and someone explained to me that the Silenium Web Driver that is the default web driver for Rspec isn&#39;t capable of seeing these sort of Javascript changes to the page if it doesn&#39;t reload, it only inspects HTML but doesn&#39;t launch a full headless web browser. What I needed was a gem called &#39;poltergeist&#39; which would let me use phantomjs which would give me this capability. Here is how I fixed it.&lt;/p&gt;
+&lt;p&gt;Install PhantomJS&lt;/p&gt;
+&lt;p&gt;https://gist.github.com/julionc/7476620&lt;/p&gt;
+&lt;p&gt;Switch from Selenium to Poltergeist&lt;/p&gt;
+&lt;p&gt;http://everydayrails.com/2015/01/27/rspec-switch-selenium-poltergeist.html&lt;/p&gt;
+&lt;p&gt;Lastly, since phantomjs will be running in a different thread, unexpected things could happen in the test database. Here is a post by Avdi that explains how &amp;amp; why to fix it.&lt;/p&gt;
+&lt;p&gt;http://devblog.avdi.org/2012/08/31/configuring-database_cleaner-with-rails-rspec-capybara-and-selenium/&lt;/p&gt;
+&lt;p&gt;Before I could finish the last step I noticed that something else was wrong with the spec, I forgot to let it click a link. So now my tests are fixed and this process is not done, but hopefully writing it down for when I do need it will make it less painful at that time.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 20 Sep 2015 13:09:20 +0200</pubDate>
+        <link>http://yourdomain.com/2015/09/20/rspec-test-javascript.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2015/09/20/rspec-test-javascript.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>How I got the error messages from Cron</title>
+        <description>&lt;p&gt;So I needed to use Cron to run a script on regular intervals. I quickly realized that running code without error messages was no fun &amp;amp; I needed to see what is going on.&lt;/p&gt;
+&lt;p&gt;There must have been a way to write it to a log but it seems like the way people usually handle error messages from Cron is via sending an email, so that&#39;s what I went for.&lt;/p&gt;
+&lt;p&gt;I followed this post &amp;amp; got it working&lt;/p&gt;
+&lt;p&gt;http://www.howtogeek.com/51819/how-to-setup-email-alerts-on-linux-using-gmail/&lt;/p&gt;
+&lt;p&gt;Getting my error messages emailed to me helped me find my mistake &amp;amp; now my script works.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 31 Aug 2015 20:50:23 +0200</pubDate>
+        <link>http://yourdomain.com/2015/08/31/how-i-got-the-error-messages-from-cron.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2015/08/31/how-i-got-the-error-messages-from-cron.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>From Wordpress to Developer</title>
+        <description>&lt;p&gt;I got this question from a friend:&lt;/p&gt;
+&lt;p&gt;&quot;I have a passion for design and basic UX. Not really into coding but know that I&#39;ll have to start that venture sooner than later. Really cool that you&#39;re doing ruby as a ministry. I&#39;m studying with Udemy currently and enjoying it. I&#39;m very comfortable with Wordpress and designing websites in this platform. Would love your input on what you think I&#39;d need to be a successful web designer/developer?&quot;&lt;/p&gt;
+&lt;p&gt;Hello friend, here are my thoughts.&lt;/p&gt;
+&lt;p&gt;Take courage, you are a long way on your way if you can already build Wordpress websites. Take Warning, learning how to code never stops, it is long, hard frustrating work, and the small successes are addictive because when you work that hard for success you really feel it, so while you are a long way on your way, going down this road means you will always feel like you don&#39;t know enough.... but you do get to learn new things every day.&lt;/p&gt;
+&lt;p&gt;I am assuming currently you can do the whole thing yourself. A client can come to you and ask for what they want in a website, you lock yourself in a room, and come out with a website. Unfortunately the one-man-band thing is probably a long ways off for you &amp;amp; Rails. Could you tackle one piece at a time? First aim to do the front end design on a Rails App? Here is what I think you would need to do for that.&lt;/p&gt;
+&lt;p&gt;Use one of the example apps here https://github.com/RailsApps&lt;/p&gt;
+&lt;p&gt;I am going to keep calling Rails Websites &quot;Apps&quot; because it makes me feel like a real programmer. Your first challenge is just to get the app installed on your machine or on Cloud9 if you use Windows (installing Rails on Windows is a challenge that Rails developers tend to shy away from) we all do Linux or Mac.&lt;/p&gt;
+&lt;p&gt;Maybe go through the beginning of a Rails Tutorial to figure out the basics of what is what.&lt;/p&gt;
+&lt;p&gt;Don&#39;t yet worry about the fact that you can only make the app that the tutorial tells you to, just focus on &quot;having an app&quot;.&lt;/p&gt;
+&lt;p&gt;Then you learn Bootsrap or Foundation (front end frameworks) and figure out how to use those frameworks to design a Rails app &amp;amp; make it beautiful.&lt;/p&gt;
+&lt;p&gt;Learn how to use Git from the command line.&lt;/p&gt;
+&lt;p&gt;Find a developer like me, who knows how to make things work, but don&#39;t have a clue how to make it look nice, and team up with them to make an app for a client. Even though you are splitting the money between at least two people you should still be getting paid more than doing the equivalent work in Wordpress.&lt;/p&gt;
+&lt;p&gt;I&#39;m De Wet Blomerus, If you are not a computer I trust you can figure out how to get in touch with me to ask some questions if you have any.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 27 Aug 2015 20:41:56 +0200</pubDate>
+        <link>http://yourdomain.com/2015/08/27/wordpress-and-designing-websites-in-this-platform-would-love-your-input-on-what-you-think-id-need-to-be-a-successful-web-designerdeveloper.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2015/08/27/wordpress-and-designing-websites-in-this-platform-would-love-your-input-on-what-you-think-id-need-to-be-a-successful-web-designerdeveloper.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Where I put environment variables</title>
+        <description>&lt;p&gt;In my .profile file....&lt;/p&gt;
+&lt;p&gt;Because that&#39;s the way I roll!&lt;/p&gt;
+</description>
+        <pubDate>Mon, 17 Aug 2015 19:45:13 +0200</pubDate>
+        <link>http://yourdomain.com/2015/08/17/where-i-put-environment-variables.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2015/08/17/where-i-put-environment-variables.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Getting leads via email from Workshop</title>
+        <description>&lt;p&gt;Right now, running Together Technologies takes 100% of my working hours and at the end of the week, usually leaves me evaluating how I could have prioritized better because something that would have furthered the core mission of Together Tech still didn&#39;t get done.&lt;/p&gt;
+&lt;p&gt;But the next time I find myself with time that I want to turn into Dollars, I want to try http://letsworkshop.com/ to get leads.&lt;/p&gt;
+&lt;p&gt;I do not like that their pricing is not on their website but I&#39;m guessing it is somewhere between $100 - $150 per month to get the daily emails.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 16 Aug 2015 11:33:06 +0200</pubDate>
+        <link>http://yourdomain.com/2015/08/16/getting-leads-via-email-from-workshop.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2015/08/16/getting-leads-via-email-from-workshop.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Should I learn Ruby</title>
+        <description>&lt;div class=&quot;gmail_default&quot;&gt;Should you learn Ruby depends what you want to use it for.&lt;/div&gt;
+&lt;div class=&quot;gmail_default&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;gmail_default&quot;&gt;If you want to build websites that does unique things (things you can&#39;t find a Wordpress Plugin for). And if your main constraint is money (which equials programmer hours), so it has to be done by one person or a small team in a limited amount of time, then it just so happens ​that Rails which is a framework written &amp;amp; built upon with Ruby is the best tool for the job. It can do many other things well, but for this use case I&#39;ll argue it is the very best.&lt;/div&gt;
+&lt;div class=&quot;gmail_default&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;gmail_default&quot;&gt;The other places where Ruby really shines are making scripts for text processing &amp;amp; setting up of servers.&lt;/div&gt;
+&lt;div class=&quot;gmail_default&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;gmail_default&quot;&gt;Double bonus, Ruby is fun to learn &amp;amp; work with. And there are tons of video tutorials online.&lt;/div&gt;
+&lt;div class=&quot;gmail_default&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;gmail_default&quot;&gt;This has been my favorite&lt;/div&gt;
+&lt;div class=&quot;gmail_default&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;gmail_default&quot;&gt;https://pragmaticstudio.com/&lt;/div&gt;
+&lt;div class=&quot;gmail_default&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;gmail_default&quot;&gt;If you don&#39;t have the budget for it I have heard really good things about this guy&#39;s free book&lt;/div&gt;
+&lt;div class=&quot;gmail_default&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;gmail_default&quot;&gt;https://www.railstutorial.org/&lt;/div&gt;
+</description>
+        <pubDate>Thu, 23 Jul 2015 14:41:13 +0200</pubDate>
+        <link>http://yourdomain.com/2015/07/23/should-i-learn-ruby.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2015/07/23/should-i-learn-ruby.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>master.tmate.io lookup failure</title>
+        <description>&lt;p&gt;Hardcode an IP address for master.tmate.io in /etc/hosts&lt;/p&gt;
+&lt;p&gt;Here&#39;s the Gitbug issue where I found the solution&lt;/p&gt;
+&lt;p&gt;https://github.com/nviennot/tmate/issues/32&lt;/p&gt;
+</description>
+        <pubDate>Thu, 23 Jul 2015 10:00:49 +0200</pubDate>
+        <link>http://yourdomain.com/2015/07/23/master-tmate-io-lookup-failure.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2015/07/23/master-tmate-io-lookup-failure.html</guid>
+        
         
       </item>
     
