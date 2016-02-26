@@ -13,7 +13,7 @@ p {
 }
 
 a {
-	color: green;
+	color: DarkCyan;
 	text-decoration: none;
 }
 
@@ -35,6 +35,12 @@ a:hover {
 	width:50%;
 	margin: 0 20px 0 0;
   /* CHALLENGE 3: how could you get this to float to the left side of the screen? */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 #main {
