@@ -455,3 +455,14 @@ pre {
     color: #008080; }
   .highlight .il {
     color: #099; }
+
+/**
+ * Things De Wet changed. I need to ask where to put this.
+ */
+/**
+ * Images
+ */
+.profile-img {
+  border-radius: 15px;
+  max-width: 100%;
+  vertical-align: middle; }
