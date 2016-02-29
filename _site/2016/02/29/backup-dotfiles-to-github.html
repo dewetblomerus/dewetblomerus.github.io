@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>My first post on Jekyll!</title>
-  <meta name="description" content="I am typing my first post in Sublime Text. Oh my word this feels so much better than blogging in wp-admin. The 30 seconds I save by not having to load a web ...">
+  <title>Backup Dotfiles to Github</title>
+  <meta name="description" content="So I was creating some aliases in my .zshrc to quickly create new posts, I realized that the file has grown into something that I quite like and I really don...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://yourdomain.com/blogging/2016/02/26/my-first-post-on-jekyll.html">
+  <link rel="canonical" href="http://yourdomain.com/2016/02/29/backup-dotfiles-to-github.html">
   <link rel="alternate" type="application/rss+xml" title="De Wet Blomerus" href="http://yourdomain.com/feed.xml">
 </head>
 
@@ -61,12 +61,39 @@
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">My first post on Jekyll!</h1>
-    <p class="post-meta"><time datetime="2016-02-26T09:13:17+02:00" itemprop="datePublished">Feb 26, 2016</time></p>
+    <h1 class="post-title" itemprop="name headline">Backup Dotfiles to Github</h1>
+    <p class="post-meta"><time datetime="2016-02-29T00:00:00+02:00" itemprop="datePublished">Feb 29, 2016</time></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>I am typing my first post in Sublime Text. Oh my word this feels so much better than blogging in wp-admin. The 30 seconds I save by not having to load a web page &amp; log in “feels” like it makes a difference, wow we humans are terrible at guaging time.</p>
+    <p>So I was creating some aliases in my .zshrc to quickly create new posts, I realized that the file has grown into something that I quite like and I really don’t want to re-make from scratch ever again.</p>
+
+<p>There’s also that moment when you know you should spend a few minutes in one of your .dotfiles sharpening your productivity tools, but you don’t want to really bother. I think knowing that I have a backup system in place and that whatever time I invest in my .dotfiles is something I can draw dividents from for the rest of my “Linux Hacking Life”.</p>
+
+<p>I found an excellent post, telling me exactly how to set this up.</p>
+
+<p><a href="http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/" target="_blank">Using Git And Github To Manage Your Dotfiles</a> by Michael Smalley</p>
+
+<p>I really like the approach he took and was happy to follow it step by step.</p>
+
+<p>There were just two small gotchas that I figured out quite quickly but it is the type of thing that one can get stuck on &amp; give up the whole process, so here they are, hopefully you or my future self will find them helpful.</p>
+
+<ol>
+  <li>
+    <p>The <code class="highlighter-rouge">makemysimlinks.sh</code> script is a tiny bit scary, but ended up being 100% fine.
+It copied the directories belonging to zshell &amp; vim to a <code class="highlighter-rouge">dotfiles_old</code> directory in the home directory. Because I didn’t read the script before running it (I know, very irresponsible) I was expecting the <code class="highlighter-rouge">dotfiles_old</code> in the <code class="highlighter-rouge">~/dotfiles</code> directory. So for a minute there my Vim wasn’t working properly &amp; I didn’t know where the directory went.</p>
+  </li>
+  <li>
+    <p>The <code class="highlighter-rouge">oh-my-zsh</code> installation directory is a Git repo
+The way I installed Zshell on Ubuntu was by cloning the Git repository. I really like this method of installation because whenever I want to update it I just cd into it and do a git pull.</p>
+  </li>
+</ol>
+
+<p>This is the first time I dealt with a Git repo inside a Git repo. I added it to a <code class="highlighter-rouge">.gitignore</code> and did a <code class="highlighter-rouge">git rm -r --cached &lt;your directory&gt;</code> to stop tracking it and all was well.</p>
+
+<p>After that all was working perfectly, my dotfiles &amp; relevant directories are now pushed to <a href="https://github.com/dewetblomerus/dotfiles" target="_blank">a git repo here</a></p>
+
+<p>I would suggest you do the same, it will take you way less time to set this up than to have to keep stopping in the middle of your work to go add things to your dotfiles that you forgot when you moved to your new machine.</p>
 
   </div>
 
