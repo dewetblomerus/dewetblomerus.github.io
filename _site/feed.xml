@@ -6,9 +6,57 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 29 Feb 2016 21:50:49 +0200</pubDate>
-    <lastBuildDate>Mon, 29 Feb 2016 21:50:49 +0200</lastBuildDate>
+    <pubDate>Mon, 21 Mar 2016 22:11:55 +0200</pubDate>
+    <lastBuildDate>Mon, 21 Mar 2016 22:11:55 +0200</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
+    
+      <item>
+        <title>Using VCR 3 with Rails 4</title>
+        <description>&lt;p&gt;All the guides on using VCR with Rails that I found in my googling was from 2012 or older. This ended up being super easy but I still ended up wasting time trying to find a newer reference.&lt;/p&gt;
+
+&lt;p&gt;Put this in your &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;group :test do
+  gem &#39;vcr&#39;
+  gem &#39;webmock&#39;
+end
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Put the following in your &lt;code class=&quot;highlighter-rouge&quot;&gt;spec/spec_helper.rb&lt;/code&gt;
+    require ‘vcr’&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;VCR.configure do |c|
+  c.cassette_library_dir = &#39;spec/cassettes&#39;
+  c.hook_into :webmock
+  c.configure_rspec_metadata!
+end
+
+RSpec.configure do |config|
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;And then finally. In the specs that make the web requests you want to record, put &lt;code class=&quot;highlighter-rouge&quot;&gt;, :vcr do&lt;/code&gt; right after the description&lt;/p&gt;
+</description>
+        <pubDate>Mon, 21 Mar 2016 00:00:00 +0200</pubDate>
+        <link>http://yourdomain.com/2016/03/21/using-vcr-3-with-rails-4.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2016/03/21/using-vcr-3-with-rails-4.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Catalog of Refactorings</title>
+        <description>&lt;p&gt;This is so cool. I would really like to see a page like this with every technical book I read.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.refactoring.com/catalog/index.html&quot; target=&quot;_blank&quot;&gt;Catalog of Refactorings by Martin Fowler&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 01 Mar 2016 00:00:00 +0200</pubDate>
+        <link>http://yourdomain.com/2016/03/01/refactoring-catalog.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2016/03/01/refactoring-catalog.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Backup Dotfiles to Github</title>
@@ -157,44 +205,6 @@ The way I installed Zshell on Ubuntu was by cloning the Git repository. I really
         <pubDate>Sun, 16 Aug 2015 11:33:06 +0200</pubDate>
         <link>http://yourdomain.com/2015/08/16/getting-leads-via-email-from-workshop.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2015/08/16/getting-leads-via-email-from-workshop.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Should I learn Ruby</title>
-        <description>&lt;div class=&quot;gmail_default&quot;&gt;Should you learn Ruby depends what you want to use it for.&lt;/div&gt;
-&lt;div class=&quot;gmail_default&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;gmail_default&quot;&gt;If you want to build websites that does unique things (things you can&#39;t find a Wordpress Plugin for). And if your main constraint is money (which equials programmer hours), so it has to be done by one person or a small team in a limited amount of time, then it just so happens ​that Rails which is a framework written &amp;amp; built upon with Ruby is the best tool for the job. It can do many other things well, but for this use case I&#39;ll argue it is the very best.&lt;/div&gt;
-&lt;div class=&quot;gmail_default&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;gmail_default&quot;&gt;The other places where Ruby really shines are making scripts for text processing &amp;amp; setting up of servers.&lt;/div&gt;
-&lt;div class=&quot;gmail_default&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;gmail_default&quot;&gt;Double bonus, Ruby is fun to learn &amp;amp; work with. And there are tons of video tutorials online.&lt;/div&gt;
-&lt;div class=&quot;gmail_default&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;gmail_default&quot;&gt;This has been my favorite&lt;/div&gt;
-&lt;div class=&quot;gmail_default&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;gmail_default&quot;&gt;https://pragmaticstudio.com/&lt;/div&gt;
-&lt;div class=&quot;gmail_default&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;gmail_default&quot;&gt;If you don&#39;t have the budget for it I have heard really good things about this guy&#39;s free book&lt;/div&gt;
-&lt;div class=&quot;gmail_default&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;gmail_default&quot;&gt;https://www.railstutorial.org/&lt;/div&gt;
-</description>
-        <pubDate>Thu, 23 Jul 2015 14:41:13 +0200</pubDate>
-        <link>http://yourdomain.com/2015/07/23/should-i-learn-ruby.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2015/07/23/should-i-learn-ruby.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>master.tmate.io lookup failure</title>
-        <description>&lt;p&gt;Hardcode an IP address for master.tmate.io in /etc/hosts&lt;/p&gt;
-&lt;p&gt;Here&#39;s the Gitbug issue where I found the solution&lt;/p&gt;
-&lt;p&gt;https://github.com/nviennot/tmate/issues/32&lt;/p&gt;
-</description>
-        <pubDate>Thu, 23 Jul 2015 10:00:49 +0200</pubDate>
-        <link>http://yourdomain.com/2015/07/23/master-tmate-io-lookup-failure.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2015/07/23/master-tmate-io-lookup-failure.html</guid>
         
         
       </item>
