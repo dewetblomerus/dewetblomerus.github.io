@@ -6,9 +6,50 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 21 Mar 2016 22:11:55 +0200</pubDate>
-    <lastBuildDate>Mon, 21 Mar 2016 22:11:55 +0200</lastBuildDate>
+    <pubDate>Sun, 24 Apr 2016 14:56:35 +0200</pubDate>
+    <lastBuildDate>Sun, 24 Apr 2016 14:56:35 +0200</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
+    
+      <item>
+        <title>How I used VirtualBox snapshots to create my ultimate Linux post install script</title>
+        <description>&lt;h3 id=&quot;i-have-always-wanted-a-really-awesome-linux-post-install-script-to-automatically-install-and-set-up-everything-i-need-to-start-being-a-productive-web-developer-within-an-hour-after-installing-linux&quot;&gt;I have always wanted a really awesome Linux post install script to automatically install and set up everything I need to start being a productive web developer within an hour after installing Linux.&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;I have a few reasons for this:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;It’s cool&lt;/li&gt;
+  &lt;li&gt;I saw thoughtbot created an OSX laptop script (aka, it’s cool)&lt;/li&gt;
+  &lt;li&gt;I don’t like doing tedious, repetitive tasks, which is also why I love programming.&lt;/li&gt;
+  &lt;li&gt;It breaks focus when I am in the middle of coding something and I need to apt-get install some dependancy.&lt;/li&gt;
+  &lt;li&gt;Installing stuff manually can waste a lot of time, because while I wait for it to download or install I can get distracted.&lt;/li&gt;
+  &lt;li&gt;I have taught a lot of people to code and really love getting people started. Windows is great but I don’t do development on it, so if you want to “follow me” then I will help you set up your Linux environment so that it is ready to start coding. This means I actually get to use my install script quite often.&lt;/li&gt;
+  &lt;li&gt;It gives me the freedom to try out different distros whenever I want. As long as I install Linux at the end of the day and set my script to run, I don’t lose any time.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;One challenge I always had with not getting my install script tuned quite the way I needed it, was that even while running a bootcamp, I use it less than once per week. So if I needed 25 iterations to get it where I wanted it, that’s over half a year. The other problem is that if something fails halfway through installing things, you can’t fix it and see it working in it’s fixed state, you have to fix it and wait for next time to see the results, which kills motivation. I was slowly making my way through this process with no end in sight when I got annoyed and decided to solve this once and for all.&lt;/p&gt;
+
+&lt;h3 id=&quot;enter-virtualbox-snapshots&quot;&gt;Enter, VirtualBox Snapshots&lt;/h3&gt;
+&lt;p&gt;It’s like Git for a Virtual Machine. It allowed me take a couple of hours and run my script many times over.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Here are the steps I took:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Install Linux Mint in a VirtualBox (I switched from Ubuntu to Mint as my main distro this year).&lt;/li&gt;
+  &lt;li&gt;Take a Snapshot.&lt;/li&gt;
+  &lt;li&gt;Run my script.&lt;/li&gt;
+  &lt;li&gt;When something fails I fix the part of the script that caused it to fail.&lt;/li&gt;
+  &lt;li&gt;Restore to the snapshot. (This is instant on an SSD).&lt;/li&gt;
+  &lt;li&gt;Repeat steps 3-5 until the whole thing runs without any problems.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Here is my current post-install script. &lt;a href=&quot;https://github.com/dewetblomerus/linux-laptop&quot; target=&quot;_blank&quot;&gt;linux-laptop&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 24 Apr 2016 00:00:00 +0200</pubDate>
+        <link>http://yourdomain.com/2016/04/24/how-i-used-virtualbox-snapshots-to-create-my-ultimate-linux-post-install-script.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2016/04/24/how-i-used-virtualbox-snapshots-to-create-my-ultimate-linux-post-install-script.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Using VCR 3 with Rails 4</title>
@@ -192,19 +233,6 @@ The way I installed Zshell on Ubuntu was by cloning the Git repository. I really
         <pubDate>Mon, 17 Aug 2015 19:45:13 +0200</pubDate>
         <link>http://yourdomain.com/2015/08/17/where-i-put-environment-variables.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2015/08/17/where-i-put-environment-variables.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Getting leads via email from Workshop</title>
-        <description>&lt;p&gt;Right now, running Together Technologies takes 100% of my working hours and at the end of the week, usually leaves me evaluating how I could have prioritized better because something that would have furthered the core mission of Together Tech still didn&#39;t get done.&lt;/p&gt;
-&lt;p&gt;But the next time I find myself with time that I want to turn into Dollars, I want to try http://letsworkshop.com/ to get leads.&lt;/p&gt;
-&lt;p&gt;I do not like that their pricing is not on their website but I&#39;m guessing it is somewhere between $100 - $150 per month to get the daily emails.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 16 Aug 2015 11:33:06 +0200</pubDate>
-        <link>http://yourdomain.com/2015/08/16/getting-leads-via-email-from-workshop.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2015/08/16/getting-leads-via-email-from-workshop.html</guid>
         
         
       </item>

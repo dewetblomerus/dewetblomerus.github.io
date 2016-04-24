@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>De Wet Blomerus</title>
-  <meta name="description" content="I built this website in Jekyll & hosting it on Github Pages.
-">
+  <title>How I used VirtualBox snapshots to create my ultimate Linux post install script</title>
+  <meta name="description" content="I have always wanted a really awesome Linux post install script to automatically install and set up everything I need to start being a productive web develop...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://yourdomain.com/">
+  <link rel="canonical" href="http://yourdomain.com/2016/04/24/how-i-used-virtualbox-snapshots-to-create-my-ultimate-linux-post-install-script.html">
   <link rel="alternate" type="application/rss+xml" title="De Wet Blomerus" href="http://yourdomain.com/feed.xml">
 </head>
 
@@ -59,21 +58,49 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <img class="profile-img" src="assets/images/dewet-profile.jpg">
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">How I used VirtualBox snapshots to create my ultimate Linux post install script</h1>
+    <p class="post-meta"><time datetime="2016-04-24T00:00:00+02:00" itemprop="datePublished">Apr 24, 2016</time></p>
+  </header>
 
-  <p>Hi, I'm De Wet. My name rhymes with Corvette & sounds like "The Vet".</p>
+  <div class="post-content" itemprop="articleBody">
+    <h3 id="i-have-always-wanted-a-really-awesome-linux-post-install-script-to-automatically-install-and-set-up-everything-i-need-to-start-being-a-productive-web-developer-within-an-hour-after-installing-linux">I have always wanted a really awesome Linux post install script to automatically install and set up everything I need to start being a productive web developer within an hour after installing Linux.</h3>
 
-  <p>I derive deep satisfaction from learning exactly what someone is needing to accomplish, and then writing the code to let a computer do it for them. Its the problem solving that I enjoy the most.</p>
+<p><strong>I have a few reasons for this:</strong></p>
 
-  <p>The other thing that I can't seem to ever get enough of, is teaching people to code. I am in awe of the human brain and how with the right attitude, grit & deliberate practice, things that seem impossibly difficult, can become second nature. A skill that can then lead someone with minimal formal education out of crushing poverty.</p>
+<ol>
+  <li>It’s cool</li>
+  <li>I saw thoughtbot created an OSX laptop script (aka, it’s cool)</li>
+  <li>I don’t like doing tedious, repetitive tasks, which is also why I love programming.</li>
+  <li>It breaks focus when I am in the middle of coding something and I need to apt-get install some dependancy.</li>
+  <li>Installing stuff manually can waste a lot of time, because while I wait for it to download or install I can get distracted.</li>
+  <li>I have taught a lot of people to code and really love getting people started. Windows is great but I don’t do development on it, so if you want to “follow me” then I will help you set up your Linux environment so that it is ready to start coding. This means I actually get to use my install script quite often.</li>
+  <li>It gives me the freedom to try out different distros whenever I want. As long as I install Linux at the end of the day and set my script to run, I don’t lose any time.</li>
+</ol>
 
-  <p>I founded <a href="http://togethertech.org/" target="blank">Together Technologies</a> where I work full time as the director. We are a coding bootcamp with the focus of developing strong role models in underprivileged communities around Cape Town, South Africa and empowering them in sustainable employment.</p>
+<p>One challenge I always had with not getting my install script tuned quite the way I needed it, was that even while running a bootcamp, I use it less than once per week. So if I needed 25 iterations to get it where I wanted it, that’s over half a year. The other problem is that if something fails halfway through installing things, you can’t fix it and see it working in it’s fixed state, you have to fix it and wait for next time to see the results, which kills motivation. I was slowly making my way through this process with no end in sight when I got annoyed and decided to solve this once and for all.</p>
 
-  <p>I'm married to my best friend, Marysol, and together we are raising our three young kids, a son and two daughters. I'm an avid cyclist, audio book devourer, and burger connoisseur.</p>
+<h3 id="enter-virtualbox-snapshots">Enter, VirtualBox Snapshots</h3>
+<p>It’s like Git for a Virtual Machine. It allowed me take a couple of hours and run my script many times over.</p>
 
-</div>
+<p><strong>Here are the steps I took:</strong></p>
+
+<ol>
+  <li>Install Linux Mint in a VirtualBox (I switched from Ubuntu to Mint as my main distro this year).</li>
+  <li>Take a Snapshot.</li>
+  <li>Run my script.</li>
+  <li>When something fails I fix the part of the script that caused it to fail.</li>
+  <li>Restore to the snapshot. (This is instant on an SSD).</li>
+  <li>Repeat steps 3-5 until the whole thing runs without any problems.</li>
+</ol>
+
+<p>Here is my current post-install script. <a href="https://github.com/dewetblomerus/linux-laptop" target="_blank">linux-laptop</a></p>
+
+  </div>
+
+</article>
 
       </div>
     </div>
