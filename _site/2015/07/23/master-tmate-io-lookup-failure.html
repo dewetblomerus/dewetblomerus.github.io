@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>master.tmate.io lookup failure</title>
-  <meta name="description" content="Hardcode an IP address for master.tmate.io in /etc/hostsHere's the Gitbug issue where I found the solutionhttps://github.com/nviennot/tmate/issues/32">
+  <title>master.tmate.io lookup failure or ssh.tmate.io lookup failure</title>
+  <meta name="description" content="This error used to show up as master.tmate.io lookup failure but lately it’s ssh.tmate.io lookup failure">
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://yourdomain.com/2015/07/23/master-tmate-io-lookup-failure.html">
@@ -61,14 +61,26 @@
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">master.tmate.io lookup failure</h1>
-    <p class="post-meta"><time datetime="2015-07-23T10:00:49+02:00" itemprop="datePublished">Jul 23, 2015</time></p>
+    <h1 class="post-title" itemprop="name headline">master.tmate.io lookup failure or ssh.tmate.io lookup failure</h1>
+    <p class="post-meta"><time datetime="2015-07-23T00:00:00+02:00" itemprop="datePublished">Jul 23, 2015</time></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>Hardcode an IP address for master.tmate.io in /etc/hosts</p>
-<p>Here's the Gitbug issue where I found the solution</p>
+    <p>This error used to show up as <code class="highlighter-rouge">master.tmate.io lookup failure</code> but lately it’s <code class="highlighter-rouge">ssh.tmate.io lookup failure</code></p>
+
+<p>Hardcode an IP address for master.tmate.io in /etc/hosts</p>
+
+<p>Here’s the Gitbug issue where I found the solution</p>
+
 <p>https://github.com/nviennot/tmate/issues/32</p>
+
+<p>Here is how:</p>
+
+<ol>
+  <li>Get the IP address for master.tmate.io by running <code class="highlighter-rouge">host master.tmate.io</code> at the command line. You will see several IP addresses, pick the first one.</li>
+  <li>Open your <code class="highlighter-rouge">/etc/hosts</code> file by typing <code class="highlighter-rouge">sudo vi /etc/hosts</code></li>
+  <li>Put the ip address you copied at the top of the top of the file, with ssh.tmate.io after it like this: <code class="highlighter-rouge">the-ip-address ssh.tmate.io</code>.</li>
+</ol>
 
   </div>
 
