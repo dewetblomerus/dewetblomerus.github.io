@@ -6,9 +6,33 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 10 May 2016 22:22:49 +0200</pubDate>
-    <lastBuildDate>Tue, 10 May 2016 22:22:49 +0200</lastBuildDate>
+    <pubDate>Wed, 11 May 2016 13:50:12 +0200</pubDate>
+    <lastBuildDate>Wed, 11 May 2016 13:50:12 +0200</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
+    
+      <item>
+        <title>Programming Music</title>
+        <description>&lt;p&gt;When I turn on music that I would normally listen to, it draws my attention, especially to the lyrics. So generally I want music with no words and I often go for electronic music because after a while it all sounds the same, which allows me to stop focusing on the music and focus 100% on the code.&lt;/p&gt;
+
+&lt;p&gt;I subscribe to this rss with a pod catcher on my phone and computer, when I am out and about not wanting to kill my cellphone data with streaming, this feed is what I usually listen to.
+http://musicforprogramming.net/&lt;/p&gt;
+
+&lt;h3 id=&quot;when-i-am-home-or-somewhere-else-with-unlimited-internet-i-stream-from-one-of-these-sites&quot;&gt;When I am home or somewhere else with unlimited internet, I stream from one of these sites&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://somafm.com/player/#/now-playing/groovesalad&quot; target=&quot;_blank&quot;&gt;http://somafm.com/player/#/now-playing/groovesalad&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.getworkdonemusic.com/&quot; target=&quot;_blank&quot;&gt;http://www.getworkdonemusic.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;here-are-some-paid-services-i-am-considering-but-havent-signed-up-for-any-yet&quot;&gt;Here are some paid services I am considering but haven’t signed up for any yet&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.di.fm/search?q=goa&quot; target=&quot;_blank&quot;&gt;http://www.di.fm/search?q=goa_blank&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 11 May 2016 00:00:00 +0200</pubDate>
+        <link>http://yourdomain.com/2016/05/11/programming-music.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2016/05/11/programming-music.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Postgres could not connect to server because rails was connecting to it on the wrong port</title>
@@ -238,29 +262,6 @@ The way I installed Zshell on Ubuntu was by cloning the Git repository. I really
         <pubDate>Mon, 31 Aug 2015 20:50:23 +0200</pubDate>
         <link>http://yourdomain.com/2015/08/31/how-i-got-the-error-messages-from-cron.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2015/08/31/how-i-got-the-error-messages-from-cron.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>From Wordpress to Developer</title>
-        <description>&lt;p&gt;I got this question from a friend:&lt;/p&gt;
-&lt;p&gt;&quot;I have a passion for design and basic UX. Not really into coding but know that I&#39;ll have to start that venture sooner than later. Really cool that you&#39;re doing ruby as a ministry. I&#39;m studying with Udemy currently and enjoying it. I&#39;m very comfortable with Wordpress and designing websites in this platform. Would love your input on what you think I&#39;d need to be a successful web designer/developer?&quot;&lt;/p&gt;
-&lt;p&gt;Hello friend, here are my thoughts.&lt;/p&gt;
-&lt;p&gt;Take courage, you are a long way on your way if you can already build Wordpress websites. Take Warning, learning how to code never stops, it is long, hard frustrating work, and the small successes are addictive because when you work that hard for success you really feel it, so while you are a long way on your way, going down this road means you will always feel like you don&#39;t know enough.... but you do get to learn new things every day.&lt;/p&gt;
-&lt;p&gt;I am assuming currently you can do the whole thing yourself. A client can come to you and ask for what they want in a website, you lock yourself in a room, and come out with a website. Unfortunately the one-man-band thing is probably a long ways off for you &amp;amp; Rails. Could you tackle one piece at a time? First aim to do the front end design on a Rails App? Here is what I think you would need to do for that.&lt;/p&gt;
-&lt;p&gt;Use one of the example apps here https://github.com/RailsApps&lt;/p&gt;
-&lt;p&gt;I am going to keep calling Rails Websites &quot;Apps&quot; because it makes me feel like a real programmer. Your first challenge is just to get the app installed on your machine or on Cloud9 if you use Windows (installing Rails on Windows is a challenge that Rails developers tend to shy away from) we all do Linux or Mac.&lt;/p&gt;
-&lt;p&gt;Maybe go through the beginning of a Rails Tutorial to figure out the basics of what is what.&lt;/p&gt;
-&lt;p&gt;Don&#39;t yet worry about the fact that you can only make the app that the tutorial tells you to, just focus on &quot;having an app&quot;.&lt;/p&gt;
-&lt;p&gt;Then you learn Bootsrap or Foundation (front end frameworks) and figure out how to use those frameworks to design a Rails app &amp;amp; make it beautiful.&lt;/p&gt;
-&lt;p&gt;Learn how to use Git from the command line.&lt;/p&gt;
-&lt;p&gt;Find a developer like me, who knows how to make things work, but don&#39;t have a clue how to make it look nice, and team up with them to make an app for a client. Even though you are splitting the money between at least two people you should still be getting paid more than doing the equivalent work in Wordpress.&lt;/p&gt;
-&lt;p&gt;I&#39;m De Wet Blomerus, If you are not a computer I trust you can figure out how to get in touch with me to ask some questions if you have any.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 27 Aug 2015 20:41:56 +0200</pubDate>
-        <link>http://yourdomain.com/2015/08/27/wordpress-and-designing-websites-in-this-platform-would-love-your-input-on-what-you-think-id-need-to-be-a-successful-web-designerdeveloper.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2015/08/27/wordpress-and-designing-websites-in-this-platform-would-love-your-input-on-what-you-think-id-need-to-be-a-successful-web-designerdeveloper.html</guid>
         
         
       </item>
