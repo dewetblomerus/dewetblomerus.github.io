@@ -8,12 +8,12 @@ When I turn on music that I would normally listen to, it draws my attention, esp
 I subscribe to this rss with a pod catcher on my phone and computer, when I am out and about not wanting to kill my cellphone data with streaming, this feed is what I usually listen to.
 <a href="http://musicforprogramming.net/" target="_blank">http://musicforprogramming.net/</a>
 
-###When I am home or somewhere else with unlimited internet, I stream from one of these sites
+### When I am home or somewhere else with unlimited internet, I stream from one of these sites
 
 <a href="http://somafm.com/player/#/now-playing/groovesalad" target="_blank">http://somafm.com/player/#/now-playing/groovesalad</a>
 
 <a href="http://www.getworkdonemusic.com/" target="_blank">http://www.getworkdonemusic.com/</a>
 
-###Here are some paid services I am considering but haven't signed up for any yet
+### Here are some paid services I am considering but haven't signed up for any yet
 
 <a href="http://www.di.fm/search?q=goa" target="_blank">http://www.di.fm/search?q=goa_blank</a>
