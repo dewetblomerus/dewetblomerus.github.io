@@ -12,3 +12,5 @@ I find where your employees or customers are wasting their time or getting stuck
 
 # What tools do you use?
 I specialize in Ruby, Rails, Linux, Heroku, HTML and CSS in that order. So if you need a web designer, I should not be your first pick, but I can recommend one.
+
+Here is my <a href="http://dewetblomerus.com/dewet-blomerus-resume.pdf" target="_blank">Resume</a> if you are wanting to discuss traditional employment.
