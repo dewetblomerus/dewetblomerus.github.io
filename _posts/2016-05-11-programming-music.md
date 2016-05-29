@@ -20,5 +20,6 @@ When I turn on music that I would normally listen to, it draws my attention, esp
 
 ### Some other lists I found online
 <a href="https://www.reddit.com/r/trance/comments/2s3hy0/what_are_some_of_your_favorite_uplifting_trance/" target="_blank">What are some of your favorite uplifting trance songs without any lyrics?</a>
+
 <a href="http://www.escapistmagazine.com/forums/read/18.403016-Looking-for-good-ambient-trance-music-No-Vocals" target="_blank">Looking for good ambient/trance music, No Vocals</a>
 
