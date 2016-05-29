@@ -14,6 +14,9 @@ When I turn on music that I would normally listen to, it draws my attention, esp
 
 <a href="http://www.getworkdonemusic.com/" target="_blank">http://www.getworkdonemusic.com/</a>
 
-### Here are some paid services I am considering but haven't signed up for any yet
+### Here are some paid services I am considering but have not signed up for any yet
 
 <a href="http://www.di.fm/search?q=goa" target="_blank">http://www.di.fm/search?q=goa_blank</a>
+
+### This Reddit post seems to have several great lists
+<a href="https://www.reddit.com/r/trance/comments/2s3hy0/what_are_some_of_your_favorite_uplifting_trance/" target="_blank">What are some of your favorite uplifting trance songs without any lyrics?</a>
