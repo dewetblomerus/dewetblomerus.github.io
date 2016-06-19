@@ -6,9 +6,26 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 03 Jun 2016 16:21:03 +0200</pubDate>
-    <lastBuildDate>Fri, 03 Jun 2016 16:21:03 +0200</lastBuildDate>
+    <pubDate>Sun, 19 Jun 2016 09:35:28 +0200</pubDate>
+    <lastBuildDate>Sun, 19 Jun 2016 09:35:28 +0200</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
+    
+      <item>
+        <title>GPG error rosa Release The following signatures were invalid</title>
+        <description>&lt;p&gt;I got this error message while trying to run &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get update&lt;/code&gt;. Here is the full error message:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;W: GPG error: http://extra.linuxmint.com rosa Release: The following signatures were invalid: BADSIG 3EE67F3D0FF405B2 Clement Lefebvre (Linux Mint Package Repository v1) &amp;lt;root@linuxmint.com&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This is what fixed it:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo rm -rf /var/lib/apt/lists/*&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;After removing those, &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get update&lt;/code&gt; ran just fine.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 19 Jun 2016 00:00:00 +0200</pubDate>
+        <link>http://yourdomain.com/2016/06/19/gpg-error-the-following-signatures-were-invalid.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2016/06/19/gpg-error-the-following-signatures-were-invalid.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>How to flash my Ergodox Firmware</title>
@@ -265,26 +282,6 @@ The way I installed Zshell on Ubuntu was by cloning the Git repository. I really
         <pubDate>Fri, 16 Oct 2015 19:49:46 +0200</pubDate>
         <link>http://yourdomain.com/2015/10/16/why-learn-to-program.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2015/10/16/why-learn-to-program.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>rspec test javascript</title>
-        <description>&lt;p&gt;I volunteered at &lt;a href=&quot;https://railsbridgecapetown.org/&quot;&gt;Railsbridge&lt;/a&gt; yesterday &amp;amp; when the other teachers didn&#39;t seem busy enough I went ahead &amp;amp; asked them questions of my own. I learned about the save_and_open_page method in Rspec.&lt;/p&gt;
-&lt;p&gt;This gave me the power to go fix a bunch of feature tests that I previously couldn&#39;t figure out how to fix, usually the features were working but the tests were failing falsely.&lt;/p&gt;
-&lt;p&gt;Finally I got to one that got the better of me again. It was a page that loaded a &quot;Flash&quot; message but didn&#39;t reload the page. I asked for help again and someone explained to me that the Silenium Web Driver that is the default web driver for Rspec isn&#39;t capable of seeing these sort of Javascript changes to the page if it doesn&#39;t reload, it only inspects HTML but doesn&#39;t launch a full headless web browser. What I needed was a gem called &#39;poltergeist&#39; which would let me use phantomjs which would give me this capability. Here is how I fixed it.&lt;/p&gt;
-&lt;p&gt;Install PhantomJS&lt;/p&gt;
-&lt;p&gt;https://gist.github.com/julionc/7476620&lt;/p&gt;
-&lt;p&gt;Switch from Selenium to Poltergeist&lt;/p&gt;
-&lt;p&gt;http://everydayrails.com/2015/01/27/rspec-switch-selenium-poltergeist.html&lt;/p&gt;
-&lt;p&gt;Lastly, since phantomjs will be running in a different thread, unexpected things could happen in the test database. Here is a post by Avdi that explains how &amp;amp; why to fix it.&lt;/p&gt;
-&lt;p&gt;http://devblog.avdi.org/2012/08/31/configuring-database_cleaner-with-rails-rspec-capybara-and-selenium/&lt;/p&gt;
-&lt;p&gt;Before I could finish the last step I noticed that something else was wrong with the spec, I forgot to let it click a link. So now my tests are fixed and this process is not done, but hopefully writing it down for when I do need it will make it less painful at that time.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 20 Sep 2015 13:09:20 +0200</pubDate>
-        <link>http://yourdomain.com/2015/09/20/rspec-test-javascript.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2015/09/20/rspec-test-javascript.html</guid>
         
         
       </item>
