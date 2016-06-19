@@ -11,8 +11,16 @@
     margin-bottom: 10px;
     border-radius: 15px;
     max-width: 100%;
-    vertical-align: middle;
     height: 243px;
     width: 160px;
 }
 
+
+p:last-child {
+  margin-bottom: 0px;
+}
+/*
+* {
+  border: solid 1px;
+}
+*/
