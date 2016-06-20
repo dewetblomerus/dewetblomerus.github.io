@@ -9,11 +9,12 @@
 title: De Wet Blomerus
 email: dewet@blomerus.org
 description: > # this means to ignore newlines until "baseurl:"
-  I built this website in Jekyll & hosting it on Github Pages.
+  Built with Jekyll & hosted on Github Pages.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: dewetblomerus
-github_username:  dewetblomerus
+#twitter_username: dewetblomerus
+github_username: dewetblomerus
+linkedin_username: dewetblomerus
 
 # Build settings
 markdown: kramdown
