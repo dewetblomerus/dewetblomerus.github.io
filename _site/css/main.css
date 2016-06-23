@@ -273,7 +273,12 @@ pre {
   margin-left: 0;
   list-style: none; }
   .post-list > li {
-    margin-bottom: 30px; }
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 15px; }
+
+.post-list li h2 {
+  margin-bottom: 0; }
 
 .post-meta {
   font-size: 14px;
