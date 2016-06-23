@@ -5,7 +5,7 @@ permalink: /hire-me/
 ---
 # Hire me
 
-If you have a problem that you think can be solved with a web application, scroll to the bottom & send me an email so we can set up a "No Strings Attached" Skype call to chat about it.
+If you have a problem that you think can be solved with a web application, scroll to the bottom & send me an email so we can set up a "No Strings Attached" Skype call to talk about it.
 
 # What do you do De Wet?
 I find where your employees or customers are wasting their time or getting stuck. Then I build a web application that automates boring stuff, removes the friction & let them focus on what they are trying to get done.
