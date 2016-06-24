@@ -14,6 +14,8 @@ When I turn on music that I would normally listen to, it draws my attention, esp
 
 <a href="http://www.getworkdonemusic.com/" target="_blank">http://www.getworkdonemusic.com/</a>
 
+Okay so I feel embarrased to admit that Youtube has some great study music, I have always thought that people using Youtube as a music player is ridiculous because of the wated bandwidth. Now that I found some great background study music on there, I am guilty of this as well.
+
 ### Here are some paid services I am considering but have not signed up for any yet
 
 <a href="http://www.di.fm/search?q=goa" target="_blank">http://www.di.fm/search?q=goa_blank</a>
