@@ -1,0 +1,16 @@
+---
+layout: post
+title: You are never too experienced for Codeacademy or Codeschool
+---
+
+I have been coding for 5 years now. Several of my bootcamp students have gone on to start full time web development positions the week after they graduate with us.
+
+These successes are great, but I got here by learning Linux, Ruby and Rails in that order, and learning each of them well before moving to the next step. This gives me a confidence when working with Ruby code inside or outside of Rails that I would LOVE to have when making changes on the front end.
+
+So when I decided it was time to truly learn CSS and Javascript, my Ego failed me and I thought to myself "I'm too advanced for Codeschool or Codeacademy" I need something where I can work only in the terminal to learn this thing from first principles, learning from the bottom up, master the building blocks and get super quick feedback by not using a stupid gui especially not one that slowly loads in the browser. If I was going to do a course I should do <a href='https://www.pluralsight.com/' target='_blank'>Pluralsight</a> like real developers do, but even then, the only sensible thing to do would be to leverage my ninja mouseless navigation skills to Vim and Terminal the shit out of this thing.
+
+So while there was some wisdom sprinkled around this, the ego kept me from seeing the "Use the right tool for the job" principle that started screaming at me pretty early on in the command line javascript interpreter world.
+
+<a href='https://www.codecademy.com/' target='_blank'>Codeacademy</a> and <a href='https://www.codeschool.com/' target='_blank'>Codeschool</a> are tools built for exactly this. I didn't know Javascript or CSS. I would pattern match and move code around and copy-paste from stack overflow but I didn't know these like I know Ruby. No matter how experienced I might be in Ruby, I had to make peace with the fact that I am a beginner at Javascript and CSS. What a liberating experience that has been. The web gui's are a bit slow, but slow is part of the territory when picking up a new thing. The browser exercises feel like training wheels, but training wheels are great for getting me to type something after every bit of information I learn, so that it sticks in my head. And here is the real revelation, the courses don't actually take all that long. My experience still applies and lets me fly through a lot of the answers and quickly get to the things I don't know.
+
+I don't care how experienced of a coder you are, if you are new to web development or new to the front-end. Give Codeacacemy and Codeschool a whirl, it is only introductory content but if the foundations is what you want to quickly get into your head, these are the best tools for the job that I have found. I would be happy to one day see a trend where there are enough of an audience to see them create some intermediate content on these type of interactive code in the browser learning sites.

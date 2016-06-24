@@ -1,0 +1,22 @@
+<p>My version of the firmware closely follows the partial-rewrite branch of ben-blazak.
+My working branch is also the partial-rewrite branch.</p>
+
+<p>The link to my Github repo
+<a href="http://github.com/dewetblomerus/ergodox-firmware" target="_blank">http://github.com/dewetblomerus/ergodox-firmware</a></p>
+
+<h3 id="steps-to-set-up-when-on-a-new-computer">Steps to set up when on a new computer</h3>
+
+<ol>
+  <li>Make sure all the stuff needed to compile is installed <code class="highlighter-rouge">sudo apt-get install gcc-avr binutils-avr avr-libc</code></li>
+  <li>Set up the Linux Dev Rules and install Teensy Loader
+<a href="http://pjrc.com/teensy/loader_linux.html" target="_blank">http://pjrc.com/teensy/loader_linux.html</a></li>
+</ol>
+
+<h3 id="steps-to-edit-the-layout-and-flash-the-firmware">Steps to edit the layout and flash the firmware</h3>
+<ol>
+  <li>Edit the layout file at <code class="highlighter-rouge">/firmware/keyboard/ergodox/layout</code></li>
+  <li><code class="highlighter-rouge">cd</code> to <code class="highlighter-rouge">/firmware</code> and run the <code class="highlighter-rouge">make</code> command to compile the firmware with your new layout</li>
+  <li>This will generate a new <code class="highlighter-rouge">firmware.hex</code> file and place it in the <code class="highlighter-rouge">/firmware</code> directory</li>
+  <li>Run the Teensy Loader to flash the new <code class="highlighter-rouge">firmware.hex</code> file to the keyboard</li>
+</ol>
+

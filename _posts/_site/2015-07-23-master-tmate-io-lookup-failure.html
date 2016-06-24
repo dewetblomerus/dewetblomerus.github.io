@@ -1,0 +1,15 @@
+<p>This error used to show up as <code class="highlighter-rouge">master.tmate.io lookup failure</code> but lately it’s <code class="highlighter-rouge">ssh.tmate.io lookup failure</code></p>
+
+<p>Hardcode an IP address for master.tmate.io in /etc/hosts</p>
+
+<p>Here’s the Gitbug issue where I found the solution</p>
+
+<p>https://github.com/nviennot/tmate/issues/32</p>
+
+<p>Here is how:</p>
+
+<ol>
+  <li>Get the IP address for master.tmate.io by running <code class="highlighter-rouge">host master.tmate.io</code> at the command line. You will see several IP addresses, pick the first one.</li>
+  <li>Open your <code class="highlighter-rouge">/etc/hosts</code> file by typing <code class="highlighter-rouge">sudo vi /etc/hosts</code></li>
+  <li>Put the ip address you copied at the top of the top of the file, with ssh.tmate.io after it like this: <code class="highlighter-rouge">the-ip-address ssh.tmate.io</code>.</li>
+</ol>

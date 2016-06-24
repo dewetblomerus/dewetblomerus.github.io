@@ -1,0 +1,8 @@
+Hardcode an IP address for master.tmate.io in /etc/hosts
+Here's the Gitbug issue where I found the solution
+https://github.com/nviennot/tmate/issues/32
+
+Here is how:
+
+1. Get the IP address for master.tmate.io by running `host master.tmate.io` at the command line. You will see several IP addresses, pick the first one.
+2. l

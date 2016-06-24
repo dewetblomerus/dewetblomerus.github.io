@@ -6,9 +6,30 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 23 Jun 2016 11:03:33 +0200</pubDate>
-    <lastBuildDate>Thu, 23 Jun 2016 11:03:33 +0200</lastBuildDate>
+    <pubDate>Fri, 24 Jun 2016 12:32:59 +0200</pubDate>
+    <lastBuildDate>Fri, 24 Jun 2016 12:32:59 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>You are never too experienced for Codeacademy or Codeschool</title>
+        <description>&lt;p&gt;I have been coding for 5 years now. Several of my bootcamp students have gone on to start full time web development positions the week after they graduate with us.&lt;/p&gt;
+
+&lt;p&gt;These successes are great, but I got here by learning Linux, Ruby and Rails in that order, and learning each of them well before moving to the next step. This gives me a confidence when working with Ruby code inside or outside of Rails that I would LOVE to have when making changes on the front end.&lt;/p&gt;
+
+&lt;p&gt;So when I decided it was time to truly learn CSS and Javascript, my Ego failed me and I thought to myself “I’m too advanced for Codeschool or Codeacademy” I need something where I can work only in the terminal to learn this thing from first principles, learning from the bottom up, master the building blocks and get super quick feedback by not using a stupid gui especially not one that slowly loads in the browser. If I was going to do a course I should do &lt;a href=&quot;https://www.pluralsight.com/&quot; target=&quot;_blank&quot;&gt;Pluralsight&lt;/a&gt; like real developers do, but even then, the only sensible thing to do would be to leverage my ninja mouseless navigation skills to Vim and Terminal the shit out of this thing.&lt;/p&gt;
+
+&lt;p&gt;So while there was some wisdom sprinkled around this, the ego kept me from seeing the “Use the right tool for the job” principle that started screaming at me pretty early on in the command line javascript interpreter world.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.codecademy.com/&quot; target=&quot;_blank&quot;&gt;Codeacademy&lt;/a&gt; and &lt;a href=&quot;https://www.codeschool.com/&quot; target=&quot;_blank&quot;&gt;Codeschool&lt;/a&gt; are tools built for exactly this. I didn’t know Javascript or CSS. I would pattern match and move code around and copy-paste from stack overflow but I didn’t know these like I know Ruby. No matter how experienced I might be in Ruby, I had to make peace with the fact that I am a beginner at Javascript and CSS. What a liberating experience that has been. The web gui’s are a bit slow, but slow is part of the territory when picking up a new thing. The browser exercises feel like training wheels, but training wheels are great for getting me to type something after every bit of information I learn, so that it sticks in my head. And here is the real revelation, the courses don’t actually take all that long. My experience still applies and lets me fly through a lot of the answers and quickly get to the things I don’t know.&lt;/p&gt;
+
+&lt;p&gt;I don’t care how experienced of a coder you are, if you are new to web development or new to the front-end. Give Codeacacemy and Codeschool a whirl, it is only introductory content but if the foundations is what you want to quickly get into your head, these are the best tools for the job that I have found. I would be happy to one day see a trend where there are enough of an audience to see them create some intermediate content on these type of interactive code in the browser learning sites.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 24 Jun 2016 00:00:00 +0200</pubDate>
+        <link>http://yourdomain.com/2016/06/24/you-are-never-too-experienced-for-codeacademy-or-codeschool.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2016/06/24/you-are-never-too-experienced-for-codeacademy-or-codeschool.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>GPG error rosa Release The following signatures were invalid</title>
@@ -266,23 +287,6 @@ The way I installed Zshell on Ubuntu was by cloning the Git repository. I really
         
         
         <category>blogging</category>
-        
-      </item>
-    
-      <item>
-        <title>Why learn to program?</title>
-        <description>&lt;p&gt;I stumbled on this Lifehacker post &quot;Don&#39;t Learn to Code: Learn to Work With Technology&quot;&lt;/p&gt;
-&lt;p&gt;I think there are two schools of thought here. Readers &amp;amp; Mechanics&lt;/p&gt;
-&lt;p&gt;Readers:&lt;/p&gt;
-&lt;p&gt;Having a &quot;Readers&quot; view of coding is to believe learning to code is like reading. You can make it though life without it. Especially if you live somewhere in central Africa with hot weather &amp;amp; fertile soil so you can farm the land you live on to provide for yourself &amp;amp; your family. People might say &quot;learning to read would be useful &amp;amp; make trips to town more convenient, but it is really difficult, frustrating &amp;amp; time consuming, I am living just fine without knowing how to read, so it is not necessary&quot;. As a reader, when we see this, we think &quot;oh no, you don&#39;t get it, if you only knew the power &amp;amp; freedom literacy would give you, you would start today, but it is really damn frustrating to learn how to read, so I won&#39;t be the one to try and convince you it&#39;s necessary&quot;. Readers generally believe that since so much of our work is done using computers, being able to automate the inefficient bits of what we do &quot;Just makes sense&quot;. Why would you rename files one by one? Why test the contact from on your wordpress website manually? Learning to code makes you more efficient at many daily tasks.&lt;/p&gt;
-&lt;p&gt;Mechanics:&lt;/p&gt;
-&lt;p&gt;Having a &quot;Mechanic&quot; view of coding is to think learning to code is like fixing a car. Your car breaks. Who should fix it? I was born in 1983 so my first car had fuel injection, sensors to measure all kinds of things &amp;amp; a computer to read the data &amp;amp; calculate how much fuel to inject at any moment. Knowing which gear the automatic gearbox should be in was also calculated by a computer. This code wasn&#39;t open sourced, Chevrolet didn&#39;t even give me a REST API or documentation!!!!!!!! Fact, if things broke on the car, I could not fix all of it. I could not do what my dad did 30 years before and take whole cars apart &amp;amp; put it back together in working order. Fact, I didn&#39;t want to be a career mechanic. So I did some calculations of my own, I calculated that I would take at least twice as long as a decent mechanic to fix my car, so if I could just earn half as much money as I would pay for a mechanic working on my car, then I am wasting money (opportunity cost of what I could be making) when I work on my car myself. So I decided that until mechanics went into extremely high demand &amp;amp; labor on cars went up exponentially, I will not waste the money (opportunity cost) of working on my car ever again. Unless I was in a position where I am broke or jobless &amp;amp; I need to fix the car before I can go turn hours into money (which has happened a few times). Taking a Mechanic view of coding is to believe that since other people code for a living, they can use the resulting software &amp;amp; focus on what they are good at. Like owning a car &amp;amp; not needing to know how to fix it.&lt;/p&gt;
-&lt;p&gt;I see merit in both but lean toward the reader mentality. I see the world heading into a direction where being code literate would be useful in more and more situations. Even just knowing what is possible with code &amp;amp; which kinds of jobs should be done by humans &amp;amp; which kinds of jobs should be done by computers. Being able to imagine what kind of custom software would be required to make you more efficient. Even if you don&#39;t work on the car yourself, you will one day own one or be responsible for getting one built or fixed.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 16 Oct 2015 19:49:46 +0200</pubDate>
-        <link>http://yourdomain.com/2015/10/16/why-learn-to-program.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2015/10/16/why-learn-to-program.html</guid>
-        
         
       </item>
     

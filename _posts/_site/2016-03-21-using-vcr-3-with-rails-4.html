@@ -1,0 +1,25 @@
+<p>All the guides on using VCR with Rails that I found in my googling was from 2012 or older. This ended up being super easy but I still ended up wasting time trying to find a newer reference.</p>
+
+<p>Put this in your <code class="highlighter-rouge">Gemfile</code></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>group :test do
+  gem 'vcr'
+  gem 'webmock'
+end
+</code></pre>
+</div>
+
+<p>Put the following in your <code class="highlighter-rouge">spec/spec_helper.rb</code>
+    require ‘vcr’</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>VCR.configure do |c|
+  c.cassette_library_dir = 'spec/cassettes'
+  c.hook_into :webmock
+  c.configure_rspec_metadata!
+end
+
+RSpec.configure do |config|
+</code></pre>
+</div>
+
+<p>And then finally. In the specs that make the web requests you want to record, put <code class="highlighter-rouge">, :vcr do</code> right after the description</p>

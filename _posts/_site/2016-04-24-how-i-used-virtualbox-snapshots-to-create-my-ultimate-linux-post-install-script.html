@@ -1,0 +1,31 @@
+<h3 id="i-have-always-wanted-a-really-awesome-linux-post-install-script-to-automatically-install-and-set-up-everything-i-need-to-start-being-a-productive-web-developer-within-an-hour-after-installing-linux">I have always wanted a really awesome Linux post install script to automatically install and set up everything I need to start being a productive web developer within an hour after installing Linux.</h3>
+
+<p><strong>I have a few reasons for this:</strong></p>
+
+<ol>
+  <li>It’s cool</li>
+  <li>I saw thoughtbot created an OSX laptop script (aka, it’s cool)</li>
+  <li>I don’t like doing tedious, repetitive tasks, which is also why I love programming.</li>
+  <li>It breaks focus when I am in the middle of coding something and I need to apt-get install some dependancy.</li>
+  <li>Installing stuff manually can waste a lot of time, because while I wait for it to download or install I can get distracted.</li>
+  <li>I have taught a lot of people to code and really love getting people started. Windows is great but I don’t do development on it, so if you want to “follow me” then I will help you set up your Linux environment so that it is ready to start coding. This means I actually get to use my install script quite often.</li>
+  <li>It gives me the freedom to try out different distros whenever I want. As long as I install Linux at the end of the day and set my script to run, I don’t lose any time.</li>
+</ol>
+
+<p>One challenge I always had with not getting my install script tuned quite the way I needed it, was that even while running a bootcamp, I use it less than once per week. So if I needed 25 iterations to get it where I wanted it, that’s over half a year. The other problem is that if something fails halfway through installing things, you can’t fix it and see it working in it’s fixed state, you have to fix it and wait for next time to see the results, which kills motivation. I was slowly making my way through this process with no end in sight when I got annoyed and decided to solve this once and for all.</p>
+
+<h3 id="enter-virtualbox-snapshots">Enter, VirtualBox Snapshots</h3>
+<p>It’s like Git for a Virtual Machine. It allowed me take a couple of hours and run my script many times over.</p>
+
+<p><strong>Here are the steps I took:</strong></p>
+
+<ol>
+  <li>Install Linux Mint in a VirtualBox (I switched from Ubuntu to Mint as my main distro this year).</li>
+  <li>Take a Snapshot.</li>
+  <li>Run my script.</li>
+  <li>When something fails I fix the part of the script that caused it to fail.</li>
+  <li>Restore to the snapshot. (This is instant on an SSD).</li>
+  <li>Repeat steps 3-5 until the whole thing runs without any problems.</li>
+</ol>
+
+<p>Here is my current post-install script. <a href="https://github.com/dewetblomerus/linux-laptop" target="_blank">linux-laptop</a></p>
