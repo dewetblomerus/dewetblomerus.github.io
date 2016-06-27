@@ -19,6 +19,10 @@
   display: inline-block;
 }
 
+#endorsements article:not(:last-child) {
+  margin-bottom: $spacing-unit * 1;
+}
+
 .endorsement-img {
   float: left;
   border-radius: 50%;
@@ -33,7 +37,9 @@
 
 .endorser {
   color: $grey-color;
+  margin-bottom: 0;
 }
+
 
 html, body{
     height: 100%

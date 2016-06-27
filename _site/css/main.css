@@ -479,6 +479,9 @@ pre {
 #endorsements {
   display: inline-block; }
 
+#endorsements article:not(:last-child) {
+  margin-bottom: 30px; }
+
 .endorsement-img {
   float: left;
   border-radius: 50%;
@@ -490,7 +493,8 @@ pre {
   margin-bottom: 5px; }
 
 .endorser {
-  color: #828282; }
+  color: #828282;
+  margin-bottom: 0; }
 
 html, body {
   height: 100%; }
