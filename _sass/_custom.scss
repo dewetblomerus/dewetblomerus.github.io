@@ -15,6 +15,26 @@
     width: 160px;
 }
 
+#endorsements {
+  display: inline-block;
+}
+
+.endorsement-img {
+  float: left;
+  border-radius: 50%;
+  height: 100px;
+  margin-right: $spacing-unit / 2;
+}
+
+.endorsement {
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.endorser {
+  color: $grey-color;
+}
+
 html, body{
     height: 100%
 }

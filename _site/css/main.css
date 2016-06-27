@@ -476,6 +476,22 @@ pre {
   height: 243px;
   width: 160px; }
 
+#endorsements {
+  display: inline-block; }
+
+.endorsement-img {
+  float: left;
+  border-radius: 50%;
+  height: 100px;
+  margin-right: 15px; }
+
+.endorsement {
+  font-style: italic;
+  margin-bottom: 5px; }
+
+.endorser {
+  color: #828282; }
+
 html, body {
   height: 100%; }
 
