@@ -24,10 +24,18 @@
 }
 
 .endorsement-img {
-  float: left;
-  border-radius: 50%;
   height: 100px;
+  border-radius: 50%;
+}
+
+#endorsements article:nth-child(odd) .endorsement-img {
+  float: left;
   margin-right: $spacing-unit / 2;
+}
+
+#endorsements article:nth-child(even) .endorsement-img {
+  float: right;
+  margin-left: $spacing-unit / 2;
 }
 
 .endorsement {
