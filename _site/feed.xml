@@ -6,9 +6,64 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 28 Jun 2016 16:50:40 +0200</pubDate>
-    <lastBuildDate>Tue, 28 Jun 2016 16:50:40 +0200</lastBuildDate>
+    <pubDate>Thu, 30 Jun 2016 21:13:06 +0200</pubDate>
+    <lastBuildDate>Thu, 30 Jun 2016 21:13:06 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Vim cheat sheet</title>
+        <description>&lt;p&gt;Always up to date, personal vim cheat sheet, you should totally make one like this for yourself.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th class=&quot;tablename&quot; colspan=&quot;2&quot;&gt;Working on&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Mapping&lt;/th&gt;
+      &lt;th&gt;Summary&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;b&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;move (&lt;strong&gt;b&lt;/strong&gt;)ackward one word&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;e&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;move forward to the (&lt;strong&gt;e&lt;/strong&gt;)nd a word&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th class=&quot;tablename&quot; colspan=&quot;2&quot;&gt;Already Mastered&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Mapping&lt;/th&gt;
+      &lt;th&gt;Summary&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;h&lt;/code&gt;, &lt;code&gt;l&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;move left/right by character&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;w&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;move forward one (&lt;strong&gt;w&lt;/strong&gt;)ord&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        <pubDate>Thu, 30 Jun 2016 00:00:00 +0200</pubDate>
+        <link>http://yourdomain.com/2016/06/30/vim-cheat-sheet.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2016/06/30/vim-cheat-sheet.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>You are never too experienced for Codeacademy or Codeschool</title>
@@ -276,19 +331,6 @@ The way I installed Zshell on Ubuntu was by cloning the Git repository. I really
         <link>http://yourdomain.com/2016/02/29/backup-dotfiles-to-github.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2016/02/29/backup-dotfiles-to-github.html</guid>
         
-        
-      </item>
-    
-      <item>
-        <title>My first post on Jekyll!</title>
-        <description>&lt;p&gt;I am typing my first post in Sublime Text. Oh my word this feels so much better than blogging in wp-admin. The 30 seconds I save by not having to load a web page &amp;amp; log in “feels” like it makes a difference, wow we humans are terrible at guaging time.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 26 Feb 2016 09:13:17 +0200</pubDate>
-        <link>http://yourdomain.com/blogging/2016/02/26/my-first-post-on-jekyll.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/blogging/2016/02/26/my-first-post-on-jekyll.html</guid>
-        
-        
-        <category>blogging</category>
         
       </item>
     
