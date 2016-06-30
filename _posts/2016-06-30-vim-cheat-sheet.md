@@ -23,6 +23,30 @@ Always up to date, personal vim cheat sheet, you should totally make one like th
       <td><code>e</code></td>
       <td>move forward to the (<strong>e</strong>)nd a word</td>
     </tr>
+    <tr>
+      <td><code>f&lt;char&gt;</code></td>
+      <td>(<strong>f</strong>)ind a character forward in a line and move to it</td>
+    </tr>
+    <tr>
+      <td><code>t&lt;char&gt;</code></td>
+      <td>find a character forward in a line and move un(<strong>t</strong>)il it (one character before)</td>
+    </tr>
+    <tr>
+      <td><code>F&lt;char&gt;</code></td>
+      <td>(<strong>f</strong>)ind a character backward in a line and move to it</td>
+    </tr>
+    <tr>
+      <td><code>T&lt;char&gt;</code></td>
+      <td>find a character backward in a line and move un(<strong>t</strong>)il it</td>
+    </tr>
+    <tr>
+      <td><code>;</code></td>
+      <td>repeat last <code>f</code>, <code>t</code>, <code>F</code>, or <code>T</code> command</td>
+    </tr>
+    <tr>
+      <td><code>,</code></td>
+      <td>repeat last <code>f</code>, <code>t</code>, <code>F</code>, or <code>T</code> command, but in opposite direction</td>
+    </tr>
   </tbody>
 </table>
 
@@ -44,6 +68,34 @@ Always up to date, personal vim cheat sheet, you should totally make one like th
     <tr>
       <td><code>w</code></td>
       <td>move forward one (<strong>w</strong>)ord</td>
+    </tr>
+    <tr>
+      <td><code>&lt;esc&gt;</code></td>
+      <td>Exit out of any mode back into normal mode</td>
+    </tr>
+    <tr>
+      <td><code>:q</code> or <code>:quit</code></td>
+      <td>Quit out of Vim</td>
+    </tr>
+    <tr>
+      <td><code>:w</code> or <code>:write</code></td>
+      <td>Write the current file</td>
+    </tr>
+    <tr>
+      <td><code>j</code>, <code>k</code></td>
+      <td>Move the cursor down / up</td>
+    </tr>
+    <tr>
+      <td><code>h</code>, <code>l</code></td>
+      <td>Move the cursor left / right</td>
+    </tr>
+    <tr>
+      <td><code>i</code></td>
+      <td>Go into &quot;insert mode&quot; to enter text</td>
+    </tr>
+    <tr>
+      <td><code>x</code></td>
+      <td>Delete the character under the cursor</td>
     </tr>
   </tbody>
 </table>
