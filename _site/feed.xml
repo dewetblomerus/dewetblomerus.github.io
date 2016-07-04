@@ -6,9 +6,42 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 01 Jul 2016 11:48:24 +0200</pubDate>
-    <lastBuildDate>Fri, 01 Jul 2016 11:48:24 +0200</lastBuildDate>
+    <pubDate>Mon, 04 Jul 2016 21:35:38 +0200</pubDate>
+    <lastBuildDate>Mon, 04 Jul 2016 21:35:38 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Why not to learn Microsoft Office</title>
+        <description>&lt;p&gt;Few people know what programming is so people usually just see me as a “Computer Person”. Recently I was asked about good material for learning Microsoft Office, here is my answer.&lt;/p&gt;
+
+&lt;p&gt;Microsoft Office is a great general purpose tool, but I believe it makes a poor subject for study. I think everyone needs to be able to do the basics. Write up a document in Word, drop in a picture or two if needed and please keep the aspect ratio. Write down a bunch of numbers in Excel and add them together. Save your files, find them on the hard drive, and attach them to an email, you have now graduated the De Wet Blomerus Office Curriculum. After that, it is much more important to learn how to use Google to solve problems. There are a couple reasons I believe this.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Employability&lt;/strong&gt;
+If an employer or customer is going to pay somoene good money to design some sort of a flyer or document, they will be wanting someone to do it in graphic design software like Indesign, Illustrator or Photoshop. If an employer is going to pay someone to do things in Excell, they will want somone who knows something about Business or Finance or Administration. If you want one of those jobs, study Business or Finance or Administration, your studies will include the necessary Excell.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Scope&lt;/strong&gt;
+The Microsoft Office Suite is a broad general set of tools, in order to be useful to every business on the planet, they have tons and tons of features. Each type of business only uses maybe 5% of these features. If you successfully learned how to use 100% of the features in the Microsoft Office Suite, 95% of your skills will go to waste because your job will only require the 5%.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Learn to Google, it’s a better skill to have&lt;/strong&gt;
+On more than one occasion I have had to use some crazy advanced Microsoft Office feature. I actually do it in Libre Office but the main features are all the same. Every time I need to do this, I use my one computer skill that I can apply to every job, I Google something like “How do I take names and addresses from an Excel Spreadsheet and print out address labels”. Then I find very specific instructions, sometimes I even find a Youtube video with someone showing and explaining exactly what I need to do. Why would you spend the time to learn and store Microsoft Office features in my head when I can just Google and find the exact instructions on what to do?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Learn to Touch Type, it’s a better skill to have&lt;/strong&gt;
+Now here is a skill that way too many people overlook. This blog post didn’t take very long at all because it is coming through my fingers quite fast. 100% of all jobs I have ever seen working at a comptuer, can be done faster with better touch typing. If you are still looking at your fingers while you type, stop reading this right now, install a Typing Tutor. &lt;a href=&quot;http://klavaro.sourceforge.net/en/&quot; target=&quot;_blank&quot;&gt;Klavaro&lt;/a&gt; is free and works great. I have NEVER seen someone practice touch typing for one hour per day for a whole month and not able to touch type at the end of the month, but even if you are the slowest learner on earth and it took you 3 months of one hour per day each day, it will still be a worthwhile investment from which you will reap the benefits for the rest of your life, every time you use a computer.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Mon, 04 Jul 2016 00:00:00 +0200</pubDate>
+        <link>http://yourdomain.com/2016/07/04/why-not-to-learn-microsoft-office.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2016/07/04/why-not-to-learn-microsoft-office.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Vim cheat sheet</title>
@@ -386,44 +419,6 @@ RSpec.configure do |config|
         <pubDate>Tue, 01 Mar 2016 00:00:00 +0200</pubDate>
         <link>http://yourdomain.com/2016/03/01/refactoring-catalog.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2016/03/01/refactoring-catalog.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Backup Dotfiles to Github</title>
-        <description>&lt;p&gt;So I was creating some aliases in my .zshrc to quickly create new posts, I realized that the file has grown into something that I quite like and I really don’t want to re-make from scratch ever again.&lt;/p&gt;
-
-&lt;p&gt;There’s also that moment when you know you should spend a few minutes in one of your .dotfiles sharpening your productivity tools, but you don’t want to really bother. I think knowing that I have a backup system in place and that whatever time I invest in my .dotfiles is something I can draw dividents from for the rest of my “Linux Hacking Life”.&lt;/p&gt;
-
-&lt;p&gt;I found an excellent post, telling me exactly how to set this up.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/&quot; target=&quot;_blank&quot;&gt;Using Git And Github To Manage Your Dotfiles&lt;/a&gt; by Michael Smalley&lt;/p&gt;
-
-&lt;p&gt;I really like the approach he took and was happy to follow it step by step.&lt;/p&gt;
-
-&lt;p&gt;There were just two small gotchas that I figured out quite quickly but it is the type of thing that one can get stuck on &amp;amp; give up the whole process, so here they are, hopefully you or my future self will find them helpful.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;makemysimlinks.sh&lt;/code&gt; script is a tiny bit scary, but ended up being 100% fine.
-It copied the directories belonging to zshell &amp;amp; vim to a &lt;code class=&quot;highlighter-rouge&quot;&gt;dotfiles_old&lt;/code&gt; directory in the home directory. Because I didn’t read the script before running it (I know, very irresponsible) I was expecting the &lt;code class=&quot;highlighter-rouge&quot;&gt;dotfiles_old&lt;/code&gt; in the &lt;code class=&quot;highlighter-rouge&quot;&gt;~/dotfiles&lt;/code&gt; directory. So for a minute there my Vim wasn’t working properly &amp;amp; I didn’t know where the directory went.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;oh-my-zsh&lt;/code&gt; installation directory is a Git repo
-The way I installed Zshell on Ubuntu was by cloning the Git repository. I really like this method of installation because whenever I want to update it I just cd into it and do a git pull.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;This is the first time I dealt with a Git repo inside a Git repo. I added it to a &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt; and did a &lt;code class=&quot;highlighter-rouge&quot;&gt;git rm -r --cached &amp;lt;your directory&amp;gt;&lt;/code&gt; to stop tracking it and all was well.&lt;/p&gt;
-
-&lt;p&gt;After that all was working perfectly, my dotfiles &amp;amp; relevant directories are now pushed to &lt;a href=&quot;https://github.com/dewetblomerus/dotfiles&quot; target=&quot;_blank&quot;&gt;a git repo here&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I would suggest you do the same, it will take you way less time to set this up than to have to keep stopping in the middle of your work to go add things to your dotfiles that you forgot when you moved to your new machine.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 29 Feb 2016 00:00:00 +0200</pubDate>
-        <link>http://yourdomain.com/2016/02/29/backup-dotfiles-to-github.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2016/02/29/backup-dotfiles-to-github.html</guid>
         
         
       </item>
