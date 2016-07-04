@@ -2,7 +2,10 @@
 layout: post
 title: Why not to learn Microsoft Office
 ---
-Few people know what programming is so people usually just see me as a "Computer Person". Recently I was asked about good material for learning Microsoft Office, here is my answer.
+Few people know what programming is so people usually just see me as a "Computer Person". Here is a great xkcd comic explaining
+<a href='https://xkcd.com/627/' target='_blank'>how I am able to be a "Computer Person"</a>
+
+Recently I was asked about good material for learning Microsoft Office, here is my answer.
 
 Microsoft Office is a great general purpose tool, but I believe it makes a poor subject for study. I think everyone needs to be able to do the basics. Write up a document in Word, drop in a picture or two if needed and please keep the aspect ratio. Write down a bunch of numbers in Excel and add them together. Save your files, find them on the hard drive, and attach them to an email, you have now graduated the De Wet Blomerus Office Curriculum. After that, it is much more important to learn how to use Google to solve problems. There are a couple reasons I believe this.
 
