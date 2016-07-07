@@ -46,7 +46,7 @@ The goal with these instructions is to create a separate partition on my SSD whe
       ln -s $SSDPATH/$i ~/$i
     done
 
-That is an Array and a For loop in bash that creates Symlinks. The `rm` deletes the symlinks if they exist which makes the script idempotent and potentially dangerous.
+That is an Array and a For loop in Bash that creates Symlinks. The `rm` deletes the symlinks if they exist which makes the script idempotent and potentially dangerous.
 
 This file is a part of my whole <a href='https://github.com/dewetblomerus/linux-laptop' target='_blank'>laptop setup script repo</a>
 
