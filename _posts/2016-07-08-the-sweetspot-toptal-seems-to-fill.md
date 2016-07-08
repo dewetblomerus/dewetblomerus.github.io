@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The sweetspot Toptal seems to dominate
+title: The sweetspot Toptal seems to fill
 ---
 Here is my take on some different services for finding consulting clients, and why I am currently applying to get into Toptal.
 
