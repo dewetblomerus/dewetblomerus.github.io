@@ -18,3 +18,12 @@ linkedin_username: dewetblomerus
 
 # Build settings
 markdown: kramdown
+
+# Disqus comments
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      comments: true
