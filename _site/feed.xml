@@ -6,9 +6,36 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 08 Jul 2016 14:20:39 +0200</pubDate>
-    <lastBuildDate>Fri, 08 Jul 2016 14:20:39 +0200</lastBuildDate>
+    <pubDate>Fri, 08 Jul 2016 15:58:46 +0200</pubDate>
+    <lastBuildDate>Fri, 08 Jul 2016 15:58:46 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>The sweetspot Toptal seems to dominate</title>
+        <description>&lt;p&gt;Here is my take on some different services for finding consulting clients, and why I am currently applying to get into Toptal.&lt;/p&gt;
+
+&lt;h1&gt;&lt;a href=&quot;https://www.upwork.com/&quot; target=&quot;_blank&quot;&gt;Upwork&lt;/a&gt;&lt;br /&gt;
+Not bad. I have done some work on there and have dealt with some really friendly and thankful clients. But since anyone in the world can sign up right now and call themselves a developer and list their price as lower than yours, it&#39;s hard to charge good prices there. Also, because it is seen as &quot;budget outsourcing&quot;, it is often used as such. Many of the clients on there are wanting software built that would be &quot;nice to have&quot;, they don&#39;t see the software as an essential part of their business, if it was, they would be looking somewhere else where they would be taking less risk.
+
+&lt;h1&gt;&lt;a href=&quot;https://letsworkshop.com/&quot; target=&quot;_blank&quot;&gt;Workshop&lt;/a&gt;&lt;br /&gt;
+
+Cool service. There just wasn&#39;t enough Ruby jobs for me. At the time I was also looking for contracts and not for a full time position, and most of the Ruby postings were job postings, which I wasn&#39;t looking for at the time. I am more open to a full time position now so I will probably give this service a try again in the future.
+
+&lt;h1&gt;&lt;a href=&quot;https://devchat.tv/freelancers&quot; target=&quot;_blank&quot;&gt;Starting Your Own Company&lt;/a&gt;&lt;br /&gt;
+This definitely has the potential of making more money. But personally, I&#39;d rather make less money and outsource my marketing and brand recognition work. I know it might seem lazy but I would rather put that effort into becoming a better programmer, later down the road I can monetize on that by solving massively expensive and difficult problems that I am an expert at solving.
+
+&lt;h1&gt;&lt;a href=&quot;https://www.toptal.com/&quot; target=&quot;_blank&quot;&gt;Toptal&lt;/a&gt;&lt;br /&gt;
+
+Toptal has already done a lot of the hard work for me as a developer, by building a brand that clients trust. They also do a lot of the hard work for the client, by having a rigorous interview process before a developer or designer can be listed on the site. Toptal seems to occupies a sweet spot for me here in that I get some of the benefits that would come from a trusted brand that I had to build myself, and some of the benefits of an outsourcing website where I can just go sign up and find clients. I am currently in the application process so I will let you know how it turns out and if it lives up to my expectations.
+
+&lt;/h1&gt;&lt;/h1&gt;&lt;/h1&gt;&lt;/h1&gt;
+</description>
+        <pubDate>Fri, 08 Jul 2016 00:00:00 +0200</pubDate>
+        <link>http://yourdomain.com/2016/07/08/the-sweetspot-toptal-seems-to-dominate.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2016/07/08/the-sweetspot-toptal-seems-to-dominate.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Why I Symlinked Every Folder In My Home Directory</title>
@@ -436,41 +463,6 @@ My working branch is also the partial-rewrite branch.&lt;/p&gt;
         <pubDate>Sun, 24 Apr 2016 00:00:00 +0200</pubDate>
         <link>http://yourdomain.com/2016/04/24/how-i-used-virtualbox-snapshots-to-create-my-ultimate-linux-post-install-script.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2016/04/24/how-i-used-virtualbox-snapshots-to-create-my-ultimate-linux-post-install-script.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Using VCR 3 with Rails 4</title>
-        <description>&lt;p&gt;All the guides on using VCR with Rails that I found in my googling was from 2012 or older. This ended up being super easy but I still ended up wasting time trying to find a newer reference.&lt;/p&gt;
-
-&lt;p&gt;Put this in your &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt;&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;group :test do
-  gem &#39;vcr&#39;
-  gem &#39;webmock&#39;
-end
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Put the following in your &lt;code class=&quot;highlighter-rouge&quot;&gt;spec/spec_helper.rb&lt;/code&gt;
-    require ‘vcr’&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;VCR.configure do |c|
-  c.cassette_library_dir = &#39;spec/cassettes&#39;
-  c.hook_into :webmock
-  c.configure_rspec_metadata!
-end
-
-RSpec.configure do |config|
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;And then finally. In the specs that make the web requests you want to record, put &lt;code class=&quot;highlighter-rouge&quot;&gt;, :vcr do&lt;/code&gt; right after the description&lt;/p&gt;
-</description>
-        <pubDate>Mon, 21 Mar 2016 00:00:00 +0200</pubDate>
-        <link>http://yourdomain.com/2016/03/21/using-vcr-3-with-rails-4.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2016/03/21/using-vcr-3-with-rails-4.html</guid>
         
         
       </item>
