@@ -63,7 +63,8 @@ li > ol {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400; }
+  color: #828282;
+  font-weight: bold; }
 
 /**
  * Links
@@ -476,6 +477,9 @@ pre {
   margin-bottom: 0px;
   max-width: 100%;
   height: 300px; }
+
+.signature {
+  margin-bottom: 30px; }
 
 #endorsements {
   display: inline-block; }
