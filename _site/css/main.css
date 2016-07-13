@@ -488,12 +488,12 @@ pre {
   border-radius: 50%; }
 
 #endorsements article:nth-child(odd) .endorsement-img {
-  float: left;
-  margin-right: 15px; }
-
-#endorsements article:nth-child(even) .endorsement-img {
   float: right;
   margin-left: 15px; }
+
+#endorsements article:nth-child(even) .endorsement-img {
+  float: left;
+  margin-right: 15px; }
 
 .endorsement {
   font-style: italic;
