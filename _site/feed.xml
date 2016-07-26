@@ -4,11 +4,46 @@
     <title>De Wet Blomerus</title>
     <description>Built with Jekyll &amp; hosted on Github Pages.
 </description>
-    <link>http://yourdomain.com/</link>
-    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 14 Jul 2016 00:37:53 +0200</pubDate>
-    <lastBuildDate>Thu, 14 Jul 2016 00:37:53 +0200</lastBuildDate>
+    <link>http://dewetblomerus.com/</link>
+    <atom:link href="http://dewetblomerus.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 26 Jul 2016 12:27:37 +0200</pubDate>
+    <lastBuildDate>Tue, 26 Jul 2016 12:27:37 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Top 5 personal development audio books from the first half of 2016</title>
+        <description>&lt;p&gt;Just to clarify, first half of 2016 is when I listened to them, not when they were published.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.audible.com/pd/Self-Development/The-Art-of-Learning-Audiobook/B00JAOOBHU&quot;&gt;The art of learning by Josh Waitzkin&lt;/a&gt;&lt;img style=&quot;float:right&quot; src=&quot;https://images-na.ssl-images-amazon.com/images/I/51VoXW+dIrL._SL80_.jpg&quot; /&gt;
+Josh takes a true deep dive into his journey of discovering how the human brain learns things. Becoming the best in the world at two completely different things (Chess player for his age and Thai Chi world champion). It just interests me to no end. I was glued to my headphones listening to every minute of this one.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.audible.com/pd/Business/The-Lean-Startup-Audiobook/B005LXV0HI&quot;&gt;The learn startup by Eric Ries&lt;/a&gt;&lt;img style=&quot;float:right&quot; src=&quot;https://images-na.ssl-images-amazon.com/images/I/51PAIR77wJL._SL80_.jpg&quot; /&gt;
+I through tons of conversations with startup founders and Rails developers I basically internalized all the implications of this book, but listening to the source made it click at a much deeper level.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.audible.com/pd/Business/Crucial-Conversations-Audiobook/B009RQZDHS&quot;&gt;Crucial Conversations by Kerry Patterson&lt;/a&gt;&lt;img style=&quot;float:right&quot; src=&quot;https://images-na.ssl-images-amazon.com/images/I/61amggUXwFL._SL80_.jpg&quot; /&gt;
+You only need to read this book if you interact with other people. It scratches behind the surface of emotional human interactions and discovers a goldmine of opportunity for better interactions and relationships.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.audible.com/pd/Science-Technology/Predictably-Irrational-Audiobook/B002V0GCE0&quot;&gt;Predictably Irrational by Dan Ariely&lt;/a&gt;&lt;img style=&quot;float:right&quot; src=&quot;https://images-na.ssl-images-amazon.com/images/I/51zvOkieKjL._SL80_.jpg&quot; /&gt;
+Just fascinating to find out how freaking irrational we are, and that we consistently keep being irrational about certain things.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.audible.com/pd/Business/Getting-More-Audiobook/B004D63GDK&quot;&gt;Getting More by Stuart Diamond&lt;/a&gt;&lt;img style=&quot;float:right&quot; src=&quot;https://images-na.ssl-images-amazon.com/images/I/51GsQKwG+kL._SL80_.jpg&quot; /&gt;
+This book is almost 19 horus long, but I stayed glued because Stuart pairs his practical step by step approach with some fascinating real life stories about negotiating peace in some really gnarly war time situations, and also some super practical situations where it applies to every day relationships.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Tue, 26 Jul 2016 00:00:00 +0200</pubDate>
+        <link>http://dewetblomerus.com/2016/07/26/top-5-personal-development-audio-books-from-the-first-half-of-2016.html</link>
+        <guid isPermaLink="true">http://dewetblomerus.com/2016/07/26/top-5-personal-development-audio-books-from-the-first-half-of-2016.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>The sweetspot Toptal seems to fill</title>
@@ -30,8 +65,8 @@
 
 </description>
         <pubDate>Fri, 08 Jul 2016 00:00:00 +0200</pubDate>
-        <link>http://yourdomain.com/2016/07/08/the-sweetspot-toptal-seems-to-fill.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2016/07/08/the-sweetspot-toptal-seems-to-fill.html</guid>
+        <link>http://dewetblomerus.com/2016/07/08/the-sweetspot-toptal-seems-to-fill.html</link>
+        <guid isPermaLink="true">http://dewetblomerus.com/2016/07/08/the-sweetspot-toptal-seems-to-fill.html</guid>
         
         
       </item>
@@ -92,8 +127,8 @@ done
 
 </description>
         <pubDate>Thu, 07 Jul 2016 00:00:00 +0200</pubDate>
-        <link>http://yourdomain.com/2016/07/07/why-i-symlinked-every-folder-in-my-home-directory.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2016/07/07/why-i-symlinked-every-folder-in-my-home-directory.html</guid>
+        <link>http://dewetblomerus.com/2016/07/07/why-i-symlinked-every-folder-in-my-home-directory.html</link>
+        <guid isPermaLink="true">http://dewetblomerus.com/2016/07/07/why-i-symlinked-every-folder-in-my-home-directory.html</guid>
         
         
       </item>
@@ -128,8 +163,8 @@ Now here is a skill that way too many people overlook. This blog post didn’t t
 
 </description>
         <pubDate>Mon, 04 Jul 2016 00:00:00 +0200</pubDate>
-        <link>http://yourdomain.com/2016/07/04/why-not-to-learn-microsoft-office.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2016/07/04/why-not-to-learn-microsoft-office.html</guid>
+        <link>http://dewetblomerus.com/2016/07/04/why-not-to-learn-microsoft-office.html</link>
+        <guid isPermaLink="true">http://dewetblomerus.com/2016/07/04/why-not-to-learn-microsoft-office.html</guid>
         
         
       </item>
@@ -277,8 +312,8 @@ Now here is a skill that way too many people overlook. This blog post didn’t t
 &lt;/table&gt;
 </description>
         <pubDate>Thu, 30 Jun 2016 00:00:00 +0200</pubDate>
-        <link>http://yourdomain.com/2016/06/30/vim-cheat-sheet.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2016/06/30/vim-cheat-sheet.html</guid>
+        <link>http://dewetblomerus.com/2016/06/30/vim-cheat-sheet.html</link>
+        <guid isPermaLink="true">http://dewetblomerus.com/2016/06/30/vim-cheat-sheet.html</guid>
         
         
       </item>
@@ -298,8 +333,8 @@ Now here is a skill that way too many people overlook. This blog post didn’t t
 &lt;p&gt;I don’t care how experienced of a coder you are, if you are new to web development or new to the front-end. Give Codeacacemy and Codeschool a whirl, it is only introductory content but if the foundations is what you want to quickly get into your head, these are the best tools for the job that I have found. I would be happy to one day see a trend where there are enough of an audience to see them create some intermediate content on these type of interactive code in the browser learning sites.&lt;/p&gt;
 </description>
         <pubDate>Fri, 24 Jun 2016 00:00:00 +0200</pubDate>
-        <link>http://yourdomain.com/2016/06/24/you-are-never-too-experienced-for-codeacademy-or-codeschool.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2016/06/24/you-are-never-too-experienced-for-codeacademy-or-codeschool.html</guid>
+        <link>http://dewetblomerus.com/2016/06/24/you-are-never-too-experienced-for-codeacademy-or-codeschool.html</link>
+        <guid isPermaLink="true">http://dewetblomerus.com/2016/06/24/you-are-never-too-experienced-for-codeacademy-or-codeschool.html</guid>
         
         
       </item>
@@ -315,8 +350,8 @@ Now here is a skill that way too many people overlook. This blog post didn’t t
 &lt;p&gt;After removing those, &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get update&lt;/code&gt; ran just fine.&lt;/p&gt;
 </description>
         <pubDate>Sun, 19 Jun 2016 00:00:00 +0200</pubDate>
-        <link>http://yourdomain.com/2016/06/19/gpg-error-the-following-signatures-were-invalid.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2016/06/19/gpg-error-the-following-signatures-were-invalid.html</guid>
+        <link>http://dewetblomerus.com/2016/06/19/gpg-error-the-following-signatures-were-invalid.html</link>
+        <guid isPermaLink="true">http://dewetblomerus.com/2016/06/19/gpg-error-the-following-signatures-were-invalid.html</guid>
         
         
       </item>
@@ -347,8 +382,8 @@ My working branch is also the partial-rewrite branch.&lt;/p&gt;
 
 </description>
         <pubDate>Sat, 28 May 2016 00:00:00 +0200</pubDate>
-        <link>http://yourdomain.com/2016/05/28/how-to-flash-my-ergodox-firmware.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2016/05/28/how-to-flash-my-ergodox-firmware.html</guid>
+        <link>http://dewetblomerus.com/2016/05/28/how-to-flash-my-ergodox-firmware.html</link>
+        <guid isPermaLink="true">http://dewetblomerus.com/2016/05/28/how-to-flash-my-ergodox-firmware.html</guid>
         
         
       </item>
@@ -379,8 +414,8 @@ My working branch is also the partial-rewrite branch.&lt;/p&gt;
 
 </description>
         <pubDate>Wed, 11 May 2016 00:00:00 +0200</pubDate>
-        <link>http://yourdomain.com/2016/05/11/programming-music.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2016/05/11/programming-music.html</guid>
+        <link>http://dewetblomerus.com/2016/05/11/programming-music.html</link>
+        <guid isPermaLink="true">http://dewetblomerus.com/2016/05/11/programming-music.html</guid>
         
         
       </item>
@@ -419,49 +454,8 @@ My working branch is also the partial-rewrite branch.&lt;/p&gt;
 &lt;p&gt;Problem solved!&lt;/p&gt;
 </description>
         <pubDate>Tue, 10 May 2016 00:00:00 +0200</pubDate>
-        <link>http://yourdomain.com/2016/05/10/postgres-could-not-connect-to-server.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2016/05/10/postgres-could-not-connect-to-server.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>How I used VirtualBox snapshots to create my ultimate Linux post install script</title>
-        <description>&lt;h3 id=&quot;i-have-always-wanted-a-really-awesome-linux-post-install-script-to-automatically-install-and-set-up-everything-i-need-to-start-being-a-productive-web-developer-within-an-hour-after-installing-linux&quot;&gt;I have always wanted a really awesome Linux post install script to automatically install and set up everything I need to start being a productive web developer within an hour after installing Linux.&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;I have a few reasons for this:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;It’s cool&lt;/li&gt;
-  &lt;li&gt;I saw thoughtbot created an OSX laptop script (aka, it’s cool)&lt;/li&gt;
-  &lt;li&gt;I don’t like doing tedious, repetitive tasks, which is also why I love programming.&lt;/li&gt;
-  &lt;li&gt;It breaks focus when I am in the middle of coding something and I need to apt-get install some dependancy.&lt;/li&gt;
-  &lt;li&gt;Installing stuff manually can waste a lot of time, because while I wait for it to download or install I can get distracted.&lt;/li&gt;
-  &lt;li&gt;I have taught a lot of people to code and really love getting people started. Windows is great but I don’t do development on it, so if you want to “follow me” then I will help you set up your Linux environment so that it is ready to start coding. This means I actually get to use my install script quite often.&lt;/li&gt;
-  &lt;li&gt;It gives me the freedom to try out different distros whenever I want. As long as I install Linux at the end of the day and set my script to run, I don’t lose any time.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;One challenge I always had with not getting my install script tuned quite the way I needed it, was that even while running a bootcamp, I use it less than once per week. So if I needed 25 iterations to get it where I wanted it, that’s over half a year. The other problem is that if something fails halfway through installing things, you can’t fix it and see it working in it’s fixed state, you have to fix it and wait for next time to see the results, which kills motivation. I was slowly making my way through this process with no end in sight when I got annoyed and decided to solve this once and for all.&lt;/p&gt;
-
-&lt;h3 id=&quot;enter-virtualbox-snapshots&quot;&gt;Enter, VirtualBox Snapshots&lt;/h3&gt;
-&lt;p&gt;It’s like Git for a Virtual Machine. It allowed me take a couple of hours and run my script many times over.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Here are the steps I took:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Install Linux Mint in a VirtualBox (I switched from Ubuntu to Mint as my main distro this year).&lt;/li&gt;
-  &lt;li&gt;Take a Snapshot.&lt;/li&gt;
-  &lt;li&gt;Run my script.&lt;/li&gt;
-  &lt;li&gt;When something fails I fix the part of the script that caused it to fail.&lt;/li&gt;
-  &lt;li&gt;Restore to the snapshot. (This is instant on an SSD).&lt;/li&gt;
-  &lt;li&gt;Repeat steps 3-5 until the whole thing runs without any problems.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Here is my current post-install script. &lt;a href=&quot;https://github.com/dewetblomerus/linux-laptop&quot; target=&quot;_blank&quot;&gt;linux-laptop&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sun, 24 Apr 2016 00:00:00 +0200</pubDate>
-        <link>http://yourdomain.com/2016/04/24/how-i-used-virtualbox-snapshots-to-create-my-ultimate-linux-post-install-script.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2016/04/24/how-i-used-virtualbox-snapshots-to-create-my-ultimate-linux-post-install-script.html</guid>
+        <link>http://dewetblomerus.com/2016/05/10/postgres-could-not-connect-to-server.html</link>
+        <guid isPermaLink="true">http://dewetblomerus.com/2016/05/10/postgres-could-not-connect-to-server.html</guid>
         
         
       </item>

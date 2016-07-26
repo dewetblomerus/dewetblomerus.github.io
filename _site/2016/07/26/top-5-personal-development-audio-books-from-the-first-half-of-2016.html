@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>rspec test javascript</title>
-  <meta name="description" content="I volunteered at Railsbridge yesterday &amp; when the other teachers didn't seem busy enough I went ahead &amp; asked them questions of my own. I learned abo...">
+  <title>Top 5 personal development audio books from the first half of 2016</title>
+  <meta name="description" content="Just to clarify, first half of 2016 is when I listened to them, not when they were published.">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://dewetblomerus.com/2015/09/20/rspec-test-javascript.html">
+  <link rel="canonical" href="http://dewetblomerus.com/2016/07/26/top-5-personal-development-audio-books-from-the-first-half-of-2016.html">
   <link rel="alternate" type="application/rss+xml" title="De Wet Blomerus" href="http://dewetblomerus.com/feed.xml">
   <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico?">
 </head>
@@ -62,21 +62,36 @@
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">rspec test javascript</h1>
-    <p class="post-meta"><time datetime="2015-09-20T13:09:20+02:00" itemprop="datePublished">Sep 20, 2015</time></p>
+    <h1 class="post-title" itemprop="name headline">Top 5 personal development audio books from the first half of 2016</h1>
+    <p class="post-meta"><time datetime="2016-07-26T00:00:00+02:00" itemprop="datePublished">Jul 26, 2016</time></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>I volunteered at <a href="https://railsbridgecapetown.org/">Railsbridge</a> yesterday &amp; when the other teachers didn't seem busy enough I went ahead &amp; asked them questions of my own. I learned about the save_and_open_page method in Rspec.</p>
-<p>This gave me the power to go fix a bunch of feature tests that I previously couldn't figure out how to fix, usually the features were working but the tests were failing falsely.</p>
-<p>Finally I got to one that got the better of me again. It was a page that loaded a "Flash" message but didn't reload the page. I asked for help again and someone explained to me that the Silenium Web Driver that is the default web driver for Rspec isn't capable of seeing these sort of Javascript changes to the page if it doesn't reload, it only inspects HTML but doesn't launch a full headless web browser. What I needed was a gem called 'poltergeist' which would let me use phantomjs which would give me this capability. Here is how I fixed it.</p>
-<p>Install PhantomJS</p>
-<p>https://gist.github.com/julionc/7476620</p>
-<p>Switch from Selenium to Poltergeist</p>
-<p>http://everydayrails.com/2015/01/27/rspec-switch-selenium-poltergeist.html</p>
-<p>Lastly, since phantomjs will be running in a different thread, unexpected things could happen in the test database. Here is a post by Avdi that explains how &amp; why to fix it.</p>
-<p>http://devblog.avdi.org/2012/08/31/configuring-database_cleaner-with-rails-rspec-capybara-and-selenium/</p>
-<p>Before I could finish the last step I noticed that something else was wrong with the spec, I forgot to let it click a link. So now my tests are fixed and this process is not done, but hopefully writing it down for when I do need it will make it less painful at that time.</p>
+    <p>Just to clarify, first half of 2016 is when I listened to them, not when they were published.</p>
+
+<ol>
+  <li>
+    <p><a href="http://www.audible.com/pd/Self-Development/The-Art-of-Learning-Audiobook/B00JAOOBHU">The art of learning by Josh Waitzkin</a><img style="float:right" src="https://images-na.ssl-images-amazon.com/images/I/51VoXW+dIrL._SL80_.jpg" />
+Josh takes a true deep dive into his journey of discovering how the human brain learns things. Becoming the best in the world at two completely different things (Chess player for his age and Thai Chi world champion). It just interests me to no end. I was glued to my headphones listening to every minute of this one.</p>
+  </li>
+  <li>
+    <p><a href="http://www.audible.com/pd/Business/The-Lean-Startup-Audiobook/B005LXV0HI">The learn startup by Eric Ries</a><img style="float:right" src="https://images-na.ssl-images-amazon.com/images/I/51PAIR77wJL._SL80_.jpg" />
+I through tons of conversations with startup founders and Rails developers I basically internalized all the implications of this book, but listening to the source made it click at a much deeper level.</p>
+  </li>
+  <li>
+    <p><a href="http://www.audible.com/pd/Business/Crucial-Conversations-Audiobook/B009RQZDHS">Crucial Conversations by Kerry Patterson</a><img style="float:right" src="https://images-na.ssl-images-amazon.com/images/I/61amggUXwFL._SL80_.jpg" />
+You only need to read this book if you interact with other people. It scratches behind the surface of emotional human interactions and discovers a goldmine of opportunity for better interactions and relationships.</p>
+  </li>
+  <li>
+    <p><a href="http://www.audible.com/pd/Science-Technology/Predictably-Irrational-Audiobook/B002V0GCE0">Predictably Irrational by Dan Ariely</a><img style="float:right" src="https://images-na.ssl-images-amazon.com/images/I/51zvOkieKjL._SL80_.jpg" />
+Just fascinating to find out how freaking irrational we are, and that we consistently keep being irrational about certain things.</p>
+  </li>
+  <li>
+    <p><a href="http://www.audible.com/pd/Business/Getting-More-Audiobook/B004D63GDK">Getting More by Stuart Diamond</a><img style="float:right" src="https://images-na.ssl-images-amazon.com/images/I/51GsQKwG+kL._SL80_.jpg" />
+This book is almost 19 horus long, but I stayed glued because Stuart pairs his practical step by step approach with some fascinating real life stories about negotiating peace in some really gnarly war time situations, and also some super practical situations where it applies to every day relationships.</p>
+  </li>
+</ol>
+
 
   </div>
 
