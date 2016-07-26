@@ -11,7 +11,7 @@ Josh takes a true deep dive into his journey of discovering how the human brain 
 I through tons of conversations with startup founders and Rails developers I basically internalized all the implications of this book, but listening to the source made it click at a much deeper level.
 
 3. [Crucial Conversations by Kerry Patterson](http://www.audible.com/pd/Business/Crucial-Conversations-Audiobook/B009RQZDHS)<img style='float:right' src='https://images-na.ssl-images-amazon.com/images/I/61amggUXwFL._SL80_.jpg'>
-You only need to read this book if you interact with other people. It scratches behind the surface of emotional human interactions and discovers a goldmine of opportunity for better interactions and relationships.
+You only need to read this book if you interact with other people. It scratches beneath the surface of emotional human interactions and discovers a goldmine of opportunity for better interactions and relationships.
 
 4. [Predictably Irrational by Dan Ariely](http://www.audible.com/pd/Science-Technology/Predictably-Irrational-Audiobook/B002V0GCE0)<img style='float:right' src='https://images-na.ssl-images-amazon.com/images/I/51zvOkieKjL._SL80_.jpg'>
 Just fascinating to find out how freaking irrational we are, and that we consistently keep being irrational about certain things.
