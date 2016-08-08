@@ -4,11 +4,11 @@ title: master.tmate.io lookup failure or ssh.tmate.io lookup failure
 ---
 This error used to show up as `master.tmate.io lookup failure` but lately it's `ssh.tmate.io lookup failure`
 
-Hardcode an IP address for master.tmate.io in /etc/hosts
-
 Here's the Github issue where I found the solution
 
 [https://github.com/nviennot/tmate/issues/32](https://github.com/nviennot/tmate/issues/32)
+
+The solution is to hardcode an IP address for master.tmate.io in /etc/hosts
 
 Here is how:
 
