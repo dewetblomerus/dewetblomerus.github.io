@@ -6,9 +6,9 @@ This error used to show up as `master.tmate.io lookup failure` but lately it's `
 
 Hardcode an IP address for master.tmate.io in /etc/hosts
 
-Here's the Gitbug issue where I found the solution
+Here's the Github issue where I found the solution
 
-https://github.com/nviennot/tmate/issues/32
+[https://github.com/nviennot/tmate/issues/32](https://github.com/nviennot/tmate/issues/32)
 
 Here is how:
 
