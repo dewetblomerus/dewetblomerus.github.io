@@ -19,6 +19,7 @@ linkedin_username: dewetblomerus
 # Build settings
 markdown: kramdown
 
+exclude: [vendor]
 # Disqus comments
 defaults:
   -
