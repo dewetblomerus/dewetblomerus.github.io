@@ -1,7 +1,0 @@
-<p>I got this error message while trying to run <code class="highlighter-rouge">sudo apt-get update</code>. Here is the full error message:
-<code class="highlighter-rouge">: GPG error: http://extra.linuxmint.com rosa Release: The following signatures were invalid: BADSIG 3EE67F3D0FF405B2 Clement Lefebvre (Linux Mint Package Repository v1) &lt;root@linuxmint.com&gt;</code></p>
-
-<p>This is what fixed it:
-<code class="highlighter-rouge">sudo rm -rf /var/lib/apt/lists/*</code></p>
-
-<p>After removing those, <code class="highlighter-rouge">sudo apt-get update</code> ran just fine.</p>
