@@ -9,3 +9,5 @@ permalink: /links/
 [GitLab Issues](https://gitlab.com/groups/gitlab-com/issues?scope=all&state=opened&utf8=%E2%9C%93&assignee_id=640106){:target="_blank"}
 
 [GitLab ToDos](https://gitlab.com/dashboard/todos){:target="_blank"}
+
+[Gmail](https://gmail.com){:target="_blank"}
