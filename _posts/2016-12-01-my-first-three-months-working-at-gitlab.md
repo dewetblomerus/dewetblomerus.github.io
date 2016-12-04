@@ -4,7 +4,8 @@ title: My First Three Months Working at GitLab
 ---
 
 I have not blogged in a while, becuase three months ago I started working at
-GitLab as a [Service Engineer](https://about.gitlab.com/jobs/service-engineer/).
+GitLab as a [Service Engineer](https://about.gitlab.com/jobs/service-engineer/)
+and have been focusing all my efforts on drinking from the firehose.
 
 Check me out [here on the team page](https://about.gitlab.com/team/).
 
