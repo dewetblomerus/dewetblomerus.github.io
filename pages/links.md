@@ -11,3 +11,5 @@ permalink: /links/
 [GitLab ToDos](https://gitlab.com/dashboard/todos){:target="_blank"}
 
 [Gmail](https://gmail.com){:target="_blank"}
+
+[GitLab Packages](https://packages.gitlab.com/gitlab/gitlab-ee?filter=debs){:target="_blank"}
