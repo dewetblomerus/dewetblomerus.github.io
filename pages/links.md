@@ -15,3 +15,9 @@ permalink: /links/
 [GitLab Packages](https://packages.gitlab.com/gitlab/gitlab-ee?filter=debs){:target="_blank"}
 
 [Calendly Link](https://calendly.com/dewet/45){:target="_blank"}
+
+[Zoom De Wet](https://gitlab.zoom.us/j/7755775577){:target="_blank"}
+
+[Zoom Support](https://gitlab.zoom.us/j/410924151){:target="_blank"}
+
+[Zoom GitLab](https://gitlab.zoom.us/j/719183216){:target="_blank"}
