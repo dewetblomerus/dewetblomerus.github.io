@@ -1,13 +1,15 @@
 FROM ruby:2.3.1
 
-RUN useradd jekyll
+RUN useradd -m jekyll
 
 USER jekyll
 
-WORKDIR /jekyll
+WORKDIR /home/jekyll
 
-COPY Gemfile /jekyll
+COPY Gemfile /home/jekyll
 
-RUN bundle
+RUN bundle -j7
+
+RUN rm Gemfile*
 
 RUN /bin/bash

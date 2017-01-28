@@ -9,3 +9,9 @@ pages:
     - public
   only:
   - master
+
+build_docker:
+  script:
+  - docker build -t dewet-jekyll .
+  only:
+  - docker
