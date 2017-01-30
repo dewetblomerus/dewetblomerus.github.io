@@ -12,4 +12,6 @@ RUN bundle -j7
 
 RUN rm Gemfile*
 
-RUN /bin/bash
+EXPOSE 4000
+
+CMD bundle && jekyll serve
