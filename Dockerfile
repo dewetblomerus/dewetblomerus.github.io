@@ -1,5 +1,7 @@
 FROM ruby:2.3.1
 
+EXPOSE 4000
+
 RUN useradd -m jekyll
 
 USER jekyll
@@ -12,6 +14,4 @@ RUN bundle -j7
 
 RUN rm Gemfile*
 
-EXPOSE 4000
-
-CMD bundle && jekyll serve
+CMD jekyll serve --host 0.0.0.0
