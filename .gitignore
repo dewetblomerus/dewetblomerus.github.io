@@ -1,5 +1,6 @@
 _site/
 .sass-cache/
 .jekyll-metadata
+.bash_history
 public/
 
