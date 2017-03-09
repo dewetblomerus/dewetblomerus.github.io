@@ -8,7 +8,7 @@ WORKDIR /home/jekyll
 
 COPY Gemfile /home/jekyll
 
-RUN bundle -j7
+RUN bundle
 
 RUN rm Gemfile*
 
