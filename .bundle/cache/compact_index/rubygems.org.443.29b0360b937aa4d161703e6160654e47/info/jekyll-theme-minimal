@@ -1,0 +1,4 @@
+---
+0.0.1 jekyll:~> 3.3|checksum:d507863b16467d42cff1868e20c66fdf5d7ffa25a9efd0013d50fe8eaeb14a7c
+0.0.2 jekyll:~> 3.3|checksum:4518c13eb470410b213330a57195448fa075f76013d8e4f88e1ad384e1cde312
+0.0.3 jekyll:~> 3.3|checksum:fc84acc6823daf3625308b41c6fdc1ed1cda7d9aa90272a7098dbe6e34a44df7
