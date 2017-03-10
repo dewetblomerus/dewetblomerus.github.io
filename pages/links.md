@@ -23,3 +23,5 @@ permalink: /links/
 [Zoom GitLab](https://gitlab.zoom.us/j/719183216){:target="_blank"}
 
 `docker run -it --rm -v /home/dewet/.ssh:/home/dewet/.ssh -v /home/dewet/code:/home/dewet/code registry.gitlab.com/dewetblomerus/dotfiles`
+
+`docker run -d --rm -v $(pwd):/home/jekyll -p 80:4000 registry.gitlab.com/dewetblomerus/dewetblomerus.gitlab.io jekyll serve --host=0.0.0.0`
