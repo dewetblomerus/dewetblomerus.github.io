@@ -5,6 +5,7 @@ pages:
   - time bundle
   - ls
   - which jekyll
+  - whoami
   - time jekyll build -d public
   artifacts:
     paths:
