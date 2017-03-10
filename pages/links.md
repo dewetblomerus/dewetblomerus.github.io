@@ -21,3 +21,5 @@ permalink: /links/
 [Zoom Support](https://gitlab.zoom.us/j/410924151){:target="_blank"}
 
 [Zoom GitLab](https://gitlab.zoom.us/j/719183216){:target="_blank"}
+
+`docker run -it --rm -v /home/dewet/.ssh:/home/dewet/.ssh -v /home/dewet/code:/home/dewet/code registry.gitlab.com/dewetblomerus/dotfiles`
