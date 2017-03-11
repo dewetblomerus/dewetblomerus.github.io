@@ -2,7 +2,6 @@ image: jekyll/jekyll
 
 pages:
   script:
-  - echo $CI_PROJECT_DIR
   - time jekyll build -s $CI_PROJECT_DIR -d $CI_PROJECT_DIR/public
   artifacts:
     paths:
