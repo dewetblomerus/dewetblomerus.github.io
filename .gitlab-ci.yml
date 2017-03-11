@@ -2,7 +2,7 @@ image: jekyll/jekyll
 
 pages:
   script:
-  - time jekyll build -d public
+  - time jekyll build -s /builds/dewetblomerus/dewetblomerus.gitlab.io -d /builds/dewetblomerus/dewetblomerus.gitlab.io/public
   artifacts:
     paths:
     - public
