@@ -2,15 +2,10 @@ image: jekyll/jekyll
 
 pages:
   script:
-  - time jekyll build -s /builds/dewetblomerus/dewetblomerus.gitlab.io -d /builds/dewetblomerus/dewetblomerus.gitlab.io/public
+  - echo $(CI_PROJECT_DIR)
+  - time jekyll build -s $(CI_PROJECT_DIR) -d $(CI_PROJECT_DIR)/public
   artifacts:
     paths:
     - public
   only:
   - master
-
-build_docker:
-  script:
-  - docker build -t dewet-jekyll .
-  only:
-  - docker
