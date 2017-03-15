@@ -5,6 +5,7 @@ pages:
   - time jekyll build -s $CI_PROJECT_DIR -d $CI_PROJECT_DIR/public
   - cp -r $CI_PROJECT_DIR/.well-known $CI_PROJECT_DIR/public
   artifacts:
+    expire_in: 7 days
     paths:
     - public
   only:
