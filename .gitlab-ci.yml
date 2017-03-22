@@ -1,6 +1,56 @@
-image: jekyll/jekyll
+stages:
+  - build
+  - review
+  - pages
 
-pages:
+build:
+  stage: build
+  script:
+    - mkdir _site
+    - docker run --rm -v $(pwd):/srv/jekyll jekyll/jekyll:latest jekyll build
+    - mv _site public
+    - sudo chown gitlab-runner:gitlab-runner -R public
+  artifacts:
+    paths:
+      - public
+    expire_in: 1 hour
+  tags:
+    - nginx
+    - review-apps
+
+review:
+  stage: review
+  script:
+    - rsync -av --delete public /srv/nginx/pages/$CI_BUILD_REF_SLUG
+  environment:
+    name: review/$CI_BUILD_REF_NAME
+    url: http://$CI_BUILD_REF_SLUG.$APPS_DOMAIN
+    on_stop: stop_review
+  only:
+    - branches
+  except:
+    - master
+  tags:
+    - nginx
+    - review-apps
+
+stop_review:
+  stage: review
+  script:
+    - rm -rf public /srv/nginx/pages/$CI_BUILD_REF_SLUG
+  variables:
+    GIT_STRATEGY: none
+  when: manual
+  environment:
+    name: review/$CI_BUILD_REF_NAME
+    action: stop
+  tags:
+    - nginx
+    - review-apps
+
+deploy:
+  stage: build
+  image: jekyll/jekyll
   script:
   - time jekyll build -s $CI_PROJECT_DIR -d $CI_PROJECT_DIR/public
   #- cp -r $CI_PROJECT_DIR/.well-known $CI_PROJECT_DIR/public
