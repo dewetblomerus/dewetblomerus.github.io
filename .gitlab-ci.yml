@@ -1,7 +1,6 @@
 stages:
   - build
   - review
-  - pages
 
 build:
   stage: build
