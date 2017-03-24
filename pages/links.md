@@ -24,4 +24,4 @@ permalink: /links/
 
 `docker run -it --rm -v /home/dewet/.ssh:/home/dewet/.ssh -v /home/dewet/code:/home/dewet/code registry.gitlab.com/dewetblomerus/dotfiles`
 
-`docker run -d --rm -v $(pwd):/home/jekyll -p 80:4000 registry.gitlab.com/dewetblomerus/dewetblomerus.gitlab.io jekyll serve --host=0.0.0.0`
+`docker run -d --rm -v $(pwd):/srv/jekyll -p 80:4000 jekyll/jekyll jekyll serve --host=0.0.0.0`
