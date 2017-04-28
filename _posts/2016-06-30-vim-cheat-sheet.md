@@ -88,6 +88,10 @@ Always up to date, personal vim cheat sheet, you should totally make one like th
   </thead>
   <tbody>
     <tr>
+      <td><code>C-u</code>, <code>C-d</code></td>
+      <td>move (<strong>u</strong>)p or (<strong>d</strong>)own</td>
+    </tr>
+    <tr>
       <td><code>/</code></td>
       <td>search</td>
     </tr>
