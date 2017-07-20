@@ -6,7 +6,7 @@ permalink: /links/
 
 [Okta](https://salesloft.okta.com/app/UserHome){:target="_blank"}
 
-[Jira](https://salesloft.atlassian.net/secure/RapidBoard.jspa?rapidView=70){:target="_blank"}
+[Jira](https://salesloft.atlassian.net/secure/RapidBoard.jspa?rapidView=3&quickFilter=217){:target="_blank"}
 
 [Gmail](https://gmail.com){:target="_blank"}
 
