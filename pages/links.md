@@ -14,6 +14,10 @@ permalink: /links/
 
 [Okta](https://salesloft.okta.com/app/UserHome){:target="_blank"}
 
+[QA](https://accounts.qasalesloft.com/sign_in){:target="_blank"}
+
+[QA2](https://accounts2.qasalesloft.com/sign_in){:target="_blank"}
+
 [Sumo](https://service.us2.sumologic.com/ui/bento.html#/workspace/default/search/view/600d6994_a887_6d39_3254_8ea35ee5bde5){:target="_blank"}
 
 ```
