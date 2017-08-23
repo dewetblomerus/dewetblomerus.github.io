@@ -10,6 +10,8 @@ permalink: /links/
 
 [PairingForm](https://goo.gl/forms/NT6ZQQNYIMNUg8V43){:target="_blank"}
 
+[DeleteSession](chrome://settings/content/cookies){:target="_blank"}
+
 [DevOps](http://devops.salesloft.com/){:target="_blank"}
 
 [Gmail](https://gmail.com){:target="_blank"}
