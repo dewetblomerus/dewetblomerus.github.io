@@ -16,7 +16,7 @@ permalink: /links/
 
 [Gmail](https://gmail.com){:target="_blank"}
 
-[K8S QA Process](https://salesloft.atlassian.net/wiki/spaces/DEVOPS/pages/62395200/Process){:target="_blank"}
+[K8S QA Process](https://salesloft.atlassian.net/wiki/spaces/DEVOPS/pages/82378753/Kubernetes+QA+FAQ){:target="_blank"}
 
 [Sumo](https://service.us2.sumologic.com/ui/bento.html#/workspace/default/search/view/600d6994_a887_6d39_3254_8ea35ee5bde5){:target="_blank"}
 
