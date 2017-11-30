@@ -24,6 +24,8 @@ permalink: /links/
 
 [Okta](https://salesloft.okta.com/app/UserHome){:target="_blank"}
 
+[Q4 Personal Goals](https://gitlab.com/dewetblomerus/public-notes/issues/4){:target="_blank"}
+
 [QA TracerBullet](https://tracer-bullet.qasalesloft.com/){:target="_blank"}
 
 [QA Melody](https://accounts.qasalesloft.com/sign_in){:target="_blank"}
