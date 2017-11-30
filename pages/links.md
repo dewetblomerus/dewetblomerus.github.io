@@ -43,4 +43,4 @@ docker run -it --rm \
    registry.gitlab.com/dewetblomerus/dotfiles
 ```
 
-`docker run -d --rm -v $(pwd):/srv/jekyll -p 80:4000 jekyll/jekyll jekyll serve --host=0.0.0.0`
+`docker run -d --rm -v $(pwd):/srv/jekyll -p 80:4000 jekyll/jekyll jekyll serve --host 0.0.0.0`
