@@ -6,7 +6,9 @@ permalink: /links/
 
 [Jira](https://salesloft.atlassian.net/secure/RapidBoard.jspa?rapidView=3&quickFilter=217){:target="_blank"}
 
-[GitHub](https://github.com/pulls?utf8=%E2%9C%93&q=is%3Aopen+is%3Apr+label%3Abs){:target="_blank"}
+[GitHub My PRs](https://github.com/pulls?utf8=%E2%9C%93&q=is%3Aopen+is%3Apr+author%3Adewetblomerus){:target="_blank"}
+
+[GitHub Review PRs](https://github.com/pulls?utf8=%E2%9C%93&q=is%3Aopen+is%3Apr+is%3Aprivate+label%3A%22ready+for+review%22){:target="_blank"}
 
 [PairingForm](https://goo.gl/forms/NT6ZQQNYIMNUg8V43){:target="_blank"}
 
