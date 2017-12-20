@@ -2,6 +2,8 @@
 layout: page
 permalink: /links/
 ---
+[Book Recommendations](https://trello.com/b/7ewcVqv3/cultue-of-learning){:target="_blank"}
+
 [Calendar](https://calendar.google.com/calendar/render?pli=1#main_7){:target="_blank"}
 
 [Jira](https://salesloft.atlassian.net/secure/RapidBoard.jspa?rapidView=3&quickFilter=217){:target="_blank"}
