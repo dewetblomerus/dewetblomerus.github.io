@@ -2,6 +2,8 @@
 layout: page
 permalink: /links/
 ---
+[Backlog](https://salesloft.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=SL&view=planning.nodetail&quickFilter=83){:target="_blank"}
+
 [Book Recommendations](https://trello.com/b/7ewcVqv3/cultue-of-learning){:target="_blank"}
 
 [Calendar](https://calendar.google.com/calendar/render?pli=1#main_7){:target="_blank"}
