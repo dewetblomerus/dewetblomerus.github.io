@@ -38,6 +38,8 @@ permalink: /links/
 
 [QA2 Melody](https://accounts2.qasalesloft.com/sign_in){:target="_blank"}
 
+[Strategic Initiatives](https://trello.com/b/QFl0QulQ/strategic-initiative-programs-v2){:target="_blank"}
+
 ```
 docker run -it --rm \
    --name dotfiles \
