@@ -42,6 +42,8 @@ permalink: /links/
 
 [Strategic Initiatives](https://trello.com/b/QFl0QulQ/strategic-initiative-programs-v2){:target="_blank"}
 
+[Zoom Personal](https://salesloft.zoom.us/my/dewetb){:target="_blank"}
+
 ```
 docker run -it --rm \
    --name dotfiles \
