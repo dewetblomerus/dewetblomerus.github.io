@@ -20,7 +20,7 @@ permalink: /links/
 
 [PairingForm](https://goo.gl/forms/NT6ZQQNYIMNUg8V43){:target="_blank"}
 
-[Professional Development Initiative](https://docs.google.com/a/salesloft.com/forms/d/e/1FAIpQLSdgZzTPwA2CejT0XLt1WVjtd0InwZ7WG705UjtEb2CER-U56Q/viewform){:target="_blank"}
+[Professional Development Initiative (PDI)](https://docs.google.com/a/salesloft.com/forms/d/e/1FAIpQLSdgZzTPwA2CejT0XLt1WVjtd0InwZ7WG705UjtEb2CER-U56Q/viewform){:target="_blank"}
 
 [DeleteSession](chrome://settings/content/cookies){:target="_blank"}
 
