@@ -10,6 +10,8 @@ permalink: /links/
 
 [Calendly](https://calendly.com/dewet/30min){:target="_blank"}
 
+[Codeship Builds Melody](https://app.codeship.com/projects/19477){:target="_blank"}
+
 [DeleteSession](chrome://settings/content/cookies){:target="_blank"}
 
 [DevOps](http://devops.salesloft.com/){:target="_blank"}
@@ -20,7 +22,7 @@ permalink: /links/
 
 [Gmail](https://gmail.com){:target="_blank"}
 
-[Jira](https://salesloft.atlassian.net/secure/RapidBoard.jspa?rapidView=70&projectKey=ISE&selectedIssue=ISE-15){:target="_blank"}
+[Jira](https://salesloft.atlassian.net/secure/RapidBoard.jspa?rapidView=70){:target="_blank"}
 
 [Jira Old Bikeshedders](https://salesloft.atlassian.net/secure/RapidBoard.jspa?rapidView=3&quickFilter=217){:target="_blank"}
 
