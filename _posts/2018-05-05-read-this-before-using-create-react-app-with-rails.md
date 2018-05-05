@@ -102,4 +102,7 @@ This asset URL will probably be different between Development and Production.
 And lastly a normal Rails view that only contains `<div id="root"></div>` and
 then the React app uses that as a target to load itself into.
 
-Feel free to get in touch if you have any questions.
+I hope this saves you some of the time I spent. At least if you do decide to
+still have Rails serve a **CRA** app, you can go straight to figuring out how to
+configure it's front-end code with a custom `PUBLIC_URL`. Feel free to get in
+touch if you have any questions.
