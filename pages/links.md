@@ -23,7 +23,7 @@ permalink: /links/
 
 [Gmail](https://gmail.com){:target="\_blank"}
 
-[Jira](https://salesloft.atlassian.net/secure/RapidBoard.jspa?rapidView=70){:target="\_blank"}
+[Jira](https://salesloft.atlassian.net/secure/RapidBoard.jspa?rapidView=70&quickFilter=275){:target="\_blank"}
 
 [K8S QA Process](https://salesloft.atlassian.net/wiki/spaces/DEVOPS/pages/82378753/Kubernetes+QA+FAQ){:target="\_blank"}
 
