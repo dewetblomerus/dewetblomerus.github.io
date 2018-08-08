@@ -37,6 +37,8 @@ permalink: /links/
 
 [Professional Development Initiative (PDI)](https://docs.google.com/a/salesloft.com/forms/d/e/1FAIpQLSdgZzTPwA2CejT0XLt1WVjtd0InwZ7WG705UjtEb2CER-U56Q/viewform){:target="\_blank"}
 
+[Rhythm / SalesLoft Components](https://github.com/SalesLoft/rhythm/tree/master/packages){:target="\_blank"}
+
 [SalesLoft Private NPM](https://npms.salesloft.com/#/){:target="\_blank"}
 
 [Sumo](https://service.us2.sumologic.com/ui/bento.html#/workspace/default/search/view/600d6994_a887_6d39_3254_8ea35ee5bde5){:target="\_blank"}
