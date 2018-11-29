@@ -7,13 +7,16 @@ As a beginner programmer, already having learned some JavaScript and considering
 learning React to build on your JavaScript knowledge or switching to Elixir,
 here is some information to help you decide.
 
-The most powerful/amazing/heavy-duty/military-grade stack that anyone could
-conceive in 2018, would probably be an Elixir back-end with a JavaScript/React
-front-end. Facebook uses both technologies. They use React to build their
-Front-end and Erlang (Which Elixir is built on) to build some of their back-end.
-I am not making a job at Facebook the goal here, it's just that they are doing
-what they do at a higher scale than anyone else, and we can learn something from
-them.
+If you want to stop reading here, and just walk away with the answer that would
+apply to the most amount of people: **JavaScript**.
+
+The easiest answer would be to **learn both**. The most
+powerful/amazing/heavy-duty/military-grade stack that anyone could conceive in
+2018, would probably be an Elixir back-end with a JavaScript/React front-end.
+Facebook uses both technologies. They use React to build their Front-end and
+Erlang (Which Elixir is built on) to build some of their back-end. I am not
+making a job at Facebook the goal here, it's just that they are doing what they
+do at a higher scale than anyone else, and we can learn something from them.
 
 ## Some pro's for each:
 
