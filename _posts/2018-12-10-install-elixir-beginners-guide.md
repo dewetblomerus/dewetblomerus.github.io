@@ -28,12 +28,12 @@ erl -eval 'erlang:display(erlang:system_info(otp_release)), halt().'  -noshell
 ### Install Kiex
 
 ```shell
-\curl -sSL https://raw.githubusercontent.com/taylor/kiex/master/install | bash -s
+curl -sSL https://raw.githubusercontent.com/taylor/kiex/master/install | bash -s
 ```
 
 ### Add what is in the quotes to your .rc file or copy/paste the whole command into your terminal which will add the relevant bits to the bottom of your .bashrc
 
 ```shell
-RUN echo '[[ -s "$HOME/.kiex/scripts/kiex" ]] && source "$HOME/.kiex/scripts/kiex"' >> .bashrc
-RUN echo 'export PATH="$HOME/.kiex/bin:\$PATH"' >> .bashrc
+echo 'test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"' >> .bashrc
+echo 'export PATH="$HOME/.kiex/bin:\$PATH"' >> .bashrc
 ```
