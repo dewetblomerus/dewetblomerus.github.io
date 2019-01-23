@@ -31,6 +31,12 @@ erl -eval 'erlang:display(erlang:system_info(otp_release)), halt().'  -noshell
 curl -sSL https://raw.githubusercontent.com/taylor/kiex/master/install | bash -s
 ```
 
+### Check if Kiex is installed
+
+```shell
+kiex
+```
+
 ### Add what is in the quotes to your .rc file or copy/paste the whole command into your terminal which will add the relevant bits to the bottom of your .bashrc
 
 ```shell
