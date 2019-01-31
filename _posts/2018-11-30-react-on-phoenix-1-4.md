@@ -55,12 +55,12 @@ As show by https://www.valentinog.com/blog/react-webpack-babel/
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-const Switchboard = () => <div>This is a React Component!!!</div>
+const ReactOnPhoenix = () => <div>This is a React Component!!!</div>
 
-ReactDOM.render(<Switchboard />, document.getElementById('mountPoint'))
+ReactDOM.render(<ReactOnPhoenix />, document.getElementById('mountPoint'))
 ```
 
-### `lib/switchboard_ex_web/templates/page/index.html.eex`
+### `lib/react_on_phoenix_web/templates/page/index.html.eex`
 
 ```html
 <div id="mountPoint"></div>
