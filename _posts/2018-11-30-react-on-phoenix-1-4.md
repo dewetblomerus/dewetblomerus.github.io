@@ -66,6 +66,24 @@ ReactDOM.render(<ReactOnPhoenix />, document.getElementById('mountPoint'))
 <div id="mountPoint"></div>
 ```
 
+## Change out the test assertion about what should be on the page
+
+### In this file `test/react_on_phoenix_web/controllers/page_controller_test.exs`
+
+```elixir
+# Change it from this
+"Welcome to Phoenix!"
+
+# To this
+"mountPoint"
+```
+
+### The tests should now pass
+
+```shell
+mix test
+```
+
 ### Get back to the root directory of the app and start the server
 
 ```shell
