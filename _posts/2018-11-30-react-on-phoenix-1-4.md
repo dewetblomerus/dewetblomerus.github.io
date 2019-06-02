@@ -66,6 +66,18 @@ ReactDOM.render(<ReactOnPhoenix />, document.getElementById('mountPoint'))
 <div id="mountPoint"></div>
 ```
 
+## You probably want React Router to handle most routes
+
+To do that, make a small change in `lib/react_on_phoenix_web/router.ex`
+
+from
+
+`get "/", PageController, :index`
+
+to
+
+`get "/*path", PageController, :index`
+
 ## Change out the test assertion about what should be on the page
 
 ### In this file `test/react_on_phoenix_web/controllers/page_controller_test.exs`
