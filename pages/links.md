@@ -3,8 +3,6 @@ layout: page
 permalink: /links/
 ---
 
-[Backlog G3](https://salesloft.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=SL&view=planning.nodetail&quickFilter=83){:target="\_blank"}
-
 [Calendly](https://calendly.com/dewet/30min){:target="\_blank"}
 
 [Codeship Builds Melody](https://app.codeship.com/projects/19477){:target="\_blank"}
