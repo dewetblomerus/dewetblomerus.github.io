@@ -5,7 +5,7 @@ permalink: /links/
 
 [Calendly](https://calendly.com/dewet/30min){:target="\_blank"}
 
-[Codeship Builds Melody](https://app.codeship.com/projects/19477){:target="\_blank"}
+[Codeship Builds](https://app.codeship.com/salesloft){:target="\_blank"}
 
 [DeleteSession](chrome://settings/content/cookies){:target="\_blank"}
 
