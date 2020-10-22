@@ -7,11 +7,10 @@ title: My Technology Usage Policy
 
 My life was heavily influenced by the following two books
 
-[Why We sleep](https://www.audible.com/pd/Why-We-Sleep-Audiobook/B0752ZQR33){:target="\_blank"}
+- [Why We sleep](https://www.audible.com/pd/Why-We-Sleep-Audiobook/B0752ZQR33){:target="\_blank"}
+- [Digital Minimalism](https://www.audible.com/pd/Digital-Minimalism-Audiobook/B07LGF8TCJ){:target="\_blank"}
 
-[Digital Minimalism](https://www.audible.com/pd/Digital-Minimalism-Audiobook/B07LGF8TCJ){:target="\_blank"}
-
-I finally became convinced that I will be a happier, more connected, wealthier,
+I became convinced that I will be a happier, more connected, wealthier,
 more successful, more devoted version of myself if I only use technology to do
 the things I value.
 
