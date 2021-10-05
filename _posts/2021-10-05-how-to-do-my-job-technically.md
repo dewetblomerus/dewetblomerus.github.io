@@ -48,4 +48,4 @@ Learn these and build a basic personal website for yourself, like the one you ar
 
 Elixir/Phoenix can do everything Ruby/Rails can do, but better.
 
-LiveView can do 60% of what Javascript and React can do, but with MUCH less code and less complexity. It is brand new compared to the other technologies here, and is going to change the world :)
+LiveView can do 60% of what Javascript and React can do, but with MUCH less code and less complexity. It is brand new compared to the other technologies here, and is changing the world of web development :)
