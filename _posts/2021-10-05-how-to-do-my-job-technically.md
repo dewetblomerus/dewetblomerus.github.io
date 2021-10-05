@@ -33,7 +33,7 @@ Learn these and build a basic personal website for yourself, like the one you ar
 - Touch Typing. All the other skills will go faster if you can do this one well, so take the time to learn it on it's own.
 - Git. (I went pretty far with Git, but you don't need to)
 
-### I completed several books/courses for each of these, but I suggest you skip them.
+### I completed several books/courses for each of these, but I suggest you skip them, and pick them up when needed.
 
 - Ruby.
 - Rails.
