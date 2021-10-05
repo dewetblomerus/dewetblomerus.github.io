@@ -30,21 +30,20 @@ Learn these and build a basic personal website for yourself, like the one you ar
 - How to run commands in the Linux terminal.
 - HTML. I learned it here for free https://www.codecademy.com/
 - CSS. Same as above.
+- Touch Typing. All the other skills will go faster if you can do this one well, so take the time to learn it on it's own.
 
 ### Where I Had To Dig A Bit Deeper And Do One Or Two Courses
 
 - Git.
 
-### Hard Skills Where I Had To Read Several Books Or Online Courses For Each Skill
-
-I suggest you skip these and go to the next section.
+### Hard Skills Where I Had To Read Several Books Or Online Courses For Each Skill, But I Suggest You Skip.
 
 - Ruby.
 - Rails.
 - Javascript.
 - React.
 
-### What I Am Learning Now.
+### Hard Skills Where I Had To Read Several Books Or Online Courses For Each Skill, And I Am Still Reading Books & Consuming Learning Content.
 
 - Elixir
 - Phoenix
