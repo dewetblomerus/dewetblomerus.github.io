@@ -15,12 +15,12 @@ I am in a position of privilege because someone else gave me some of their time 
 - I spent less than $500 on learning resources before I got my first job in tech, and now my employer pays for whatever books, videos, courses I want.
 - If the money for the books or courses is a problem for you, contact me, I can guide you toward free resources and if you have done all those and truly need a paid course or book, I can pay for it.
 
-### How are my technical skills summarized?
+# Technical Skills Summary
 
 I am a web developer. That can mean many different things. But in my case, I use open-source tools to build web applications. I can build something, press a button and then any of the 4.6 billion people who use the internet could access it seconds later. I am a web developer who took steps toward doing web development at a high enough skill level that I am now called a *Software Engineer* which usually means more responsibilities and more pay than a *Web Developer* role.
 
 
-# Hard Skills
+# Technical Skills List
 
 ### I am comfortable with all the basic concepts of these.
 
