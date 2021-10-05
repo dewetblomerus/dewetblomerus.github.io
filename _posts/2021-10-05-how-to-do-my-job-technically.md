@@ -22,28 +22,25 @@ I am a web developer. That can mean many different things. But in my case, I use
 
 # Hard Skills
 
-### I Have A Basic Understanding Of These
+### I am comfortable with all the basic concepts of these.
 
-Learn these and build a basic personal website for yourself, like the one you are reading right now.
+Learn these and build a basic personal website for yourself, like the one you are reading right now. If you can do that, you have learned enough here.
 
 - Linux. I had a Windows computer, I replaced Windows by installing Ubuntu, it is free.
 - How to run commands in the Linux terminal.
 - HTML. I learned it here for free https://www.codecademy.com/
 - CSS. Same as above.
 - Touch Typing. All the other skills will go faster if you can do this one well, so take the time to learn it on it's own.
+- Git. (I went pretty far with Git, but you don't need to)
 
-### Where I Had To Dig A Bit Deeper And Do One Or Two Courses
-
-- Git.
-
-### Hard Skills Where I Had To Read Several Books Or Online Courses For Each Skill, But I Suggest You Skip.
+### I completed several books/courses for each of these, but I suggest you skip them.
 
 - Ruby.
 - Rails.
 - Javascript.
 - React.
 
-### Hard Skills Where I Had To Read Several Books Or Online Courses For Each Skill, And I Am Still Reading Books & Consuming Learning Content.
+### I completed several books/courses for some of these, I am still reading and consuming learning content weekly.
 
 - Elixir
 - Phoenix
