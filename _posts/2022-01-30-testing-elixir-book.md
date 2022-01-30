@@ -14,7 +14,7 @@ I just finished reading the [Testing Elixir](https://pragprog.com/titles/lmelixi
 
 ### Surprises
 
-I struggled with motivation to get through the end of the book. Maybe that was just personal motivation for technical learning waning, I am at a place where I know enough theory to get a lot done without learning more theory. My other guess about why I struggled to get through it is because ExUnit is a fairly basic tool, so a 230 page book ends up with a lot of explanations for why best practices exist, it's good to know, but not terribly exciting. If I had more junior engineers at work asking questions about why we test how we test, I might have appreciated this a lot more.
+I struggled with motivation to get through the end of the book. Maybe that was just personal motivation for technical learning waning, I am at a place where I know enough technical content to get all my needed testing done without learning more about Elixir testing. My other guess about why I struggled to get through it is because ExUnit is a fairly basic tool, so a 230 page book ends up with a lot of explanations for why best practices exist, it's good to know, but not terribly exciting. If I had more junior engineers at work asking questions about why we test how we test, I might have appreciated this a lot more.
 
 ### Should you read it?
 
