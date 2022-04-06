@@ -284,9 +284,9 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages (~> 223)
-  jekyll-feed (~> 0.15)
-  minima (~> 2.5)
-  tzinfo (~> 2.0)
+  jekyll-feed
+  minima
+  tzinfo
   tzinfo-data
   webrick
 
