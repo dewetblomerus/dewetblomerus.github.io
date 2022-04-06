@@ -1,9 +1,14 @@
 ---
 layout: post
-title: Boundary
+title: Elixir Boundary
+tags: [elixir]
 ---
 
 I spent some time playing with [Boundary](https://github.com/sasa1977/boundary)
+
+### What is Boundary?
+
+A tool for enforcing any design of your choosing around which of your modules depends on which other ones.
 
 ### What it is for
 
