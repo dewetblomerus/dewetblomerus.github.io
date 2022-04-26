@@ -23,7 +23,7 @@ I did set up a basic Elixir repo with an HTTP client and showed her some working
 1. `iex -S mix` to load the code
 1. `EvaLight.set_color(:pink)`
 
-She wrote this down but ultimately never used it. So I wanted an easier way to do this. And then I heard about LiveBook. After getting it running on my Raspberry Pi where it is now always running, now she can just visit a bookmarked URL and click to evaluate the code that changes the light color.
+She wrote this down but ultimately never used it. So I wanted an easier way to do this. And then I heard about **Livebook**. After getting it running on my Raspberry Pi where it is now always running, now she can just visit a bookmarked URL and click to evaluate the code that changes the light color.
 
 ### How did it turn out?
 
