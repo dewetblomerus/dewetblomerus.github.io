@@ -8,7 +8,7 @@ I just finished reading [Designing Elixir Systems with OTP](https://pragprog.com
 
 ### Key Takeaways
 
-The book is masterfully structured around teaching you a systematic process for layering your Elixir applications so that you or anyone that needs to work on the code after you only has to deal with one specific layer of complexity at a time.
+The book is masterfully structured around teaching you a systematic process for layering your Elixir applications so that you or anyone that needs to work on the code after you only has to deal with one distinct layer of complexity at a time.
 
 It would help if you read the book to get it, but here is my summary:
 
