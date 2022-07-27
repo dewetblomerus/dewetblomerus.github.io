@@ -13,7 +13,7 @@ I am in a position of privilege because someone else gave me some of their time 
 - SalesLoft and many other companies can't find enough people who can do my job, so if you could do this job, you can get a job very easily.
 - I am not a genius, but I have very particular set of skills, skills I have acquired by studying from home and learning/studying on the job.
 - I spent less than $500 on learning resources before I got my first job in tech, and now my employer pays for whatever books, videos, courses I want.
-- If the money for the books or courses is a problem for you, contact me, I can guide you toward free resources and if you have done all those and truly need a paid course or book, I can pay for it.
+- If the money for the books or courses is a problem for you, contact me, I can guide you toward free resources and if you have done all those and truly need a paid course or book, I will seriously consider paying for it.
 
 # Technical Skills Summary
 
