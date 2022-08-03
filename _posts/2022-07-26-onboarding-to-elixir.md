@@ -37,6 +37,8 @@ These things are all super powerful and you will be very well served by learning
 
 ### Mentor's notes. If you are helping people who are new to Elixir onboard.
 
+- Set up formatter checks and Credo checks in CI when you set up the project.
+- Consider setting up Muzak as a tool people can run locally. The workflow would be to set it up, run it on their PR, and if it finds a bunch of problems with their tests, you can ask them to run Muzak locally and fix things. Only consider adding this in CI if it can run fast.
 - Think carefully about if they are an Elixir or programming language enthusiast or not.
 - What is the point to learning Elixir? Other than "This is the language we need you to write this in". Why was it written in Elixir in the first place?
 - Sell them on concurrency, which is might help them understand what is the point to learning Elixir.
