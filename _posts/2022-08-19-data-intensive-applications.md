@@ -21,5 +21,7 @@ All of this has left me some gaps in my knowledge of Database Theory. Which type
 ### Biggest Surprise
 
 - I expected to benefit from a heavily theoretical book like this over years as I am asked to do more design and planning work. However, right after I started the book, our team picked up a problem where we needed to increase read-complexity in order to decrease write complexity and I was listening to examples of how other companies did this right as we were doing the work.
-  
+
+### Who is this for?
+
 If you are still getting comfortable with the tools you need for writing code day-to-day, focus on learning materials for those. But as soon as you feel yourself getting comfortable with getting the work done, I would recommend this book becuase sooner or later people will look to you for making decisions on which approach to take with a data intensive problem.
