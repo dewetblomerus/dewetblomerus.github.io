@@ -9,31 +9,31 @@ tags: [elixir]
 
 These things are all super powerful and you will be very well served by learning them eventually, but you can get away with making your initial progress without them.
 
-- Genservers
-- Supervisors
-- Recursive Functions
-- Agents
+- GenServers
 - Processes
+- Recursive Functions
 - Concurrency
 - ETS
 - OTP
+- Agents
+- Supervisors
 - Behaviors
 - Protocols
 - Macros
 
 ### Things to learn right away.
 
-- Pattern Matching values out of a Map
-- Read all the errors carefully, with the attitude that (I am going to be great at understanding these) understanding those in any language is a huge help.
+- https://elixir-lang.org/getting-started (First 15 sections)
+- How you call named functions, always on the module, you don’t do `"dewet".upcase` but instead `String.upcase("dewet")`. Coming from OO, it is as if everything is a class method.
+- Read all the errors carefully, with the attitude that (I am going to be great at understanding these) understanding the errors in any language is a huge help.
+- Destructure a Map with pattern matching
 - How to create a Module
-- How to create named functions
-- How to create anonymous functions
-- How you call named functions, always on the module, you don’t do "dewet".upcase but instead String.upcase("dewet"). Coming from OO, it is as if everything is a class method.
-- How to use the List, Map, String and Enum modules.
+- Named functions
+- Anonymous functions
+- How to use the `List`, `Map`, `String` and `Enum` modules.
 - Pattern match on function heads instead of using if statements (just go with me on this, if you ignore this and write your code with if statements you will be confused the moment you try to read someone else’s code).
-- Structs
 - Writing tests with ExUnit.
-- Ask for lots of help and review with config code.
+- Ask for lots of help, the Elixir community is friendly.
 
 ### Mentor's notes. If you are helping people who are new to Elixir onboard.
 
