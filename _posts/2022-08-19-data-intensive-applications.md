@@ -8,7 +8,7 @@ I recently finished listening to [Designing Data Intensive Applications](https:/
 
 This is another technical book that worked very well as an audio book because it contains quite a bit of theory.
 
-I don't have a computer sciense degree. This has not been a significant hurdle for me becuase I believe in continually learning and reading technical books. Most of the time however, the books I am reading are focused on how to use certain tools to get certain things done. Furthermore, most of my tech career has been spent in mid stage startups. Where Postgres can still get most of the persistence work done, and chasing after newer technologies is usually the wrong choice. Except when it isn't.
+I don't have a computer science degree. This has not been a significant hurdle for me becuase I believe in continually learning and reading technical books. Most of the time however, the books I am reading are focused on how to use certain tools to get certain things done. Furthermore, most of my tech career has been spent in mid stage startups. Where Postgres can still get most of the persistence work done, and chasing after newer technologies is usually the wrong choice. Except when it isn't.
 
 All of this has left me some gaps in my knowledge of Database Theory. Which types of databases are suitable for which types of work loads. And specific names for the problems we face during distributed computing.
 
