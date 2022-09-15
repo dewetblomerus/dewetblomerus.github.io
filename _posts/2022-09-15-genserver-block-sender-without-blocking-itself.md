@@ -4,23 +4,23 @@ title: A GenServer can block senders without blocking itself
 tags: [elixir]
 ---
 
-I was discussing a data processing/aggregation problem with Ben Olive recently and he told me about a GenServer feature I didn't know about. Returning a `{:noreply, new_state}` to a `handle_call/3`. It is right there in the [GenServer documentation for `handle_call/3`](https://hexdocs.pm/elixir/1.14.0/GenServer.html#c:handle_call/3)
+I was discussing a data processing/aggregation problem with Ben Olive recently, and he told me about a GenServer feature I didn't know about. Returning a `{:noreply, new_state}` to a `handle_call/3`. It is right there in the [GenServer documentation for `handle_call/3`](https://hexdocs.pm/elixir/1.14.0/GenServer.html#c:handle_call/3)
 
 ## The problem
 
-You have many Elixir processes sending messages and you want to combine one message from each of many processes into a batch, only after the batch was successfully processed do you want the individual processes to continue their work.
+You have many Elixir processes sending messages, and you want to combine one message from each of many processes into a batch; only after the batch was successfully processed do you want the individual processes to continue their work.
 
 ## Where I was stuck
 
-I was stuck thinking about only the basics of `GenServer.cast` and `GenServer.call`. If I let the processes do `GenServer.cast` which will hand control back to them immediately, they will keep sending messages with no backpressure. If I make the individual processes use `GenServer.call`, the GenServer itself is doing a blocking operation and can not process messages from other senders to batch them up.
+I was stuck thinking about only the basics of `GenServer.cast` and `GenServer.call`. If I let the processes do `GenServer.cast`, which will hand control back to them immediately, they will keep sending messages without backpressure. If I make the individual processes use `GenServer.call`, the GenServer itself is doing a blocking operation and can not process messages from other senders to batch them up.
 
 ## What I didn't know
 
-In the OTP primitives there is no blocking syncronous communication between processes. One process sends a message to another process, it is async, that is all there is. The way that `GenServer.call` appears syncronous is that the sender sends a unique identifier and blocks itself to get a reply with that same unique identifier.
+In the OTP primitives, there is no synchronous blocking communication between processes. One process sends a message to another process. It is async. That is all there is. The `GenServer.call` appears synchronous because the sender sends a unique identifier and blocks itself to get a reply with that unique identifier.
 
 ## The solution
 
-The receiver can choose to continue doing other work and send the reply later, this will keep the sender blocked and waiting, but the receiver is free to process other messages and reply when appropriate, or even ask another process to send the reply.
+The receiver can choose to continue doing other work and send the reply later. This will keep the sender blocked and waiting. Still, the receiver can process other messages and reply when appropriate or even ask another process to send the reply.
 
 ## Example Code
 
