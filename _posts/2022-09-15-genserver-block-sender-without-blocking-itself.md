@@ -8,7 +8,7 @@ I was discussing a data processing/aggregation problem with Ben Olive recently a
 
 ## The problem
 
-You have many Elixir processes sending messages and you want to combine one message from many processes into a batch, only after the batch was successfully processed do you want the individual processes to continue their work.
+You have many Elixir processes sending messages and you want to combine one message from each of many processes into a batch, only after the batch was successfully processed do you want the individual processes to continue their work.
 
 ## Where I was stuck
 
