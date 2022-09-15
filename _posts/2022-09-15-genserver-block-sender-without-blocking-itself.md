@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A GenServer can provide backpressure without blocking itself
+title: A GenServer can block senders without blocking itself
 tags: [elixir]
 ---
 
