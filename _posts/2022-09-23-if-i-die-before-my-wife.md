@@ -30,7 +30,7 @@ Never trust someone if they are 100% sure they can beat the market, everybody tr
 
 Never invest in any kind of fund where the fund managers don’t invest a large portion of their own portfolio into the fund (this rules out almost all actively managed funds).
 
-Don’t be fooled by someone showing how they have beat the market in the past and then charge a lot of fees. You need to subtract the fees from their gains every year in order to see how they really fair against the market.
+Don’t be fooled by someone showing how they have beat the market in the past and then charge a lot of fees. You need to subtract the fees from their gains every year in order to see how they really fair against the market. Not subtracting the fees from the gains every year has a compound effect which could make it look like they dramatically beat the market over a long period of time.
 
 My favorite question about stock market investment: "Currently, my money is in Index Fund X, I know I can get a bigger reward elsewhere, I know I can find lower risk elsewhere, but do you know of a fund that has a bigger reward and lower risk without exponentially multiplying the fees I am paying?". I have asked that question of several very smart investors and no one can come up with an answer.
 
