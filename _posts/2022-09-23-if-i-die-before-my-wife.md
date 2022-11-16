@@ -22,7 +22,7 @@ I do not believe in stopping work, that is a recipe for depression. I will do so
 
 My wife and I both follow Dave's financial advice almost all of the time, so I feel the need to explain why I don't follow his investment advice. It's just personal preference, Dave's investment advice is sound. He recommends using a good broker with the heart of a teacher. Most people need this in order to stick with the plan. Not sticking with the plan during the ups and downs is the #1 mistake people make when they invest. Personally, I am more likely to stick with the plan of investing monthly if I put in all the research and find a clever way to do something myself that most of the world does not know about.
 
-## Investment Philosophy - What to invest in
+## What to invest in
 
 I more-or-less follow the investment philosophy of John Bogle. The founder of Vanguard. All our retirement money is in the broadest, lowest-cost index fund I could find that would diversify our money across all markets around the entire world. It will never beat the market, it is the market. If the market just keeps doing what it has always done since the creation of the stock market, it will average out to 10% annual growth in the long-run, I am happy with that. If we keep making contributions to our Roth IRA every month this return will allow us to retire care-free.
 
@@ -34,20 +34,20 @@ Don’t be fooled by someone showing how they have beat the market in the past a
 
 My favorite question about stock market investment: "Currently, my money is in Index Fund X, I know I can get a bigger reward elsewhere, I know I can find lower risk elsewhere, but do you know of a fund that has a bigger reward and lower risk without exponentially multiplying the fees I am paying?". I have asked that question of several very smart investors and no one can come up with an answer.
 
-## Investment strategy - Real estate
+## Real estate
 
 The goal is to have some real estate investments at the time of retirement. Even if it is just one Duplex with two rental units paying rent to you. In the event that the stock market reaches historic lows, maybe the price of rent holds better and it could keep you afloat.
 
-## Investment strategy - When to invest/withdraw
+## When to invest/withdraw
 
 Do not try to time the market, just pick a super boring monthly strategy and stick with it during all the ups and downs. If there is a historic great depression during your working years, just keep investing every month that you can, this is actually your biggest opportunity to retire rich. If there is a historic great depression after retirement, consider not selling the stocks at historically low prices, and rather live off some cash reserves. You still will not be trying to actively time the market, just reduce the amount of stock you sell every month during retirement.
 
 Starting in the 5 years before retirement, the plan is to start moving a humble amount for monthly expenses into a market account (Cash with an interest rate). Or maybe Bonds if those seem super safe with a better interest rate. This will leave you with 5 years of expenses in cash at the start of retirement so that if there is a serious depression you can live off that cash instead of having to sell the stocks super low.
 
-## Investment Strategy - Bitcoin/Crypto
+## Bitcoin/Crypto
 
 Some people might say you have to do this because it is the future. As of the time of this writing, Crypto has no intrinsic value. The only value it has is speculative. It is only valuable because someone else will buy it from you. As opposed to a house, it has the intrinsic value of giving people a place to live, or a stock, it has the intrinsic value of the real business that you are buying a slice of. If an investment isn’t paying a dividend or an interest or a rent check, be very skeptical. If you can actually spend some kind of crypto coin in stores or anyone will accept it from you as payment for a thing you are buying from them, then keeping a healthy emergency fund of Crypto coins makes sense, but it’s not an investment.
 
-## Investment Strategy - Make it yours
+## Make it yours
 
 Go and live your life, it’s your money, don’t let my thoughts feel like a mandate. I just don’t want you getting bullied into a decision by someone saying that your investment strategy is too high-risk or not smart enough.
