@@ -1,4 +1,4 @@
-# Goodbudget
+# Rolling Average
 
 ```elixir
 Mix.install([
@@ -16,89 +16,39 @@ Mix.install([
 alias Explorer.DataFrame
 alias Explorer.Series
 
-df =
-  DataFrame.from_csv!(
-    "history.csv",
-    max_rows: 1500
-  )
-```
+df = Explorer.Datasets.fossil_fuels()
 
-```elixir
-# DataFrame.shape(df)
-# DataFrame.table(df)
-
-date_series =
-  df[:Date]
-  |> Series.to_list()
-  |> Enum.map(fn input ->
-    input
-    |> String.split("/")
-    |> tl()
-    |> Enum.reverse()
-    |> List.replace_at(2, "15")
-    |> Enum.join("-")
-  end)
-  |> Series.from_list()
-
-amount_series =
-  df[:Amount]
-  |> Series.to_list()
-  |> Enum.map(fn input ->
-    input
-    |> String.replace([",", "."], "")
-    |> String.to_integer()
-    |> (fn
-          cents ->
-            cents / -100
-        end).()
-    |> round()
-  end)
-  |> Series.from_list()
-
-:ok
+DataFrame.table(df)
 ```
 
 ```elixir
 df =
   df
-  |> DataFrame.mutate(Date: date_series)
-  |> DataFrame.mutate(Amount: amount_series)
-  |> DataFrame.filter_with(&Series.equal(&1["Envelope"], "Fuel & Uber"))
-  # |> DataFrame.group_by(:Envelope)
-  |> DataFrame.group_by(:Date)
-  |> Explorer.DataFrame.summarise(Amount: [:sum])
+  |> DataFrame.filter_with(&Series.equal(&1["country"], "DEMOCRATIC PEOPLE S REPUBLIC OF KOREA"))
+  |> DataFrame.group_by(:year)
+  |> Explorer.DataFrame.summarise(total: [:sum])
   |> DataFrame.mutate_with(fn data ->
     rolling =
-      data[:Amount_sum]
-      |> Series.reverse()
+      data[:total_sum]
       |> Series.window_mean(3)
-      |> Series.reverse()
 
     %{RollingAverage: rolling}
   end)
 ```
 
-```elixir
-# DataFrame.shape(df)
-# DataFrame.table(df)
-
-df[:Amount_sum]
-|> Series.mean()
-```
-
-<!-- livebook:{"attrs":{"chart_title":"Expenses Per Month","height":300,"layers":[{"chart_type":"bar","color_field":null,"color_field_aggregate":null,"color_field_type":null,"data_variable":"df","x_field":"Date","x_field_aggregate":null,"x_field_type":"nominal","y_field":"Amount_sum","y_field_aggregate":null,"y_field_type":"quantitative"},{"chart_type":"line","color_field":null,"color_field_aggregate":null,"color_field_type":null,"data_variable":"df","x_field":"Date","x_field_aggregate":null,"x_field_type":"nominal","y_field":"RollingAverage","y_field_aggregate":null,"y_field_type":"quantitative"}],"vl_alias":"Elixir.VegaLite","width":800},"kind":"Elixir.KinoVegaLite.ChartCell","livebook_object":"smart_cell"} -->
+<!-- livebook:{"attrs":{"chart_title":"Rolling Average","height":300,"layers":[{"chart_type":"bar","color_field":null,"color_field_aggregate":null,"color_field_type":null,"data_variable":"df","x_field":"year","x_field_aggregate":null,"x_field_type":null,"y_field":"total_sum","y_field_aggregate":null,"y_field_type":"quantitative"},{"chart_type":"line","color_field":null,"color_field_aggregate":null,"color_field_type":null,"data_variable":"df","x_field":"year","x_field_aggregate":null,"x_field_type":null,"y_field":"RollingAverage","y_field_aggregate":null,"y_field_type":"quantitative"}],"vl_alias":"Elixir.VegaLite","width":800},"kind":"Elixir.KinoVegaLite.ChartCell","livebook_object":"smart_cell"} -->
 
 ```elixir
-VegaLite.new(width: 800, height: 300, title: "Expenses Per Month")
-|> VegaLite.data_from_values(df, only: ["Date", "Amount_sum", "RollingAverage"])
+VegaLite.new(width: 800, height: 300, title: "Rolling Average")
+|> VegaLite.data_from_values(df, only: ["year", "total_sum", "RollingAverage"])
 |> VegaLite.layers([
   VegaLite.new()
   |> VegaLite.mark(:bar)
-  |> VegaLite.encode_field(:x, "Date", type: :nominal)
-  |> VegaLite.encode_field(:y, "Amount_sum", type: :quantitative),
+  |> VegaLite.encode_field(:x, "year")
+  |> VegaLite.encode_field(:y, "total_sum", type: :quantitative),
   VegaLite.new()
   |> VegaLite.mark(:line)
-  |> VegaLite.encode_field(:x, "Date", type: :nominal)
+  |> VegaLite.encode_field(:x, "year")
   |> VegaLite.encode_field(:y, "RollingAverage", type: :quantitative)
 ])
 ```
