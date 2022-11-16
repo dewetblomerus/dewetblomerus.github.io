@@ -1,4 +1,4 @@
-# Rolling Average
+# Moving Average
 
 ```elixir
 Mix.install([
@@ -8,9 +8,7 @@ Mix.install([
 ])
 ```
 
-## Setup
-
-`LIVEBOOK_HOME=$(pwd) livebook server`
+## Prepare Data
 
 ```elixir
 alias Explorer.DataFrame
@@ -27,6 +25,8 @@ df =
     %{rolling_average: rolling}
   end)
 ```
+
+## Chart
 
 <!-- livebook:{"attrs":{"chart_title":"Rolling Average","height":300,"layers":[{"chart_type":"bar","color_field":null,"color_field_aggregate":null,"color_field_type":null,"data_variable":"df","x_field":"year","x_field_aggregate":null,"x_field_type":null,"y_field":"total","y_field_aggregate":null,"y_field_type":"quantitative"},{"chart_type":"line","color_field":null,"color_field_aggregate":null,"color_field_type":null,"data_variable":"df","x_field":"year","x_field_aggregate":null,"x_field_type":null,"y_field":"rolling_average","y_field_aggregate":null,"y_field_type":"quantitative"}],"vl_alias":"Elixir.VegaLite","width":800},"kind":"Elixir.KinoVegaLite.ChartCell","livebook_object":"smart_cell"} -->
 
