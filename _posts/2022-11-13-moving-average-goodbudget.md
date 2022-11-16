@@ -26,5 +26,5 @@ You will need the following:
 
 [![Run in Livebook](https://livebook.dev/badge/v1/blue.svg)](https://livebook.dev/run?url=https%3A%2F%2Fdewetblomerus.com%2Fassets%2Flivebooks%2Fgoodbudget.livemd){:target="_blank"}
 
-This graph is what my family really spent on Fuel and Uber over the last couple of years.
+This graph is what my family really spent on Fuel and Uber over the last couple of years, with a 3-month moving average.
 ![image tooltip here](/assets/images/goodbudget-moving-average.png)
