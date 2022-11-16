@@ -4,6 +4,9 @@ title: Graphing a Moving Average of a Goodbudget Envelope
 tags: [Elixir]
 ---
 
+This graph is what my family really spent on Fuel and Uber over the last couple of years, with a 3-month moving average. Skip to [The Solution](#the-solution) if you want to see how.
+![image tooltip here](/assets/images/goodbudget-moving-average.png)
+
 # Confession
 
 I do not know how to create graphs or charts in Excell. I do not know all that much about data visualization in general, while writing this blog post I googled the definition for "Rolling Average vs Moving Average" and "Graph vs Chart". I am interested in Machine Learning, but I strongly prefer to learn while solving real-world problems, and until I find a real-world problem that I can solve with Machine Learning, it is going to be difficult for me to learn it.
@@ -25,6 +28,3 @@ You will need the following:
 
 
 [![Run in Livebook](https://livebook.dev/badge/v1/blue.svg)](https://livebook.dev/run?url=https%3A%2F%2Fdewetblomerus.com%2Fassets%2Flivebooks%2Fgoodbudget.livemd){:target="_blank"}
-
-This graph is what my family really spent on Fuel and Uber over the last couple of years, with a 3-month moving average.
-![image tooltip here](/assets/images/goodbudget-moving-average.png)
