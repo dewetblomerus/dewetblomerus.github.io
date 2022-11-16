@@ -57,6 +57,8 @@ amount_series =
 ```
 
 ```elixir
+months_moving_average = 3
+
 df =
   df
   |> DataFrame.mutate(Date: date_series)
@@ -69,7 +71,7 @@ df =
     moving_average =
       data[:Amount_sum]
       |> Series.reverse()
-      |> Series.window_mean(3)
+      |> Series.window_mean(months_moving_average)
       |> Series.reverse()
 
     # I am not sure why the above needed to be done backwards
