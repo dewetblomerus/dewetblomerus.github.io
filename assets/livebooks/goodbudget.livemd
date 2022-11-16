@@ -16,17 +16,15 @@ Mix.install([
 alias Explorer.DataFrame
 alias Explorer.Series
 
+# You can change the max_rows to vary how far back into history you go.
 df =
   DataFrame.from_csv!(
-    "history.csv",
+    "Downloads/history.csv",
     max_rows: 1500
   )
 ```
 
 ```elixir
-# DataFrame.shape(df)
-# DataFrame.table(df)
-
 date_series =
   df[:Date]
   |> Series.to_list()
@@ -68,29 +66,28 @@ df =
   |> DataFrame.group_by(:Date)
   |> Explorer.DataFrame.summarise(Amount: [:sum])
   |> DataFrame.mutate_with(fn data ->
-    rolling =
+    moving_average =
       data[:Amount_sum]
       |> Series.reverse()
       |> Series.window_mean(3)
       |> Series.reverse()
 
-    %{RollingAverage: rolling}
+    # I am not sure why the above needed to be done backwards
+    %{MovingAverage: moving_average}
   end)
 ```
 
 ```elixir
-# DataFrame.shape(df)
-# DataFrame.table(df)
-
+# The Average for all history
 df[:Amount_sum]
 |> Series.mean()
 ```
 
-<!-- livebook:{"attrs":{"chart_title":"Expenses Per Month","height":300,"layers":[{"chart_type":"bar","color_field":null,"color_field_aggregate":null,"color_field_type":null,"data_variable":"df","x_field":"Date","x_field_aggregate":null,"x_field_type":"nominal","y_field":"Amount_sum","y_field_aggregate":null,"y_field_type":"quantitative"},{"chart_type":"line","color_field":null,"color_field_aggregate":null,"color_field_type":null,"data_variable":"df","x_field":"Date","x_field_aggregate":null,"x_field_type":"nominal","y_field":"RollingAverage","y_field_aggregate":null,"y_field_type":"quantitative"}],"vl_alias":"Elixir.VegaLite","width":800},"kind":"Elixir.KinoVegaLite.ChartCell","livebook_object":"smart_cell"} -->
+<!-- livebook:{"attrs":{"chart_title":"Expenses Per Month","height":300,"layers":[{"chart_type":"bar","color_field":null,"color_field_aggregate":null,"color_field_type":null,"data_variable":"df","x_field":"Date","x_field_aggregate":null,"x_field_type":"nominal","y_field":"Amount_sum","y_field_aggregate":null,"y_field_type":"quantitative"},{"chart_type":"line","color_field":null,"color_field_aggregate":null,"color_field_type":null,"data_variable":"df","x_field":"Date","x_field_aggregate":null,"x_field_type":"nominal","y_field":"MovingAverage","y_field_aggregate":null,"y_field_type":"quantitative"}],"vl_alias":"Elixir.VegaLite","width":800},"kind":"Elixir.KinoVegaLite.ChartCell","livebook_object":"smart_cell"} -->
 
 ```elixir
 VegaLite.new(width: 800, height: 300, title: "Expenses Per Month")
-|> VegaLite.data_from_values(df, only: ["Date", "Amount_sum", "RollingAverage"])
+|> VegaLite.data_from_values(df, only: ["Date", "Amount_sum", "MovingAverage"])
 |> VegaLite.layers([
   VegaLite.new()
   |> VegaLite.mark(:bar)
@@ -99,6 +96,6 @@ VegaLite.new(width: 800, height: 300, title: "Expenses Per Month")
   VegaLite.new()
   |> VegaLite.mark(:line)
   |> VegaLite.encode_field(:x, "Date", type: :nominal)
-  |> VegaLite.encode_field(:y, "RollingAverage", type: :quantitative)
+  |> VegaLite.encode_field(:y, "MovingAverage", type: :quantitative)
 ])
 ```
