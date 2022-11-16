@@ -15,11 +15,11 @@ df =
   Explorer.Datasets.fossil_fuels()
   |> DataFrame.filter_with(&Series.equal(&1["country"], "DEMOCRATIC PEOPLE S REPUBLIC OF KOREA"))
   |> DataFrame.mutate_with(fn data ->
-    rolling =
+    moving_average =
       data[:total]
       |> Series.window_mean(3)
 
-    %{moving_average: rolling}
+    %{moving_average: moving_average}
   end)
 ```
 
