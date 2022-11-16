@@ -4,8 +4,6 @@ title: Displaying a Moving Average with Livebook
 tags: [Elixir]
 ---
 
-#
-
 You will need [Livebook](https://livebook.dev/) installed. And then you can click the following link to see how to create a moving average graph in Livebook
 
 [![Run in Livebook](https://livebook.dev/badge/v1/blue.svg)](https://livebook.dev/run?url=https%3A%2F%2Fdewetblomerus.com%2Fassets%2Flivebooks%2Fmoving-average.livemd)
