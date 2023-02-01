@@ -19,7 +19,7 @@ alias Explorer.Series
 # You can change the max_rows to vary how far back into history you go.
 df =
   DataFrame.from_csv!(
-    "Downloads/history.csv",
+    System.get_env("HOME") <> "/Downloads" <> "/history.csv",
     max_rows: 1500
   )
 ```
