@@ -10,7 +10,7 @@ Here is how to do it:
 
 All these changes go into your LiveView file.
 
-On mount, assign an empty `flash_timer`.
+In your `mount` function, assign an empty `flash_timer`.
 
 ```elixir
 assign(flash_timer: nil)
