@@ -4,19 +4,19 @@ title: LiveView Timed Flash
 tags: [elixir]
 ---
 
-If you need to put a flash message in LiveView but want it to dissapear after a few seconds, you might be surprised to see that this is not built into LiveView yet.
+If you need to put a flash message in LiveView but want it to disappear after a few seconds, you might be surprised that LiveView does not have this built-in.
 
 Here is how to do it:
 
-All these changes goes in your LiveView.
+All these changes go into your LiveView file.
 
-On mount, assign an empty `flash_timer`
+On mount, assign an empty `flash_timer`.
 
 ```elixir
 assign(flash_timer: nil)
 ```
 
-Define a `:clear_flash` handle info so that we can send ourselves a message to clear the flash.
+Define a `:clear_flash` handle info so we can send ourselves a message to clear the flash.
 
 ```elixir
 @impl true
@@ -25,7 +25,7 @@ def handle_info(:clear_flash, socket) do
 end
 ```
 
-Define a `put_timed_flash` function
+Define a `put_timed_flash` function.
 
 ```elixir
 defp put_timed_flash(socket, key, message, timeout \\ 5000) do
@@ -51,7 +51,7 @@ Example usage:
 put_timed_flash(
   socket,
   :info,
-  "This message will dissapear after the default of 5 seconds ⏳"
+  "This message will disappear after the default of 5 seconds ⏳."
 )
 ```
 
