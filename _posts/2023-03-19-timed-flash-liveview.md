@@ -41,4 +41,18 @@ defp put_timed_flash(socket, key, message, timeout \\ 5000) do
 end
 ```
 
-You're done! You can see it in action [on quickaverage](https://quickaverage.com/){:target="\_blank" rel="noopener"} by clicking to copy the URL at the bottom or by clicking the "Clear Numbers" button.
+You're done!
+
+Now you can use it with the same interface as [put_flash/3](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html#put_flash/3){:target="\_blank" rel="noopener"} but it also accepts an optional 4th timeout argument.
+
+Example usage:
+
+```elixir
+put_timed_flash(
+  socket,
+  :info,
+  "This message will dissapear after the default of 5 seconds ⏳"
+)
+```
+
+You can [see it in action on quickaverage](https://quickaverage.com/){:target="\_blank" rel="noopener"} by clicking to copy the URL at the bottom or by clicking the "Clear Numbers" button.
