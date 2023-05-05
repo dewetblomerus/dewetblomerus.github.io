@@ -21,4 +21,4 @@ I enjoyed the story. The book is written as a Fable. When I first realized that,
 
 ### Who would I recommend it to?
 
-If you work in software, nad your technical abilities are no longer the limiting factor (bottleneck or constraint in factory terms) to how much value you can create, then I highly recommend this book.
+If you work in software, and your technical abilities are no longer the limiting factor (bottleneck or constraint in factory terms) to how much value you can create, then I highly recommend this book.
