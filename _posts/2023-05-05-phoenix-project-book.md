@@ -12,7 +12,7 @@ Shoutout to [Adi Iengar](https://www.linkedin.com/in/adiiyengar/){:target="\_bla
 ### Key takeaways
 
 - Delivering software (or any digital) value, has a lot in common with an assembly line. That is why Agile processes and tools have names like "Lean" or "Kanban", which are manufacturing terms.
-- Work In Progress is the single greatest indicator of poor quality and missed deadlines.
+- The amount of Work In Progress is the single greatest indicator of poor quality and missed deadlines. Reducing batch sizes and cycle times is the answer.
 - Any improvement made, not at the constraint, is just an illusion. I have thought about this a lot while having some deployment issues at work, and when I see any of our Kanban board columns stacked with several cards.
 
 ### Biggest Surprise
