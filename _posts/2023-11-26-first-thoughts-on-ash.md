@@ -5,7 +5,7 @@ tags: [Book]
 ---
 
 I recently built [SpellSightWords.com](https://spellsightwords.com/){:target="\_blank"}
-to the point where my only user (my daughter) is using it every day and finding it useful.
+to the point where my only user (my daughter) is using it every day and finding it useful. [Here is the code](https://github.com/dewetblomerus/red)
 
 This was my first experience with the [Ash Framework](https://ash-hq.org/){:target="\_blank"}.
 
