@@ -5,7 +5,7 @@ permalink: /sse/
 ---
 
 <div id="sse-container">
-  <h1>Server-Sent Events Test with EventBlast</h1>
+  <h1>Server-Sent Events Test with <a href="https://eventblast.io">EventBlast</a></h1>
   <div id="messages"></div>
   <button id="connect-btn">Connect</button>
   <button id="disconnect-btn" disabled>Disconnect</button>
@@ -106,6 +106,25 @@ permalink: /sse/
 
   // Initialize preview on page load
   updateEndpointPreview();
+
+  // Auto-connect on page load
+  function autoConnect() {
+    // Wait a bit for the page to fully load
+    setTimeout(() => {
+      const orgSlug = endpointInput.value.trim();
+      if (orgSlug && !eventSource) {
+        addMessage('Auto-connecting on page load...', 'info');
+        connectBtn.click();
+      }
+    }, 500);
+  }
+
+  // Trigger auto-connect when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', autoConnect);
+  } else {
+    autoConnect();
+  }
 </script>
 
 <style>
