@@ -37,7 +37,7 @@ permalink: /clock/
 
   function connect() {
     setStatus('Connecting...', 'connecting');
-    eventSource = new EventSource('http:///dewetblomerus.eventblast.io/api/subscribe/clock');
+    eventSource = new EventSource('https:///dewetblomerus.eventblast.io/api/subscribe/clock');
 
     eventSource.onopen = () => setStatus('Connected', 'connected');
 
