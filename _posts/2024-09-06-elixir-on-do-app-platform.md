@@ -8,11 +8,13 @@ tags: [Elixir]
 
 DO NOT do this unless you absolutely have to. Fly.io is much simpler and more fully featured.
 
-# Why I tried Digital Ocean App Platform when I already knew how to deploy stuff with Fly.io?
+# What I was up to
 
-I recently had an idea for a side project that would enable ui-directional real-time public content delivery for a fraction of the cost of WebSocket-As-A-Service providers.
+I recently had an idea to build Server-Sent-Events-As-A-Service, which would enable uni-directional real-time public content delivery for a fraction of the cost of WebSocket-As-A-Service providers.
 
-Most business ideas end up making no money, but because I like to dream, I dreamt that if this one makes it, my main cost would be my cloud bill, especially my egress networking bill. Because of this, I decided to try and use Digital Ocean App Platform. I could get easy deployment of my app through their PaaS, and if I ever scaled up, I could deliver the egress bandwidth from droplets with tons of included bandwidth and 1-cent/GB overage charges.
+# Reasons to consider Digital Ocean App Platform vs Fly.io?
+
+Most business ideas end up making no money, but because I like to dream, I dreamt that if this one makes it, my main cost would be my cloud bill, especially my egress networking bill. When factoring in the included free bandwidth DigitalOcean has much lower egress bandwidth costs.
 
 # Erlang Distribution Woes
 
