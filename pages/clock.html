@@ -1,0 +1,154 @@
+---
+layout: page
+title: SSE Clock
+permalink: /clock/
+---
+
+<div id="clock-container">
+  <h1>Live Clock</h1>
+  <h3>Powered by messages from <a href="https://eventblast.io">EventBlast</a></h1>
+  <div id="clock-display">
+    <div id="time">--:--:--</div>
+    <div id="date">Loading...</div>
+  </div>
+  <div id="status">Connecting...</div>
+</div>
+
+<script>
+  let eventSource = null;
+
+  function updateClock(timestamp) {
+    const date = new Date(timestamp * 1000);
+
+    document.getElementById('time').textContent = date.toLocaleTimeString('en-US', {
+      hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit'
+    });
+
+    document.getElementById('date').textContent = date.toLocaleDateString('en-US', {
+      weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+    });
+  }
+
+  function setStatus(message, type) {
+    const status = document.getElementById('status');
+    status.textContent = message;
+    status.className = `status ${type}`;
+  }
+
+  function connect() {
+    setStatus('Connecting...', 'connecting');
+    eventSource = new EventSource('http:///dewetblomerus.eventblast.io/api/subscribe/clock');
+
+    eventSource.onopen = () => setStatus('Connected', 'connected');
+
+    // Listen for general messages that might include the initial timestamp
+    eventSource.onmessage = (event) => {
+      try {
+        // Try to parse as JSON first (for message events)
+        const data = JSON.parse(event.data);
+        if (data.data && data.data.timestamp) {
+          const timestamp = parseInt(data.data.timestamp);
+          if (timestamp) {
+            updateClock(timestamp);
+            setStatus('Live', 'live');
+          }
+        }
+      } catch (e) {
+        // If not JSON, try parsing directly as timestamp
+        const timestamp = parseInt(event.data);
+        if (timestamp) {
+          updateClock(timestamp);
+          setStatus('Live', 'live');
+        }
+      }
+    };
+
+    // Listen for connected event type (if server sends it this way)
+    eventSource.addEventListener('connected', (event) => {
+      const timestamp = parseInt(event.data);
+      if (timestamp) {
+        updateClock(timestamp);
+        setStatus('Live', 'live');
+      }
+    });
+
+    eventSource.addEventListener('t', (event) => {
+      // Heartbeat messages send timestamp directly
+      const timestamp = parseInt(event.data);
+      if (timestamp) {
+        updateClock(timestamp);
+        setStatus('Live', 'live');
+      }
+    });
+
+    eventSource.onerror = () => {
+      setStatus('Reconnecting...', 'error');
+      eventSource.close();
+      eventSource = null;
+      setTimeout(connect, 3000);
+    };
+  }
+
+  // Start on page load
+  window.addEventListener('load', connect);
+  window.addEventListener('beforeunload', () => eventSource?.close());
+</script>
+
+<style>
+  #clock-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  #clock-display {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 20px;
+    padding: 40px;
+    margin: 30px 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    color: white;
+  }
+
+  #time {
+    font-size: 4em;
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  #date {
+    font-size: 1.2em;
+    opacity: 0.9;
+  }
+
+  #status {
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin: 20px 0;
+    font-weight: 500;
+  }
+
+  .status.connecting { background-color: #ffeaa7; color: #2d3436; }
+  .status.connected { background-color: #55a3ff; color: white; }
+  .status.live { background-color: #00b894; color: white; animation: pulse 2s infinite; }
+  .status.error { background-color: #e17055; color: white; }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+  }
+
+  @media (max-width: 768px) {
+    #time { font-size: 2.5em; }
+    #clock-display { padding: 20px; }
+    #clock-container { padding: 20px 10px; }
+  }
+
+  @media (max-width: 480px) {
+    #time { font-size: 2em; }
+    #date { font-size: 1em; }
+  }
+</style>
