@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Elixir on Digital Ocean App Platform
+title: Cursor Background Agents and Elixir
 tags: [Elixir]
 ---
 
