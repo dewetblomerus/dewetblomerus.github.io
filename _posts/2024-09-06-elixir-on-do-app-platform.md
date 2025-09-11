@@ -14,7 +14,7 @@ I recently had an idea to build Server-Sent-Events-As-A-Service, which would ena
 
 # Reasons to consider Digital Ocean App Platform vs Fly.io?
 
-Most business ideas end up making no money, but because I like to dream, I dreamt that if this one makes it, my main cost would be my cloud bill, especially my egress networking bill. When factoring in the included free bandwidth DigitalOcean has much lower egress bandwidth costs.
+Most business ideas end up making no money, but because I like to dream, I dreamt that if this one makes it, my main cost would be my cloud bill, especially my egress networking bill. Even before factoring in the included free bandwidth DigitalOcean has much lower egress bandwidth costs.
 
 # Erlang Distribution Woes
 
