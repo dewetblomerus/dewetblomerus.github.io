@@ -26,9 +26,9 @@ I also really don't like to wait for computers when I'm working on them, so I wa
 if config_env() == :dev or config_env() == :test do
   database_name =
     if config_env() == :test do
-      "eventblast_test#{System.get_env("MIX_TEST_PARTITION")}"
+      "my_app_test#{System.get_env("MIX_TEST_PARTITION")}"
     else
-      "eventblast_dev"
+      "my_app_dev"
     end
 
   database_config =
@@ -56,7 +56,7 @@ if config_env() == :dev or config_env() == :test do
         ]
     end
 
-  config :eventblast, Eventblast.Repo, database_config ++ [stacktrace: true]
+  config :my_app, MyApp.Repo, database_config ++ [stacktrace: true]
 end
 
 ```
