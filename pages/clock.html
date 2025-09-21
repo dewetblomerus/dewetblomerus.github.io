@@ -37,43 +37,38 @@ permalink: /clock/
 
   function connect() {
     setStatus('Connecting...', 'connecting');
-    eventSource = new EventSource('https:///dewetblomerus.eventblast.io/api/subscribe/clock');
+    // Updated to use new EventBlast API endpoint format
+    eventSource = new EventSource('https://api.eventblast.io/v1/subscribe/dw/clock');
 
     eventSource.onopen = () => setStatus('Connected', 'connected');
 
-    // Listen for general messages that might include the initial timestamp
-    eventSource.onmessage = (event) => {
+    // Handle the 'connected' event - sent immediately when SSE connection is established
+    eventSource.addEventListener('connected', (event) => {
+      const timestamp = parseInt(event.data);
+      if (timestamp) {
+        updateClock(timestamp);
+        setStatus('Connected', 'connected');
+      }
+    });
+
+    // Handle 'message' events - contains published event data
+    eventSource.addEventListener('message', (event) => {
       try {
-        // Try to parse as JSON first (for message events)
         const data = JSON.parse(event.data);
-        if (data.data && data.data.timestamp) {
-          const timestamp = parseInt(data.data.timestamp);
+        if (data.timestamp) {
+          const timestamp = parseInt(data.timestamp);
           if (timestamp) {
             updateClock(timestamp);
             setStatus('Live', 'live');
           }
         }
       } catch (e) {
-        // If not JSON, try parsing directly as timestamp
-        const timestamp = parseInt(event.data);
-        if (timestamp) {
-          updateClock(timestamp);
-          setStatus('Live', 'live');
-        }
-      }
-    };
-
-    // Listen for connected event type (if server sends it this way)
-    eventSource.addEventListener('connected', (event) => {
-      const timestamp = parseInt(event.data);
-      if (timestamp) {
-        updateClock(timestamp);
-        setStatus('Live', 'live');
+        console.error('Error parsing message event:', e);
       }
     });
 
+    // Handle heartbeat events ('t') - periodic keepalive messages every 30 seconds
     eventSource.addEventListener('t', (event) => {
-      // Heartbeat messages send timestamp directly
       const timestamp = parseInt(event.data);
       if (timestamp) {
         updateClock(timestamp);
