@@ -12,7 +12,7 @@ permalink: /sse/
 
   <div id="endpoint-config">
     <label for="endpoint-input">Organization Slug:</label>
-    <input type="text" id="endpoint-input" placeholder="Enter organization slug" value="dewetblomerus">
+    <input type="text" id="endpoint-input" placeholder="Enter organization slug" value="dw">
     <div id="endpoint-preview"></div>
   </div>
 </div>
@@ -34,7 +34,7 @@ permalink: /sse/
   }
 
   function buildEndpointUrl(orgSlug) {
-    return `https://${orgSlug}.eventblast.io/api/subscribe/test-topic`;
+    return `https://api.eventblast.io/v1/subscribe/${orgSlug}/test-topic`;
   }
 
   function updateEndpointPreview() {
