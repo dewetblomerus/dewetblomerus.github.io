@@ -4,21 +4,21 @@ title: Building with Ash, Before & After AI
 tags: [Elixir]
 ---
 
-## BLUF Bottom Line Up Front
+## BLUF (Bottom Line Up Front)
 
 AI assisted coding with the Ash framework is surprisingly good.
 
 ## History
 
-I built a side project with Ash two years ago [and wrote about it here](https://dewetblomerus.com/2023/11/26/first-thoughts-on-ash.html). I might have had an early version of GitHub CoPilot at the time, how quickly I write code with the assistance of AI has increased massively. I haven't really done much with Ash until I reached for it again on a side-project a couple of months ago.
+I built a side project with Ash two years ago [and wrote about it here](https://dewetblomerus.com/2023/11/26/first-thoughts-on-ash.html). I might have had an early version of GitHub CoPilot at the time, but how quickly I write code with the assistance of AI has increased massively. I haven't really done much with Ash until I reached for it again on a side-project a couple of months ago.
 
 ## My assumption/hypothesis
 
 I've heard that LLMs are best at writing code in [popular languages](https://www.tiobe.com/tiobe-index/). And with Ash not being very popular at all _yet_, I figured LLMs might be quite terrible at it. But I decided to give it a try, and if it didn't work well, I would just drop down to Elixir.
 
-## Findings new opinion
+## New Findings & Opinion
 
-One of my biggest struggles with Ash two years ago, was the code interface, whether I used an `Ash.Query` or exposed a proper code interface, and the error messages when I got it wrong was not as vanilla Elixir code. Surprisingly, the LLM got through this quite quickly. It would either get it right the first time, or when it made a mistake, Cursor could run the code with Tidewave, understand the error more quickly than I could, and fix the code.
+One of my biggest struggles with Ash two years ago was the code interface, whether I used an `Ash.Query` or exposed a proper code interface, and the error messages when I got it wrong were not as clear as vanilla Elixir code. Surprisingly, the LLM got through this quite quickly. It would either get it right the first time, or when it made a mistake, Cursor could run the code with Tidewave, understand the error more quickly than I could, and fix the code.
 
 One of the strongest points in favor of Ash is that the modeling of the business domain & logic is extremely dense and clear (very few short lines of code). So that if someone new to the project wrote some code that might contain mistakes, one person that understands the business domain can very quickly read & review what was written and if it lines up with business requirements. This benefit lines up PERFECTLY with an LLM writing code.
 
@@ -30,7 +30,7 @@ This has gone very quickly, because the pieces of code that I need to carefully 
 
 ## Context Switching & Ash Policies
 
-When you decide to review the authorization flow, trying to make sure that each user can only see and do what they are supposed to, [Ash Policies](https://hexdocs.pm/ash/policies.html) is implemented with a minimal amount of code that is all organized into `policies` blocks. This allows your human reviewer brain to peruse all the authorization code while being staying in the zone of thinking through authorization.
+When you decide to review the authorization flow, trying to make sure that each user can only see and do what they are supposed to, [Ash Policies](https://hexdocs.pm/ash/policies.html) is implemented with a minimal amount of code that is all organized into `policies` blocks. This allows your human reviewer brain to peruse all the authorization code while staying in the zone of thinking through authorization.
 
 ## Downsides
 
@@ -38,7 +38,7 @@ If you are considering using Ash, you need to weigh the downsides/costs to make 
 
 ## What did I build?
 
-I built [Server-Sent Events as a Service called EventBlast](https://eventblast.io/). Ash made it really easy to model that each user can create and belong to multiple organizations, an Organization can have one Plan with a monthly price & various rate limits, and each Org can have many API keys. And all the authentication & authorization required to make ensure who can see and do what. This is all boilerplate stuff, and not particularly interesting to work on. I didn't want to spend a bunch of time writing/reviewing all the code by hand. Ash allowed me to very quickly get it done, with minimal code to maintain going forward.
+I built [Server-Sent Events as a Service called EventBlast](https://eventblast.io/). Ash made it really easy to model that each user can create and belong to multiple organizations, an Organization can have one Plan with a monthly price & various rate limits, and each Org can have many API keys. And all the authentication & authorization required to ensure who can see and do what. This is all boilerplate stuff, and not particularly interesting to work on. I didn't want to spend a bunch of time writing/reviewing all the code by hand. Ash allowed me to very quickly get it done, with minimal code to maintain going forward.
 
 ## Final thoughts
 
