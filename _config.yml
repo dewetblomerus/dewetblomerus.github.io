@@ -12,6 +12,7 @@ theme: minima
 port: 3000
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 # Disqus comments
 defaults:
