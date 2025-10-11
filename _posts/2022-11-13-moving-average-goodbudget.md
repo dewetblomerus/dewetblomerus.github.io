@@ -5,7 +5,7 @@ tags: [Elixir]
 ---
 
 This graph is what my family really spent on Fuel and Uber over the last couple of years, with a 3-month moving average. Skip to [The Solution](#the-solution) if you want to see how.
-![image tooltip here](/assets/images/goodbudget-moving-average.png)
+![image tooltip here](/assets/images/goodbudget-moving-average.webp)
 
 # Confession
 
