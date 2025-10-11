@@ -2,7 +2,7 @@
 layout: post
 title: Why I Symlinked Every Folder In My Home Directory
 ---
-<img src='../../../assets/post-images/symlinks-screenshot.png' height='300'>
+<img src='../../../assets/post-images/symlinks-screenshot.webp' height='300'>
 
 ### Why I don't have a home folder partition
 You might think that the problem I am solving here can very easily be solved by creating a `home` folder partition. It's dead simple and well documented, what can go wrong?
