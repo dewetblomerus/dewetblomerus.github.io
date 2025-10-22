@@ -7,9 +7,9 @@ tags: [Cloud]
 ## BLUF (Bottom Line Up Front)
 
 - There are no sponsored links on this page, I'm just trying to be helpful.
-- I'm paying about $15 per month for a fully manged & backed up Postgres instance with 1GB of ram and 10GB of storage, which makes it powerful enough to run databases for all of my current side projects.
+- I'm running a DigitalOcean fully manged & backed up Postgres instance with 1GB of ram and 10GB of storage, which makes it powerful enough to run databases for all of my current side projects.
 - My Fly.io apps are connecting to this Postgres, and the latency from the network hop originating in Ashburn Virginia to New York is completely imperceivable.
-- This is less than half the price of [Fly Managed Postgres](https://fly.io/docs/mpg/)
+- At $15 per month, this is less than half the price of [Fly Managed Postgres](https://fly.io/docs/mpg/)
 
 ## History
 
