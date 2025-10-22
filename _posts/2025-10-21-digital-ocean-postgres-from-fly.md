@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Connecting to a DigitalOcean Managed Postgres from Fly.io
+title: Connecting to a DigitalOcean Managed Postgres from your Elixir Phoenix app on Fly.io
 tags: [Cloud Elixir Phoenix Postgres Fly DigitalOcean]
 ---
 
