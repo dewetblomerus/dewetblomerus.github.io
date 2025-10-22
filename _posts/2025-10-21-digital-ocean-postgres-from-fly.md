@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Connecting to a DigitalOcean Managed Postgres from Fly.io
-tags: [Cloud]
+tags: [Cloud Elixir Phoenix Postgres Fly DigitalOcean]
 ---
 
 ## BLUF (Bottom Line Up Front)
@@ -92,9 +92,9 @@ Eventually, I settled on [DigitalOcean Managed Postgres](https://www.digitalocea
 
 - Only RAM sizes available on both providers are shown.
 - AMD Performance core pricing shown on DigitalOcean, in order to have the higher ones to compare. In reality, the true entry-level instance starts at $12, which has been working well for me.
-- This is only compute, storage is billed per-GB on both providers, but DigitalOcean makes you buy a minimum of 10GB on the smallest plan, which works out to about $2.15.
+- The above is only compute, storage is billed per-GB on both providers, but DigitalOcean makes you buy a minimum of 10GB on the smallest plan, which works out to about $2.15 which gets added to the $12 and how I ended at ~$15.
 
-## How to actually do this
+## How to actually connect to the DigitalOcean database from your Fly.io Elixir app.
 
 If you ran `fly launch` on your Phoenix app (I will never get over how easy that is), you will basically have [this clustering setup, which is 100% up to date as Oct 21, 2025](https://fly.io/docs/elixir/the-basics/clustering/).
 
@@ -120,10 +120,12 @@ export ECTO_IPV6="false"
 fly secrets set DATABASE_URL="your-connection-string-in-quotes"
 ```
 
-That's it. You are done. I think your app will restart, but it should start working immediately after the first boot with these two settings changed. Try `fly logs` to keep an eye on what is happening.
+That's it. You are done. Your app will restart, but it should start working immediately after the first boot with these two settings changed. Try `fly logs` to keep an eye on what is happening.
 
 ## Password Only Security
 
-This is just for my side projects, and I am storing zero personal or sensitive data. So I have made the decision for now to live with the fact that if someone had my connection string, they could steal the data, or even write bad data to the DB.
+This is just for my side projects, and I am storing zero personal or sensitive data. So I have made the decision for now to live with the fact that if someone had my connection string, they could steal the data, or even write bad data to the DB. In a scenario where your business is making any money, you should set up at least IP allow-listing or some other firewall layer so that a bad actor would need more than just your DB connection string.
 
-If one of my side projects grew to the point where it mattered, I could always create a managed Postgres inside Fly.io and do a `pg_dump` and `pg_restore`.
+One layer of security that I have in place to limit the possible impact is that I use Auth0 for all my apps, so if my database was compromised and my users used the same password on my app as they did on Gmail... the bad guys would not have my users' Gmail passwords. Those would still be safe with Auth0.
+
+If one of my side projects grew to the point where it mattered, I could always move the database or move the app so that they are co-located in the same cloud and then have the DB set up to only allow connections from the app that is supposed to access it.
