@@ -120,8 +120,6 @@ export ECTO_IPV6="false"
 fly secrets set DATABASE_URL="your-connection-string-in-quotes"
 ```
 
-That's it. You are done. Your app will restart, but it should start working immediately after the first boot with these two settings changed. Try `fly logs` to keep an eye on what is happening.
-
 3. In `runtime.exs` you will have Repo config for `:prod`. It will look something like this:
 
 ```elixir
@@ -139,6 +137,8 @@ You need to add a line of config to make an SSL connection to DigitalOcean:
 ```elixir
     ssl: [verify: :verify_none]
 ```
+
+That's it. You are done. You will need to re-deploy your app, but it should start working immediately after the first boot with these settings changed. Try `fly logs` to keep an eye on what is happening.
 
 ## Password Only Security
 
