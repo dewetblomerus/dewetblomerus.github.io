@@ -45,54 +45,15 @@ Eventually, I settled on [DigitalOcean Managed Postgres](https://www.digitalocea
       <td style="background-color: #bbdefb; color: #333;">1 vCPU</td>
       <td style="background-color: #bbdefb; color: #333;">15 GiB</td>
       <td style="background-color: #bbdefb; color: #333;">22</td>
-      <td style="background-color: #bbdefb; color: #333; text-align: right;"><strong>$15.00</strong></td>
-    </tr>
-    <tr>
-      <td>2 GB</td>
-      <td style="background-color: #e1bee7; color: #333;">Starter</td>
-      <td style="background-color: #e1bee7; color: #333;">Shared-2x</td>
-      <td style="background-color: #e1bee7; color: #333; text-align: right;"><strong>$72.00</strong></td>
-      <td style="background-color: #bbdefb; color: #333;">1 vCPU</td>
-      <td style="background-color: #bbdefb; color: #333;">40 GiB</td>
-      <td style="background-color: #bbdefb; color: #333;">47</td>
-      <td style="background-color: #bbdefb; color: #333; text-align: right;"><strong>$28.00</strong></td>
-    </tr>
-    <tr>
-      <td>8 GB</td>
-      <td style="background-color: #e1bee7; color: #333;">Launch</td>
-      <td style="background-color: #e1bee7; color: #333;">Performance-2x</td>
-      <td style="background-color: #e1bee7; color: #333; text-align: right;"><strong>$282.00</strong></td>
-      <td style="background-color: #bbdefb; color: #333;">2 vCPU</td>
-      <td style="background-color: #bbdefb; color: #333;">80 GiB</td>
-      <td style="background-color: #bbdefb; color: #333;">197</td>
-      <td style="background-color: #bbdefb; color: #333; text-align: right;"><strong>$82.00</strong></td>
-    </tr>
-    <tr>
-      <td>32 GB</td>
-      <td style="background-color: #e1bee7; color: #333;">Scale</td>
-      <td style="background-color: #e1bee7; color: #333;">Performance-4x</td>
-      <td style="background-color: #e1bee7; color: #333; text-align: right;"><strong>$962.00</strong></td>
-      <td style="background-color: #bbdefb; color: #333;">8 vCPU</td>
-      <td style="background-color: #bbdefb; color: #333;">340 GiB</td>
-      <td style="background-color: #bbdefb; color: #333;">797</td>
-      <td style="background-color: #bbdefb; color: #333; text-align: right;"><strong>$324.00</strong></td>
-    </tr>
-    <tr>
-      <td>64 GB</td>
-      <td style="background-color: #e1bee7; color: #333;">Performance</td>
-      <td style="background-color: #e1bee7; color: #333;">Performance-8x</td>
-      <td style="background-color: #e1bee7; color: #333; text-align: right;"><strong>$1,922.00</strong></td>
-      <td style="background-color: #bbdefb; color: #333;">16 vCPU</td>
-      <td style="background-color: #bbdefb; color: #333;">680 GiB</td>
-      <td style="background-color: #bbdefb; color: #333;">997</td>
-      <td style="background-color: #bbdefb; color: #333; text-align: right;"><strong>$636.00</strong></td>
+      <td style="background-color: #bbdefb; color: #333; text-align: right;"><strong>$12.00</strong></td>
     </tr>
   </tbody>
 </table>
 
-- Only RAM sizes available on both providers are shown.
-- AMD Performance core pricing shown on DigitalOcean, in order to have the higher ones to compare. In reality, the true entry-level instance starts at $12, which has been working well for me.
+- Fly.io is providing a 2-node High-Availability cluster with automatic fallback. So the actual value you will be receiving is 100% comparable, and there is a reason for the $38 price tag.
 - The above is only compute, storage is billed per-GB on both providers, but DigitalOcean makes you buy a minimum of 10GB on the smallest plan, which works out to about $2.15 which gets added to the $12 and how I ended at ~$15.
+- I'm assuming data integrity & safety with the backup solution is comparable.
+- I'm assuming the 2-node HA cluster from Fly would have higher uptime.
 
 ## How to actually connect to the DigitalOcean database from your Fly.io Elixir app.
 
