@@ -100,7 +100,7 @@ If you ran `fly launch` on your Phoenix app (I will never get over how easy that
 
 You will also have a `DATABASE_URL` secret environment variable that your app reads at boot to connect to the DB via connection string.
 
-You only need to do two things.
+Change the following:
 
 1. Change this one line in `rel/env.sh.eex` from:
 
@@ -121,6 +121,24 @@ fly secrets set DATABASE_URL="your-connection-string-in-quotes"
 ```
 
 That's it. You are done. Your app will restart, but it should start working immediately after the first boot with these two settings changed. Try `fly logs` to keep an eye on what is happening.
+
+3. In `runtime.exs` you will have Repo config for `:prod`. It will look something like this:
+
+```elixir
+   config :mobile_worship, MobileWorship.Repo,
+     # ssl: true,
+     url: database_url,
+     pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
+     # For machines with several cores, consider starting multiple pools of `pool_size`
+     # pool_count: 4,
+     socket_options: maybe_ipv6
+```
+
+You need to add a line of config to make an SSL connection to DigitalOcean:
+
+```elixir
+    ssl: [verify: :verify_none]
+```
 
 ## Password Only Security
 
