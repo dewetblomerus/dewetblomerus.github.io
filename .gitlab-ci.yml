@@ -6,7 +6,7 @@ build:
   stage: build
   script:
     - mkdir _site
-    - docker run --rm -v $(pwd):/srv/jekyll jekyll/jekyll:latest jekyll build
+    - docker run --rm -v $(pwd):/srv/jekyll jekyll/jekyll:pages jekyll build
     - mv _site public
     - sudo chown gitlab-runner:gitlab-runner -R public
   artifacts:
@@ -20,15 +20,13 @@ build:
 review:
   stage: review
   script:
-    - rsync -av --delete public /srv/nginx/pages/$CI_BUILD_REF_SLUG
+    - rsync -av --delete public /srv/nginx/pages/$CI_COMMIT_REF_SLUG
   environment:
-    name: review/$CI_BUILD_REF_NAME
-    url: http://$CI_BUILD_REF_SLUG.$APPS_DOMAIN
+    name: review/$CI_COMMIT_REF_NAME
+    url: http://$CI_COMMIT_REF_SLUG.$APPS_DOMAIN
     on_stop: stop_review
-  only:
-    - branches
-  except:
-    - master
+  rules:
+    - if: $CI_COMMIT_BRANCH && $CI_COMMIT_BRANCH != $CI_DEFAULT_BRANCH
   tags:
     - nginx
     - review-apps
@@ -36,12 +34,12 @@ review:
 stop_review:
   stage: review
   script:
-    - rm -rf public /srv/nginx/pages/$CI_BUILD_REF_SLUG
+    - rm -rf public /srv/nginx/pages/$CI_COMMIT_REF_SLUG
   variables:
     GIT_STRATEGY: none
   when: manual
   environment:
-    name: review/$CI_BUILD_REF_NAME
+    name: review/$CI_COMMIT_REF_NAME
     action: stop
   tags:
     - nginx
@@ -49,7 +47,7 @@ stop_review:
 
 pages:
   stage: build
-  image: jekyll/jekyll
+  image: jekyll/jekyll:pages
   script:
     - jekyll build -s $CI_PROJECT_DIR -d $CI_PROJECT_DIR/public
   #- cp -r $CI_PROJECT_DIR/.well-known $CI_PROJECT_DIR/public
@@ -57,5 +55,5 @@ pages:
     expire_in: 7 days
     paths:
     - public
-  only:
-    - master
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
