@@ -5,7 +5,7 @@ permalink: /sse/
 ---
 
 <div id="sse-container">
-  <h1>Server-Sent Events Test with <a href="https://eventblast.io">EventBlast</a></h1>
+  <h1>Server-Sent Events Test with <a href="https://eventblast.dev">EventBlast</a></h1>
   <div id="messages"></div>
   <button id="connect-btn">Connect</button>
   <button id="disconnect-btn" disabled>Disconnect</button>
@@ -34,7 +34,7 @@ permalink: /sse/
   }
 
   function buildEndpointUrl(orgSlug) {
-    return `https://api.eventblast.io/v1/subscribe/${orgSlug}/test-topic`;
+    return `https://api.eventblast.dev/v1/subscribe/${orgSlug}/test-topic`;
   }
 
   function updateEndpointPreview() {

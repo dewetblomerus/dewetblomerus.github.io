@@ -6,7 +6,7 @@ permalink: /clock/
 
 <div id="clock-container">
   <h1>Live Clock</h1>
-  <h3>Powered by messages from <a href="https://eventblast.io">EventBlast</a></h1>
+  <h3>Powered by messages from <a href="https://eventblast.dev">EventBlast</a></h1>
   <div id="clock-display">
     <div id="time">--:--:--</div>
     <div id="date">Loading...</div>
@@ -38,7 +38,7 @@ permalink: /clock/
   function connect() {
     setStatus('Connecting...', 'connecting');
     // Updated to use new EventBlast API endpoint format
-    eventSource = new EventSource('https://api.eventblast.io/v1/subscribe/dw/clock');
+    eventSource = new EventSource('https://api.eventblast.dev/v1/subscribe/dw/clock');
 
     eventSource.onopen = () => setStatus('Connected', 'connected');
 

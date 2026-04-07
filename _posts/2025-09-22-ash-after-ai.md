@@ -38,7 +38,7 @@ If you are considering using Ash, you need to weigh the downsides/costs to make 
 
 ## What did I build?
 
-I built [Server-Sent Events as a Service called EventBlast](https://eventblast.io/). Ash made it really easy to model that each user can create and belong to multiple organizations, an Organization can have one Plan with a monthly price & various rate limits, and each Org can have many API keys. And all the authentication & authorization required to ensure who can see and do what. This is all boilerplate stuff, and not particularly interesting to work on. I didn't want to spend a bunch of time writing/reviewing all the code by hand. Ash allowed me to very quickly get it done, with minimal code to maintain going forward.
+I built [Server-Sent Events as a Service called EventBlast](https://eventblast.dev/). Ash made it really easy to model that each user can create and belong to multiple organizations, an Organization can have one Plan with a monthly price & various rate limits, and each Org can have many API keys. And all the authentication & authorization required to ensure who can see and do what. This is all boilerplate stuff, and not particularly interesting to work on. I didn't want to spend a bunch of time writing/reviewing all the code by hand. Ash allowed me to very quickly get it done, with minimal code to maintain going forward.
 
 ## Final thoughts
 
