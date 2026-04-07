@@ -7,6 +7,7 @@ Intent:
 - Keep the highest-quality source images in the repo.
 - Do not serve these files directly from the site.
 - Regenerate web-ready AVIF files whenever image quality or size needs to change.
+- Always regenerate from the files in this directory, not from the generated files in `assets/images/`.
 
 The generated images are created with:
 

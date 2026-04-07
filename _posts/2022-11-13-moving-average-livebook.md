@@ -26,4 +26,4 @@ df =
 South Korea was the first country I found with a significant decrease in total fossil fuel production, which displays the moving average nicely.
 
 And here is the final graph
-![image tooltip here](/assets/images/moving-average-livebook.avif)
+<img src="/assets/images/moving-average-livebook.avif" alt="Moving average graph in Livebook" width="1600" height="705">

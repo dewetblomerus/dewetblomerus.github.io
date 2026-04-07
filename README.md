@@ -14,6 +14,7 @@ bundle exec jekyll serve
 ## Images
 
 Keep original images in `originals/images/` and generate served assets into `assets/images/`.
+The script always reads from `originals/images/`, never from the already-generated files in `assets/images/`.
 
 Install the image tools:
 
