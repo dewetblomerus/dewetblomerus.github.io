@@ -1,0 +1,88 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+SOURCE_DIR="$ROOT_DIR/originals/images"
+OUTPUT_DIR="$ROOT_DIR/assets/images"
+TMP_DIR="$(mktemp -d)"
+trap 'rm -rf "$TMP_DIR"' EXIT
+
+PHOTO_MAX_EDGE="${PHOTO_MAX_EDGE:-2400}"
+GRAPHICS_MAX_EDGE="${GRAPHICS_MAX_EDGE:-2400}"
+AVIF_MIN="${AVIF_MIN:-24}"
+AVIF_MAX="${AVIF_MAX:-32}"
+AVIF_SPEED="${AVIF_SPEED:-6}"
+
+if command -v magick >/dev/null 2>&1; then
+  MAGICK=(magick)
+elif command -v convert >/dev/null 2>&1; then
+  MAGICK=(convert)
+else
+  echo "Missing ImageMagick. Install it with: sudo apt install imagemagick" >&2
+  exit 1
+fi
+
+if ! command -v avifenc >/dev/null 2>&1; then
+  echo "Missing avifenc. Install it with: sudo apt install libavif-bin" >&2
+  exit 1
+fi
+
+matches_filter() {
+  if [ "$#" -le 1 ]; then
+    return 0
+  fi
+
+  local stem="$1"
+  shift
+
+  local requested
+  for requested in "$@"; do
+    if [ "$requested" = "$stem" ]; then
+      return 0
+    fi
+  done
+
+  return 1
+}
+
+encode_dir() {
+  local category="$1"
+  local max_edge="$2"
+  shift 2
+
+  local dir="$SOURCE_DIR/$category"
+  [ -d "$dir" ] || return 0
+
+  local source
+  while IFS= read -r -d '' source; do
+    local filename stem resized output
+    filename="$(basename "$source")"
+    stem="${filename%.*}"
+
+    if ! matches_filter "$stem" "$@"; then
+      continue
+    fi
+
+    resized="$TMP_DIR/$stem.png"
+    output="$OUTPUT_DIR/$stem.avif"
+
+    "${MAGICK[@]}" "$source" \
+      -auto-orient \
+      -resize "${max_edge}x${max_edge}>" \
+      -strip \
+      "$resized"
+
+    avifenc \
+      --min "$AVIF_MIN" \
+      --max "$AVIF_MAX" \
+      -s "$AVIF_SPEED" \
+      "$resized" \
+      "$output" >/dev/null
+
+    printf 'Wrote %s\n' "${output#$ROOT_DIR/}"
+  done < <(find "$dir" -maxdepth 1 -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' \) -print0 | sort -z)
+}
+
+encode_dir photos "$PHOTO_MAX_EDGE" "$@"
+encode_dir graphics "$GRAPHICS_MAX_EDGE" "$@"

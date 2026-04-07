@@ -12,3 +12,7 @@ port: 3000
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+
+exclude:
+  - originals
+  - scripts
