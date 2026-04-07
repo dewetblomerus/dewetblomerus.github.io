@@ -5,13 +5,8 @@ It is built with Jekyll and hosted for free on GitHub Pages
 
 ## Local Development
 
-```
+```bash
+asdf install ruby 3.3.4
 bundle install
-jekyll serve
-```
-
-## Run in Docker
-
-```
-docker run -v "$(pwd)":/home/jekyll -p 4000:4000 -it jekylocal jekyll serve -H 0.0.0.0
+bundle exec jekyll serve
 ```

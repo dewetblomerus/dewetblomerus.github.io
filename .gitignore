@@ -1,6 +1,11 @@
 _site/
+_includes/_site/
+_posts/_site/
 .bash_history
 .jekyll-metadata
 .obsidian
 .sass-cache/
+_sass/.sass-cache/
 public/
+.cursor/
+.codex
